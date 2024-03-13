@@ -80,7 +80,7 @@
         padding: 15px 20px;
         border: 2px solid var(--main-color);
         border-radius: 10px;
-        background: var(--sec-background-color);
+        background: var(--card-background-color);
     }
 
     .product-card .name img {

@@ -19,8 +19,12 @@
   --background-color: #242142;
   --background-light-color: #f2f3f4;
 
-  --sec-background-color: #302142;
+  --sec-background-color: #302d58;
   --sec-background-light-color: #dfe6ee;
+  
+  --card-background-color: #302142;
+  --card-background-light-color: #dfe6ee;
+  
 
   --font-color: #ededed;
   --font-dark-color: #3f3f3f;
@@ -38,6 +42,8 @@
   --footer-light-background-color: #c8d0d8;
 
 }
+
+
 
 #app {
   max-width: 1980px;
