@@ -1,0 +1,372 @@
+.nav-wrapper {
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+    background: var(--background-color);
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo h5 {
+    color: #EC6316;
+}
+
+nav .logo img {
+    width: 4rem;
+    height: 4rem;
+}
+
+nav .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.main-nav {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+nav.main-nav.active {
+    box-shadow: 5px 5px 5px var(--sec-background-color);
+}
+
+nav .mobile-menu-btn {
+    display: none;
+}
+
+ a.menu {
+    font-size: 16px;
+    letter-spacing: 0.03rem;
+    padding-right: 1.5rem;
+    transition: .3s ease;
+}
+
+nav .menu:hover {
+    color: var(--main-color) !important;
+}
+
+/* menu with icon is inside span tag  */
+nav .span-menu {
+    font-size: 16px;
+    letter-spacing: 0.03rem;
+}
+
+nav .span-menu:hover {
+    color: var(--main-color);
+}
+
+nav .menu-btn {
+    margin-right: 16px;
+}
+
+nav .menu-icon {
+    margin-right: 16px;
+    font-size: 28.8px;
+}
+
+nav .dark-icon {
+    position: relative;
+}
+
+/* dark mode toggle  */
+nav .menu-icon .menu-icon-info {
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-size: 13px !important;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  left: 50%;
+  margin-left: -60px;
+  margin-bottom: -30px;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav .menu-icon .menu-icon-info::before {
+    content: "";
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+nav .menu-icon:hover .dark-icon-info {
+    visibility: visible;
+    opacity: 1;
+}
+/* dark mode toggle end  */
+
+/* search input  */
+nav .search-input-wrapper {
+    position: relative;
+}
+
+nav .search-input {
+    background: var(--font-color);
+    border-radius: 100px 0 0 100px;
+    padding: 3px 15px;
+    color: var(--main-color);
+    font-size: 18px;
+    width: 0px;
+    position: absolute;
+    right: 52px;
+    height: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+nav .search-input.searching {
+    visibility: visible;
+    opacity: 1;
+    width: 500px;
+}
+
+nav .search-input:focus {
+    outline: none;
+}
+
+nav .search-bar-icon {
+    transition: .9s ease-out;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px 0px;
+    margin-right: .5rem;
+    border-radius: 0 100px 100px 0;
+}
+
+nav .search-bar-icon.searching {
+    transition: .3s ease-in-out;
+    background: #cecdcd;
+}
+/* search input end */
+
+/* languages  */
+nav .language-wrapper {
+    transition: .3s ease;
+}
+
+nav .language {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    margin-left: -10px;
+    background: var(--language-bg-color);
+    color: #A22E76;
+    padding: 10px 15px;
+    z-index: 99;
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+nav .language::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent var(--language-bg-color) transparent;
+}
+
+nav .language-wrapper:hover .language {
+    opacity: 1;
+    visibility: visible;
+    height: 80px;
+}
+
+.active-lang {
+    background: rgba(192, 190, 190, 0.226);
+}
+
+nav .language button {
+    margin-bottom: 5px;
+    transition: .3s ease;
+    font-size: .9rem;
+}
+
+nav .language button:hover {
+    color: var(--main-color);
+}
+/* language end  */
+
+
+/* menu dropdown  */
+.menu .dropdown {
+    position: absolute;
+    background: var(--background-color);
+    z-index: 99;
+    width: 96%;
+    left: 2%;
+    top: 70%;  /*important - for coverage a:hover */
+    pointer-events: auto; 
+    height: 0;
+    transition: .4s ease !important;
+    pointer-events: none;
+    overflow: hidden;
+    opacity: 0;
+}
+.menu:hover .dropdown{
+    height: 600px;
+    opacity: 1;
+    color: var(--font-color);
+    pointer-events: visible;
+    overflow: visible;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.dropdown-content-row {
+    padding: 60px 10% ;
+  }
+
+.menu .dropdown .content {
+    width: 100%;
+    border-top: 1px solid var(--main-color);
+}
+
+.menu .dropdown ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu .dropdown ul.multi {
+    width: 15%;
+    border-right: 1px solid var(--main-color);
+}
+
+.menu .dropdown ul li {
+    margin-bottom: 10px;
+}
+
+.menu .dropdown ul li.active {
+    color: var(--main-color);
+}
+
+.menu .dropdown div.content-multi {
+    width: 85%;
+}
+
+
+
+/* =============================
+    breakponts
+===============================*/
+@media (max-width: 1500px) {
+    .menu:hover .dropdown{
+        height: 450px;
+    }
+}
+
+@media(max-width: 1350px) {
+    nav .search-input {
+        right: 52px;
+        height: 30px;
+    }
+
+    nav .search-input.searching {
+        width: 350px;
+    }
+
+    nav .search-bar-icon {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav .logo h5 {
+        font-size: 16px;
+    }
+    
+    nav .logo img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    a.menu {
+        font-size: 15px;
+        padding-right: 1.5rem;
+    }
+
+    nav .span-menu {
+        font-size: 15px;
+    }
+
+    nav .dark-icon {
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 1070px) {
+    nav .search-input.searching {
+        width: 250px;
+    }
+
+    nav .search-input {
+        font-size: 16px;
+    }
+
+    .menu:hover .dropdown{
+        height: 500px;
+    }
+
+    .menu .dropdown ul.multi {
+        width: 17%;
+    }
+}
+
+@media(max-width: 960px) {
+    nav .search-input {
+        right: 52px;
+        height: 25px;
+    }
+
+    nav .search-input.searching {
+        width: 180px;
+    }
+
+    nav .search-bar-icon {
+        height: 25px;
+        line-height: 25px;
+    }
+}
+
+@media(max-width: 890px) {
+    nav .search-input.searching {
+        width:280px;
+    }
+}
+
+@media (max-width: 768px) {
+    *{
+        overflow: hidden;
+    }
+    nav .top-menu, nav.main-nav {
+        display: none !important;
+    }
+
+    nav .mobile-menu-btn {
+        display: flex;
+    }
+}
+
+
