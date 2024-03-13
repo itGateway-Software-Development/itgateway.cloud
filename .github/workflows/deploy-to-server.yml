@@ -37,5 +37,5 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} 'cd /var/www/itgateway.cloud && git pull origin main && /root/.nvm/versions/node/v20.9.0/bin/npm install && /root/.nvm/versions/node/v20.9.0/bin/npm run build'
+          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} 'cd /var/www/itgateway.cloud && git pull origin main && /root/.nvm/versions/node/v20.11.1/bin/npm install && /root/.nvm/versions/node/v20.11.1/bin/npm run build'
 
