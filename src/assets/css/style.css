@@ -23,7 +23,7 @@
   --sec-background-light-color: #dfe6ee;
   
   --card-background-color: #302142;
-  --card-background-light-color: #dfe6ee;
+  --card-background-light-color: #f4f5f8;
   
 
   --font-color: #ededed;
@@ -62,6 +62,8 @@
   background: linear-gradient(99deg,#EC6316 3%,#ff6600 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 #app .primary-btn {
@@ -76,6 +78,12 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+#app .primary-btn.fill {
+  border: 2px solid #e25a00 !important;
+  background: linear-gradient(99deg,#EC6316 3%,#c75b13 90%) !important;
+  color: #ededed;
 }
 
 #app .primary-btn:hover {

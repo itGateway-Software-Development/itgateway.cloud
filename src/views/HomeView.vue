@@ -2,31 +2,28 @@
   <v-app>
     <Carousel></Carousel>
     <Products></Products>
-    <!-- <SuccessStory></SuccessStory>
-    <WhyitGateway></WhyitGateway>
-    <Customers></Customers>
-    <Partners></Partners>
-    <VisionMission></VisionMission> -->
+    <!-- <GlobalInfracture></GlobalInfracture> -->
+    <Solutions></Solutions>
+    <SuccessStory></SuccessStory>
+    <Pricing></Pricing>
   </v-app>
 </template>
 
 <script>
-import Products from '../components/Products'
-import VisionMission from '../components/VisionMission'
-import Partners from '../components/Partners'
-import Customers from '../components/Customers'
-import WhyitGateway from '../components/WhyitGateway'
+import Pricing from '../components/Pricing'
 import SuccessStory from '../components/SuccessStory'
+import Solutions from '../components/Solutions'
+import GlobalInfracture from '../components/GlobalInfracture'
+import Products from '../components/Products'
 import Carousel from '../components/Carousel'
 // Components
 export default {
-  components: {
-    Products,
-    VisionMission,
-    Partners,
-    Customers,
-    WhyitGateway,
+    components: {
+    Pricing,
     SuccessStory,
+    Solutions,
+    GlobalInfracture,
+    Products,
     Carousel,},
 };
 </script>

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.documentElement.style.setProperty("--background-light-color","#242142");
           document.documentElement.style.setProperty("--sec-font-color","#ededed");
           document.documentElement.style.setProperty("--footer-background-color","#c8d0d8");
-          document.documentElement.style.setProperty("--card-background-color","#dfe6ee");
+          document.documentElement.style.setProperty("--card-background-color","#f4f5f8");
         } else {
           document.documentElement.style.setProperty("--background-color","#242142");
           document.documentElement.style.setProperty("--font-color", "#ededed");
