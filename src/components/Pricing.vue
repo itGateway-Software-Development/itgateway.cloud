@@ -10,7 +10,7 @@
             <div class="col-4">
                 <div class="d-flex flex-column justify-content-center align-items-center px-5">
                     <p class="text-center fw-bold">
-                        See the estimate cost for cloud resources you need to deploy.​ 
+                        See the estimate cost for cloud resources you need to deploy.​
                     </p>
                     <button class="btn primary-btn d-flex gap-2 align-items-center fill">Pricing Calculator​</button>
                 </div>
