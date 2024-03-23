@@ -58,7 +58,7 @@
         </router-link>
         <router-link to="" class="menu">{{ $t('signin') }}</router-link>
         <div class="btn-wrapper">
-          <a href="#" class="menu btn btn-sm menu-btn primary-btn">{{ $t('create_acc') }}</a>
+          <a href="#" class=" btn btn-sm menu-btn primary-btn">{{ $t('create_acc') }}</a>
         </div>
         
         <!-- dark icon  -->

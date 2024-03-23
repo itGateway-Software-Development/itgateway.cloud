@@ -2,57 +2,74 @@
     <div class="footer content-wrapper py-5">
         <div class="row d-flex justify-content-center justify-content-md-between">
             <div class="col-5 col-md-3 col-lg-2 mb-5">
-                <h4 class="section-header">Services</h4>
+                <h6 class="section-header">Learn About Us​</h6>
                 <div class="content">
-                    <router-link to="#">Cloud​</router-link>
-                    <router-link to="#">Applications​</router-link>
-                    <router-link to="#">Cyber Security​</router-link>
-                    <router-link to="#">Infrastructure​</router-link>
-                    <router-link to="#">Engineering​</router-link>
-                    <router-link to="#">Managements​</router-link>
-                    <router-link to="#">Developments​</router-link> 
-                    <router-link to="#">Trainings</router-link>
+                    <router-link to="#">Why itGateway Cloud?​</router-link>
+                    <router-link to="#">What is itGateway Cloud?​</router-link>
+                    <router-link to="#">Global Infrastructure​</router-link>
+                    <router-link to="#">Datacenter Regions​</router-link>
+                    <router-link to="#">Customer Stories​</router-link>
+                    <router-link to="#">What is Cloud VM?​</router-link>
+                    <router-link to="#">What is Bare-Metal Cloud?​</router-link> 
+                    <router-link to="#">What is Container?​</router-link>
+                    <router-link to="#">Research & Developments​</router-link>
                 </div>
             </div>
             <div class="col-5 col-md-3 col-lg-2 mb-5">
-                <h4 class="section-header">Career</h4>
+                <h6 class="section-header">Products & Pricing​</h6>
                 <div class="content">
-                    <router-link to="#">View All Jobs​</router-link>
-                    <router-link to="#">Development Programs</router-link>
-                    <router-link to="#">Internship Programs</router-link>
+                    <router-link to="#">Products​</router-link>
+                    <router-link to="#">Pricing​</router-link>
+                    <router-link to="#">Free Tier​</router-link>
+                    <router-link to="#">Solutions​</router-link>
+                    <router-link to="#">Services​</router-link>
+                    <router-link to="#">Cost Optimization​</router-link>
                 </div>
             </div>
             <div class="col-5 col-md-3 col-lg-2 mb-5">
-                <h4 class="section-header">About Us</h4>
+                <h6 class="section-header">Resources​</h6>
                 <div class="content">
-                    <router-link to="#">Contact Us</router-link>
-                    <router-link to="#">Event</router-link>
-                    <router-link to="#">Partners</router-link>
-                    <router-link to="#">Service Groups</router-link>
-                    <router-link to="#">Business Insight</router-link>
+                    <router-link to="#">Getting Started​</router-link>
+                    <router-link to="#">Documentation​</router-link>
+                    <router-link to="#">Learn itGateway Cloud​</router-link>
+                    <router-link to="#">Training and Certification​</router-link>
+                    <router-link to="#">News and Activities​</router-link>
+                    <router-link to="#">Events and Webinars​</router-link>
+                    <router-link to="#">Partner Program​</router-link>
+                    <router-link to="#">Analyst Report​</router-link>
+                    <router-link to="#">White Paper​</router-link>
+                    <router-link to="#">Blogs​</router-link>
                 </div>
             </div>
             <div class="col-5 col-md-3 col-lg-2 mb-5">
-                <h4 class="section-header">Innovation​</h4>
+                <h6 class="section-header">Engage​</h6>
                 <div class="content">
-                    <router-link to="#">R&D Centers</router-link>
-                    <router-link to="#">Trainings</router-link>
-                    <router-link to="#">Blogs</router-link>
-                    <router-link to="#">Data Analysis</router-link>
+                    <router-link to="#">Contact Sales​</router-link>
+                    <router-link to="#">Contact Supports​</router-link>
+                    <router-link to="#">Become a Partner​</router-link>
+                    <router-link to="#">Marketplace​</router-link>
+                    <router-link to="#">itGateway Community​</router-link>
+                    <router-link to="#">Careers</router-link>
                 </div>
             </div>
             <hr class="d-block d-md-none">
             <div class="col-md-12 col-lg-3 mb-5">
                 <div class="d-flex flex-column">
-                    <a href="" class="portal-btn primary-btn">Customer Portal</a>
+                    <a href="" class="portal-btn primary-btn fill">Sign In</a>
                     <div class="social d-flex justify-content-center gap-5 align-items-center mt-5">
                         <a href="https://www.facebook.com/ITGatewayTechnologyGroup" target="_blink"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="" target="_blink"><i class="fa-brands fa-youtube"></i></a>
                         <a href="" target="_blink"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="" target="_blink"><i class="fa-brands fa-instagram"></i></a>
                     </div>
+                    <div class="social d-flex justify-content-center gap-5 align-items-center mt-5">
+                        <a href="" target="_blink"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" target="_blink"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="" target="_blink"><i class="fa-solid fa-podcast"></i></a>
+                        <a href="" target="_blink"><i class="fa-solid fa-message"></i></a>
+                    </div>
                     <p class="text-justify mt-5">
-                        We are an outstanding provider of IT services founded in 2019 by a dynamic young founder who assembled a group of professionals with a service-oriented approach.​
+                        Our Team: Web Developers / Software Engineers / DevOps Engineers / Site Reliability Engineers / Cloud Engineers / Network Engineers / Professional Supports. ​
                     </p>
                 </div>
             </div>
@@ -100,8 +117,9 @@ import { ref } from 'vue';
         padding-bottom: 0px;
     }
     
-    .footer h4 {
+    .footer .section-header {
         font-weight: bold;
+        font-size: 24px !important;
     }
 
     .footer .content {
