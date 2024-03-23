@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row price-card-row">
             <div class="col-12 col-sm-6 col-md-4" v-for="(item, i) in data" :key="i">
                 <div class="price-card shadow">
                     <div class="img d-flex justify-content-center">
@@ -66,6 +66,10 @@
 <style>
     .pricing {
         margin-top: 90px;
+    }
+
+    .pricing .price-card-row {
+        margin-top: 100px ;
     }
 
     .pricing .price-card {
