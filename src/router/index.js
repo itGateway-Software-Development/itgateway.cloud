@@ -7,6 +7,12 @@ const routes = [
     name: "home",
     component: HomeView,
   },
+
+  {
+    path: '/pricing/:slug', 
+    component: () => import('@/views/Pricing.vue'),
+    props: true
+  }
 ];
 
 const router = createRouter({

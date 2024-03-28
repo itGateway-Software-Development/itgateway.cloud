@@ -7,10 +7,12 @@
     <SuccessStory></SuccessStory>
     <Pricing></Pricing>
     <Service></Service>
+    <Support></Support>
   </v-app>
 </template>
 
 <script>
+import Support from '../components/Support'
 import Service from '../components/Service'
 import Pricing from '../components/Pricing'
 import SuccessStory from '../components/SuccessStory'
@@ -21,6 +23,7 @@ import Carousel from '../components/Carousel'
 // Components
 export default {
     components: {
+    Support,
     Service,
     Pricing,
     SuccessStory,

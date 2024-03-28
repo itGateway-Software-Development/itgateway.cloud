@@ -2,7 +2,7 @@
     <div class="content-wrapper service row align-items-center">
         <div class="col-12 col-md-6">
             <div class="row">
-                <div class="col-12 col-sm-6 mb-5" v-for="(data, i) in services" :key="i">
+                <div class="col-12 col-sm-6 mb-5 mb-sm-0" v-for="(data, i) in services" :key="i">
                     <div class="service-detail d-flex flex-column justify-content-center align-items-center">
                         <h3>{{data.no}}</h3>
                         <p>

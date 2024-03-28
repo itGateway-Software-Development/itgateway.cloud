@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <nav class="pb-1">
     <div class="d-flex justify-content-between align-items-center">
-      <div class="logo">
+      <div class="logo cursor-pointer" @click="navigate('/')">
         <img :src="require('@/assets/images/logo.png')" alt="">
         <h5 class="mt-2">itGateway Cloud</h5>
       </div>
@@ -75,7 +75,7 @@
     </nav>
 
     <nav class=" main-nav pt-0 position-relative d-flex align-items-center" :class="{active: isScroll}">
-      <router-link to="#" class="menu service-group" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
+      <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-menu">{{ $t('explore') }}</span>
         <i class="mdi mdi-menu-down"></i>
         <Explore />
@@ -92,6 +92,7 @@
       <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-">{{ $t('pricing') }}</span>
         <i class="mdi mdi-menu-down"></i>
+        <Pricing />
       </router-link>
       <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">{{ $t('market_place') }}</router-link>
       <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">{{ $t('event') }}</router-link>
@@ -127,6 +128,7 @@
 </template>
 
 <script>
+import Pricing from './navDropdown/Pricing'
 import Product from './navDropdown/Product'
 import Explore from './navDropdown/Explore'
 import MobileDrawer from './MobileDrawer'
@@ -137,6 +139,7 @@ import { useStore } from "vuex";
 
 export default {
   components: {
+    Pricing,
     Product,
     Explore,
     MobileDrawer
