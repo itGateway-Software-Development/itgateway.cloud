@@ -26,9 +26,9 @@
                             <th>CPU</th>
                             <th>RAM</th>
                             <th>Storage</th>
-                            <th>Network Data</th>
-                            <th>Transfer</th>
-                            <th>Out Snapshot</th>
+                            <th>Network</th>
+                            <th>Data Transfer Out</th>
+                            <th>Snapshot</th>
                             <th>Price</th>
                             <th>&nbsp;</th>
                         </tr>
@@ -42,119 +42,124 @@
                             <td>1 Gbps​</td>
                             <td>1 TB/Month​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.0194/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.0194/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='linux'">$14/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$159/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$504/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$159/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$504/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
-                            <td>evm.cl.small​</td>
+                            <td v-if="vm_os == 'linux'">evm.cl.small​</td>
+                            <td v-else>evm.cw.small​</td>
                             <td>2 vCPU​</td>
                             <td>4 GB DDR4​</td>
                             <td>100 GB NVMe​</td>
                             <td>1 Gbps​</td>
                             <td>1 TB/Month​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.0389/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.0389/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='linux'">$28/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$315/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$945/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$315/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$945/3 Years</td>
 
-                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.0486/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.0486/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='window'">$35/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$399/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$1197/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$399/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$1,197/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
-                            <td>evm.cl.medium</td>
+                            <td v-if="vm_os == 'linux'">evm.cl.medium</td>
+                            <td v-else>evm.cw.medium</td>
                             <td>4 vCPU​</td>
                             <td>8 GB DDR4​</td>
                             <td>200 GB NVMe​</td>
                             <td>1 Gbps​</td>
                             <td>2 TB/Month​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.0764/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.0764/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='linux'">$55/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$620/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$1860/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$620/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$1,860/3 Years</td>
 
-                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.0972/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.0972/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='window'">$70/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$799/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$2397/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$799/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$2,397/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
-                            <td>evm.cl.large</td>
+                            <td v-if="vm_os == 'linux'">evm.cl.large</td>
+                            <td v-else>evm.cw.large</td>
                             <td>4 vCPU​</td>
                             <td>16 GB DDR4​</td>
                             <td>200 GB NVMe​</td>
                             <td>5 Gbps​</td>
                             <td>2 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.1000/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.1000/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='linux'">$72/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$829/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$2487/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$829/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$2,487/3 Years</td>
                             
-                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.1250/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.1250/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='window'">$90/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$999/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$2997/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$999/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$2,997/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>                        <tr>
-                            <td>evm.cl.xlarge</td>
+                            <td v-if="vm_os == 'linux'">evm.cl.xlarge</td>
+                            <td v-else>evm.cw.xlarge</td>
                             <td>8 vCPU​</td>
                             <td>32 GB DDR4​</td>
                             <td>300 GB NVMe​</td>
                             <td>5 Gbps​</td>
                             <td>3 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.1986/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.1986/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='linux'">$143/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$1,659/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$4,977/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$1,659/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$4,977/3 Years</td>
                             
-                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.2500/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.2500/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='window'">$180/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$1,999/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$5,997/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$1,999/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$5,997/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
-                            <td>evm.cl.2xlarge</td>
+                            <td v-if="vm_os == 'linux'">evm.cl.2xlarge</td>
+                            <td v-else>evm.cw.2xlarge</td>
                             <td>16 vCPU​</td>
                             <td>64 GB DDR4​</td>
                             <td>500 GB NVMe​</td>
                             <td>10 Gbps​</td>
                             <td>3 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.3986/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='linux'">$0.3986/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='linux'">$287/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$3,349/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$10,047/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='linux'">$3,349/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='linux'">$10,047/3 Years</td>
                             
-                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.4861/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.4861/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='window'">$350/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$3,999/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$11,997/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$3,999/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$11,997/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
 
                         <tr v-if="vm_os == 'window'">
-                            <td>evm.cl.4xlarge</td>
-                            <td>16 vCPU​</td>
-                            <td>64 GB DDR4​</td>
-                            <td>500 GB NVMe​</td>
+                            <td>evm.cw.4xlarge</td>
+                            <td>32 vCPU​</td>
+                            <td>128 GB DDR4​</td>
+                            <td>1 TB NVMe​</td>
                             <td>10 Gbps​</td>
                             <td>3 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.875/Month​</td>
+                            <td v-if="vm_plan=='hourly' && vm_os=='window'">$0.875/Hour</td>
                             <td v-if="vm_plan=='monthly' && vm_os=='window'">$630/Month​</td>
-                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$7,199/Month​</td>
-                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$21,597/Month​</td>
+                            <td v-if="vm_plan=='one_year' && vm_os=='window'">$7,199/Year</td>
+                            <td v-if="vm_plan=='three_year' && vm_os=='window'">$21,597/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                     </tbody>
@@ -177,13 +182,13 @@ import { ref } from 'vue'
     }
 </script>
 
-<style scoped>
+<style >
     .price-item button {
         width: 100px;
     }
 
     .plan-detail {
-        margin-top: 50px;
+        margin-top: 20px;
         background: var(--card-background-color);
         padding: 30px;
         border-radius: 10px;
