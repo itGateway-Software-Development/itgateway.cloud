@@ -196,7 +196,7 @@
                             <td v-else>
                                 <div class="d-flex flex-column align-items-center gap-0">
                                     <p class="p-0 m-0">/28 Subnet​</p>
-                                    <small style="color: #EC6316;">13 Usable​</small>
+                                    <small style="color: #EC6316;">13 Usable​ </small>
                                 </div>
                             </td>
 
