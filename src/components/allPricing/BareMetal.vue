@@ -211,6 +211,186 @@
                             <td v-if="bm_blan=='three_year' && bm_processor=='dual'">$28,017/3 Years</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
+                        <tr>
+                            <td v-if="bm_processor == 'single'">c1m2.ebms.medium​</td>
+                            <td v-else>c2m4.ebms.medium​</td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">Intel Xeon E2388-G​</p>
+                                    <small style="color: #EC6316;">8 Core/16 Threat 3.2GHz​​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x Xeon Gold 5218R​​</p>
+                                    <small style="color: #EC6316;">40 Core/80 Threat 2.1GHz​​</small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_processor == 'single'">128 GB DDR4​</td>
+                            <td v-else>256 GB DDR4​</td>
+
+                            <td v-if="bm_processor == 'single'">2 x 1 TB NVMe​​</td>
+                            <td v-else>2 x 2 TB NVMe​​</td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x 10 Gbps​</p>
+                                    <small style="color: #EC6316;">3 TB Data Transfer Out​​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x 25 Gbps​​</p>
+                                    <small style="color: #EC6316;">4 TB Data Transfer Out​​</small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">/28 Subnet​</p>
+                                    <small style="color: #EC6316;">13 Usable​​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">/28 Subnet​</p>
+                                    <small style="color: #EC6316;">13 Usable​ </small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_blan=='hourly' && bm_processor=='single'">$0.5467/Hour</td>
+                            <td v-if="bm_blan=='monthly' && bm_processor=='single'">$399/Month​</td>
+                            <td v-if="bm_blan=='one_year' && bm_processor=='single'">$4,389/Year</td>
+                            <td v-if="bm_blan=='three_year' && bm_processor=='single'">$13,167/3 Years</td>
+
+                            <td v-if="bm_blan=='hourly' && bm_processor=='dual'">$1.3000/Hour</td>
+                            <td v-if="bm_blan=='monthly' && bm_processor=='dual'">$949/Month​</td>
+                            <td v-if="bm_blan=='one_year' && bm_processor=='dual'">$10,439/Year</td>
+                            <td v-if="bm_blan=='three_year' && bm_processor=='dual'">$31,317/3 Years</td>
+                            <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
+                        </tr>
+                        <tr>
+                            <td v-if="bm_processor == 'single'">c1m2.ebms.large​</td>
+                            <td v-else>c2m8.ebms.medium​</td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">Intel Xeon E2288-G​</p>
+                                    <small style="color: #EC6316;">8 Core/16 Threat 3.7GHz​​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x Xeon Gold 5418Y​​​</p>
+                                    <small style="color: #EC6316;">48 Core/96 Threat 2.1GHz​​</small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_processor == 'single'">128 GB DDR4​</td>
+                            <td v-else>512 GB DDR4​</td>
+
+                            <td v-if="bm_processor == 'single'">2 x 1 TB NVMe​​</td>
+                            <td v-else>2 x 4 TB NVMe​​</td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x 10 Gbps​</p>
+                                    <small style="color: #EC6316;">3 TB Data Transfer Out​​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x 25 Gbps​​</p>
+                                    <small style="color: #EC6316;">5 TB Data Transfer Out​​</small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">/28 Subnet​</p>
+                                    <small style="color: #EC6316;">13 Usable​​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">/27 Subnet​</p>
+                                    <small style="color: #EC6316;">29 Usable​ </small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_blan=='hourly' && bm_processor=='single'">$0.5712/Hour</td>
+                            <td v-if="bm_blan=='monthly' && bm_processor=='single'">$417/Month​</td>
+                            <td v-if="bm_blan=='one_year' && bm_processor=='single'">$4,587/Year</td>
+                            <td v-if="bm_blan=='three_year' && bm_processor=='single'">$13,761/3 Years</td>
+
+                            <td v-if="bm_blan=='hourly' && bm_processor=='dual'">$2.0534/Hour</td>
+                            <td v-if="bm_blan=='monthly' && bm_processor=='dual'">$1,499/Month​</td>
+                            <td v-if="bm_blan=='one_year' && bm_processor=='dual'">$16,489/Year</td>
+                            <td v-if="bm_blan=='three_year' && bm_processor=='dual'">$49,467/3 Years</td>
+                            <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
+                        </tr>
+                        <tr>
+                            <td v-if="bm_processor == 'single'">ryzen.ebms.large​</td>
+                            <td v-else>c2m8.ebms.large​</td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">AMD Ryzen 9 7900​</p>
+                                    <small style="color: #EC6316;">12 Core/24 Threat 3.7GHz​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x Xeon Gold 6430​​​​</p>
+                                    <small style="color: #EC6316;">64 Core/128 Threat 1.9GHz​</small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_processor == 'single'">128 GB DDR4​</td>
+                            <td v-else>512 GB DDR4​</td>
+
+                            <td v-if="bm_processor == 'single'">2 x 1 TB NVMe​​​</td>
+                            <td v-else>2 x 4 TB NVMe​​</td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x 16 Gbps​</p>
+                                    <small style="color: #EC6316;">3 TB Data Transfer Out​​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">2 x 25 Gbps​​</p>
+                                    <small style="color: #EC6316;">5 TB Data Transfer Out​​</small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_processor == 'single'">
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">/29 Subnet​</p>
+                                    <small style="color: #EC6316;">5 Usable​</small>
+                                </div>
+                            </td>
+                            <td v-else>
+                                <div class="d-flex flex-column align-items-center gap-0">
+                                    <p class="p-0 m-0">/27 Subnet​</p>
+                                    <small style="color: #EC6316;">29 Usable​ </small>
+                                </div>
+                            </td>
+
+                            <td v-if="bm_blan=='hourly' && bm_processor=='single'">$0.4096/Hour</td>
+                            <td v-if="bm_blan=='monthly' && bm_processor=='single'">$299/Month​</td>
+                            <td v-if="bm_blan=='one_year' && bm_processor=='single'">$3,949/Year</td>
+                            <td v-if="bm_blan=='three_year' && bm_processor=='single'">$11,847/3 Years</td>
+
+                            <td v-if="bm_blan=='hourly' && bm_processor=='dual'">$2.2589/Hour</td>
+                            <td v-if="bm_blan=='monthly' && bm_processor=='dual'">$1,649/Month​</td>
+                            <td v-if="bm_blan=='one_year' && bm_processor=='dual'">$18,139/Year</td>
+                            <td v-if="bm_blan=='three_year' && bm_processor=='dual'">$54,147/3 Years</td>
+                            <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
