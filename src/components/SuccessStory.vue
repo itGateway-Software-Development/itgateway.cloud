@@ -2,14 +2,14 @@
     <div class="success-story content-wrapper">
         <h1 class="section-header">Success Story</h1>
         <div class="story-container row mt-5">
-            <div class="col-3 pe-0 main-card">
+            <div class="col-12 col-lg-3 mb-3 mb-lg-0 pe-0 main-card">
                 <img class="" :src="require('@/assets/images/success_story.jpeg')" alt="">
                 <div>
                     <h4 class="text-justify mb-5">Managed Services Behind the Cloud​</h4>
                     <button class="btn primary-btn d-flex gap-2 align-items-center fill">Contact Sales</button>
                 </div>
             </div>
-            <div class="col-3 pe-0">
+            <div class="col-12 col-md-4 col-lg-3 pe-0">
                 <div class="success-card shadow">
                     <img :src="require('@/assets/images/success_story/1.jpg')" alt="">
                     <h5 class="my-3 fw-bold">Living 9</h5>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 pe-0">
+            <div class="col-12 col-md-4 col-lg-3 pe-0">
                 <div class="success-card shadow">
                     <img :src="require('@/assets/images/success_story/3.jpg')" alt="">
                     <h5 class="my-3 fw-bold">Snoopy Mobile​</h5>
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="col-3 pe-0">
+            <div class="col-12 col-md-4 col-lg-3 pe-0">
                 <div class="success-card shadow">
                     <img :src="require('@/assets/images/success_story/5.jpg')" alt="">
                     <h5 class="my-3 fw-bold">Amigos International​</h5>
@@ -161,5 +161,27 @@
     .success-story .success-card:hover a {
         transform: translateX(0);
         color: #EC6316 !important;
+    }
+
+    @media (max-width: 991px) {
+        .success-story .story-container .main-card img{
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .story-container {
+            padding: 0px 30px;
+        }
+
+        .success-story a {
+            transform: translateX(0px);
+            transition: .5s ease;
+        }
+
+        .col-lg-3 .pe-0 {
+            padding-left: 0;
+        }
     }
 </style>

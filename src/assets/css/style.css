@@ -176,6 +176,12 @@ nav, nav .dropdown {
   }
 }
 
+@media (max-width: 1650px) {
+  .content-wrapper {
+    padding: 10px 11%;
+  }
+}
+
 @media (max-width: 1200px) {
   *{
     font-size: 15px;

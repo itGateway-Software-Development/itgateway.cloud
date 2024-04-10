@@ -1,8 +1,8 @@
 <template>
     <div class="content-wrapper solutions">
         <h1 class="section-header">itGateway Cloud Solutions</h1>
-        <div class="row mt-5 ">
-            <div class="col-2 ">
+        <div class="solution-section gap-5 mt-5 ">
+            <div class="solution-menu">
                 <div class="solution-wrapper">
                     <ul>
                         <li :class="{'active' : currentSolution == 'most_demand'}" @click="currentSolution = 'most_demand'">Most Demand</li>
@@ -15,12 +15,29 @@
                         <li :class="{'active' : currentSolution == 'app_development'}" @click="currentSolution = 'app_development'">App Development​</li>
                         <li :class="{'active' : currentSolution == 'database'}" @click="currentSolution = 'database'">Databases​</li>
                         <li :class="{'active' : currentSolution == 'data_protection'}" @click="currentSolution = 'data_protection'">Data Protection​</li>
-                        <li :class="{'active' : currentSolution == 'cloud_security'}" @click="currentSolution = 'cloud_security'">Cloud Security​</li>
+                        <li :class="{'active' : currentSolution == 'cloud_security'}" @click="currentSolution = 'cloud_security'">Cloud Security</li>
                         <li :class="{'active' : currentSolution == 'workspace'}" @click="currentSolution = 'workspace'">Workspaces​</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-9 offset-1">
+            <!-- menu for mobile size  -->
+            <div class="solution-menu-mobile">
+                <select name="" id="" class="form-select" v-model="currentSolution">
+                    <option value="most_demand">Most Demand</option>
+                    <option value="cloud_migration">Cloud Migration​</option>
+                    <option value="container">Containers​</option>
+                    <option value="elastic_computing">Elastic Computing​</option>
+                    <option value="elastic_networking">Elastic Networking​</option>
+                    <option value="elastic_storage">Elastic Storage​</option>
+                    <option value="web_development">Web Development​</option>
+                    <option value="app_development">App Development​</option>
+                    <option value="database">Databases​</option>
+                    <option value="data_protection">Data Protection​</option>
+                    <option value="cloud_security">Cloud Security</option>
+                    <option value="workspace">Workspaces​</option>
+                </select>
+            </div>
+            <div class="solution-content">
                 <MostDemand v-if="currentSolution == 'most_demand'" />
                 <h3 v-else class="text-center">Comming Soon</h3>
             </div>
@@ -44,6 +61,23 @@ import { ref } from 'vue'
 <style>
     .solutions {
         margin-top: 90px;
+    }
+
+    .solutions .solution-section {
+        display: flex;
+        gap: 48px;
+    }
+
+    .solutions .solution-menu {
+        width: 20%;
+    }
+
+    .solutions .solution-menu-mobile {
+        display: none;
+    }
+
+    .solutions .solution-content {
+        width: 80%;
     }
 
     .solutions ul li {
@@ -76,5 +110,52 @@ import { ref } from 'vue'
         background: var(--sec-main-color);
     }
 
+    @media (max-width: 1235px) {
+        .solutions .solution-menu {
+            width: 25%;
+        }
+    
+        .solutions .solution-content {
+            width: 75%;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .solutions .solution-menu {
+            width: 28%;
+        }
+    
+        .solutions .solution-content {
+            width: 72%;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .solutions .solution-section {
+            flex-direction: column;
+            gap: 10px !important;
+        }
+
+        .solutions .solution-menu {
+            display: none;
+        }
+
+        .solutions .solution-menu-mobile {
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .solutions .solution-menu-mobile select {
+            background-color: var(--sec-background-color);
+            color: var(--font-color);
+            padding: 10px 20px;
+        }
+    
+        .solutions .solution-content {
+            width: 100%;
+        }
+    }
     
 </style>

@@ -42,11 +42,11 @@
                             <td>1 Gbps​</td>
                             <td>2 TB/Month​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.0315/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.034/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='linux'">$23/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$253/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$759/3 Years</td>
-                            <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$253</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$683</td>
+                            <td><button class="btn primary-btn deploy-btn">Deploy</button></td> 
                         </tr>
                         <tr>
                             <td v-if="dm_os == 'linux'">edm.cl.small​</td>
@@ -57,15 +57,15 @@
                             <td>1 Gbps​</td>
                             <td>2 TB/Month​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.0630/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.067/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='linux'">$46/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$506/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$1,518/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$506</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$1,366</td>
 
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.0808/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.086/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='window'">$59/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$649/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$1,947/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$649</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$1,752</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -78,15 +78,15 @@
                             <td v-if="dm_os=='linux'">3 TB/Month​</td>
                             <td v-if="dm_os=='window'">2 TB/Month​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.1260/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.134/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='linux'">$92/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$1,010/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$3,030/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$1,010</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$2,727</td>
 
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.1667/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.175/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='window'">$120/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$1,320/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$3,960/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$1,320</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$3,564</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -99,15 +99,15 @@
                             <td v-else>1 Gbps​</td>
                             <td>3 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.1652/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.174/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='linux'">$119/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$1,310/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$3,930/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$1,310</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$3,537</td>
                             
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.2041/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.217/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='window'">$149/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$1,599/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$4,797/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$1,599</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$4,317</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>                        <tr>
                             <td v-if="dm_os == 'linux'">edm.cl.xlarge</td>
@@ -119,15 +119,15 @@
                             <td v-if="dm_os == 'linux'">4 TB/Month​</td>
                             <td v-else>3 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.3274/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.348/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='linux'">$239/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$2,620/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$7,860/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$2,620</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$7,074</td>
                             
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.4096/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.436/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='window'">$299/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$3,280/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$9,840/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$3,280</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$8,856</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -139,15 +139,15 @@
                             <td>10 Gbps​</td>
                             <td>4 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.6562/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.699/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='linux'">$479/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$5,260/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$15,780/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$5,260</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$14,202</td>
                             
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.7521/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.801/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='window'">$549/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$5,999/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$17,997/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$5,999</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$16,197</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
 
@@ -159,10 +159,10 @@
                             <td>10 Gbps​</td>
                             <td>4 TB/Month​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$1,3562/Hour</td>
+                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$1,444/Hour</td>
                             <td v-if="dm_plan=='monthly' && dm_os=='window'">$990/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$9,990/Year</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$29,970/3 Years</td>
+                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$9,990</td>
+                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$26,973</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                     </tbody>

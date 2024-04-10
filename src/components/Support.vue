@@ -1,8 +1,8 @@
 <template>
     <div class="support content-wrapper">
         <h1 class="section-header">Managed Cloud Services​</h1>
-        <div class="row">
-            <div class="col-12 col-sm-5 offset-sm-1 pe-1">
+        <div class="row px-5 px-md-0">
+            <div class="col-12 col-md-5 offset-md-1 pe-md-1">
                 <div class="small-card standard-card">
                     <div class="bg-color"></div>
                     <div class="content d-flex flex-column justify-content-center">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-5">
+            <div class="col-12 col-md-5">
                 <div class="premium-card">
                     <div class="bg-color"></div>
                     <div class="content d-flex flex-column justify-content-center">
@@ -209,5 +209,27 @@
 
     .support .readmore span {
         color: #ffb006 !important;
+    }
+
+    @media (max-width: 1090px) {
+        .support .standard-card {
+            height: 368px;
+            margin-bottom: 15px;
+        }
+    
+        .support .professional-card {
+            height: 368px;
+            margin-bottom: 15px;
+        }
+    
+        .support .premium-card {
+            height: 750px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .support .premium-card {
+            height: 400px;
+        }
     }
 </style>

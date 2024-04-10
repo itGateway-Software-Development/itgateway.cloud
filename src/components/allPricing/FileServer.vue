@@ -39,10 +39,10 @@
                             <td>1 Gbps​</td>
                             <td>2 TB/Month​</td>
                             <td>300 GB​</td>
-                            <td v-if="fs_plan=='hourly'">$0.0397/Hour</td>
+                            <td v-if="fs_plan=='hourly'">$0.042/Hour</td>
                             <td v-if="fs_plan=='monthly'">$29/Month​</td>
-                            <td v-if="fs_plan=='one_year'">$299/Year</td>
-                            <td v-if="fs_plan=='three_year'">$897/3 Years</td>
+                            <td v-if="fs_plan=='one_year'">$299</td>
+                            <td v-if="fs_plan=='three_year'">$897</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -54,10 +54,10 @@
                             <td>1 Gbps​</td>
                             <td>2 TB/Month​</td>
                             <td>500 GB​​</td>
-                            <td v-if="fs_plan=='hourly'">$0.0808/Hour</td>
+                            <td v-if="fs_plan=='hourly'">$0.086/Hour</td>
                             <td v-if="fs_plan=='monthly'">$59/Month​</td>
-                            <td v-if="fs_plan=='one_year'">$590/Year</td>
-                            <td v-if="fs_plan=='three_year'">$1,770/3 Years</td>
+                            <td v-if="fs_plan=='one_year'">$590</td>
+                            <td v-if="fs_plan=='three_year'">$1,770</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -69,10 +69,10 @@
                             <td>1 Gbps​</td>
                             <td>2 TB/Month​</td>
                             <td>1 TB​​</td>
-                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.1644/Hour</td>
+                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.175/Hour</td>
                             <td v-if="fs_plan=='monthly' && dm_os=='linux'">$120/Month​</td>
-                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$1,200/Year</td>
-                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$3,600/3 Years</td>
+                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$1,200</td>
+                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$3,600</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -84,10 +84,10 @@
                             <td>5 Gbps​</td>
                             <td>3 TB/Month​</td>
                             <td>2 TB​</td>
-                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.2315/Hour</td>
+                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.247/Hour</td>
                             <td v-if="fs_plan=='monthly' && dm_os=='linux'">$169/Month​</td>
-                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$1,690/Year</td>
-                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$5,070/3 Years</td>
+                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$1,690</td>
+                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$5,070</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>                        
                         <tr>
@@ -99,10 +99,10 @@
                             <td>5 Gbps​</td>
                             <td>6 TB/Month​</td>
                             <td>4 TB​</td>
-                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.4507/Hour</td>
+                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.481/Hour</td>
                             <td v-if="fs_plan=='monthly' && dm_os=='linux'">$329/Month​</td>
-                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$3,290/Year</td>
-                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$9,870/3 Years</td>
+                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$3,290</td>
+                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$9,870</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -114,10 +114,10 @@
                             <td>10 Gbps​</td>
                             <td>10 TB/Month​</td>
                             <td>8 TB​​</td>
-                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.8616/Hour</td>
+                            <td v-if="fs_plan=='hourly' && dm_os=='linux'">$0.917/Hour</td>
                             <td v-if="fs_plan=='monthly' && dm_os=='linux'">$629/Month​</td>
-                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$6,290/Year</td>
-                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$18,870/3 Years</td>
+                            <td v-if="fs_plan=='one_year' && dm_os=='linux'">$6,290</td>
+                            <td v-if="fs_plan=='three_year' && dm_os=='linux'">$18,870</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                     </tbody>

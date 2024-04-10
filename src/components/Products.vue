@@ -1,7 +1,7 @@
 <template>
     <div class="content-wrapper products">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" v-for="(product, i) in products" :key="i">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-3" v-for="(product, i) in products" :key="i">
                 <div class="product-card shadow d-flex flex-column gap-3" >
                     <div class="name d-flex flex-column gap-2">
                         <div class="d-flex align-items-center gap-3">
@@ -91,6 +91,7 @@
         font-family: 'Courier New', Courier, monospace;
         font-size: 24px;
         font-weight: bold;
+        margin-top: 10px;
     }
 
     .product-card .name h6 {
@@ -119,5 +120,17 @@
 
     .product-card button {
         border-color: #EC6316 !important;
+    }
+
+    @media (max-width: 1675px) {
+        .product-card .name h5 {
+            height: 65px;
+        }
+    }
+
+    @media (max-width: 1375px) {
+        .product-card .info {
+            height: 145px;
+        }
     }
 </style>

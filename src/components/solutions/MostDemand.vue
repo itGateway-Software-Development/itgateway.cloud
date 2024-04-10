@@ -5,7 +5,7 @@
         <button class="btn primary-btn d-flex gap-2 align-items-center">Get Started</button>
     </div>
     <div class="row solution-card-row">
-        <div class="col-12 col-sm-6 col-md-4 mb-3" v-for="(item,i) in items" :key="i">
+        <div class="col-6 col-xl-4 mb-3" v-for="(item,i) in items" :key="i">
             <div class="solution-card shadow">
                 <h6>Elastic <b>{{item.name}}</b></h6>
                 <p class="text-justify mt-3">
@@ -73,5 +73,17 @@
     padding: 15px 20px;
     border-radius: 10px;
     background: var(--card-background-color);
+}
+
+@media (max-width: 1500px) {
+    .solutions .solution-card {
+        height: 150px;
+    }
+}
+
+@media (max-width: 450px) {
+    .solutions .solution-card {
+        height: 180px;
+    }
 }
 </style>

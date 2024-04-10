@@ -2,12 +2,12 @@
     <div class="pricing content-wrapper">
         <h1 class="section-header">itGateway Cloud Pricing​</h1>
         <div class="row mt-5">
-            <div class="col-8 border-end">
+            <div class="col-12 col-sm-8 mb-3 mb-sm-0 border-end">
                 <p>
                     itGateway Cloud can be used with a variety of pricing and billing options that are best suited for you. We offer pay-as-you-go, and yearly pricing options based on your commitment to the individual services you need. You only pay for the services you use, and once you stop or delete using them, there are no additional costs or termination fees..
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-4">
                 <div class="d-flex flex-column justify-content-center align-items-center px-5">
                     <p class="text-center fw-bold">
                         See the estimate cost for cloud resources you need to deploy.​
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="row price-card-row">
-            <div class="col-12 col-sm-6 col-md-4" v-for="(item, i) in data" :key="i">
+            <div class="col-12 col-md-6 col-lg-4 mb-5" v-for="(item, i) in data" :key="i">
                 <div class="price-card shadow">
                     <div class="img d-flex justify-content-center">
                         <img :src="item.img" alt="">
@@ -106,5 +106,12 @@
     .pricing .price-card:hover a {
         transform: translateX(0);
         color: #EC6316 !important;
+    }
+
+    @media (max-width: 767px) {
+        .pricing .price-card a {
+            transform: translateX(0px);
+            transition: .5s ease;
+        }
     }
 </style>

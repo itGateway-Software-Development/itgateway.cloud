@@ -4,14 +4,14 @@
         <img :src="require('@/assets/images/carousel/banner.png')" alt="">
         <div class="carousel-content">
             <h2 class="mb-5" data-aos="fade-down">Build, Deploy and Access Anywhere.​</h2>
-            <p class="text-white">Break the limits of applications, data and resources with our cloud infrastructure. Try itGateway cloud for up to 30 days.​</p>
+            <p class="text-white">Break the limits of applications, ` and resources with our cloud infrastructure. Try itGateway cloud for up to 30 days.​</p>
             <div class="d-flex align-items-center gap-3">
                 <button class="btn primary-btn d-flex gap-2 align-items-center register-btn">Register <span class="material-symbols-outlined">east</span></button>
                 <button class="btn primary-btn d-flex gap-2 align-items-center">Try for Free <span class="material-symbols-outlined">east</span></button>
             </div>
         </div>
     </div>
-    <div class="carousel-link shadow content-wrapper d-flex justify-content-between align-items-center gap-3">
+    <div class="carousel-link shadow content-wrapper justify-content-between align-items-center gap-3">
         <div class="d-flex align-items-center gap-3">
             <router-link to="#" :class="{active: currentSection == 'product'}">Compare Products​</router-link>
             <router-link to="#">Global Infrastructure​</router-link>
@@ -20,6 +20,19 @@
             <router-link to="#">Success Story​</router-link>
             <router-link to="#">Business​</router-link>
         </div>
+        <button class="btn d-flex gap-2 align-items-center text-white register-btn">Get Started <span class="material-symbols-outlined">east</span></button>
+    </div>
+
+    <!-- for mobile  -->
+    <div class="carousel-link-mobile shadow content-wrapper px-4">
+        <select name="" id="" class="form-select">
+            <option value="Compare Products​">Compare Products​</option>
+            <option value="Global Infrastructure​">Global Infrastructure​</option>
+            <option value="Solutions​">Solutions​</option>
+            <option value="Pricing​">Pricing​</option>
+            <option value="Success Story​">Success Story​</option>
+            <option value="Business​">Business​</option>
+        </select>
         <button class="btn d-flex gap-2 align-items-center text-white register-btn">Get Started <span class="material-symbols-outlined">east</span></button>
     </div>
 </template>
@@ -101,11 +114,25 @@ import { onMounted, ref } from 'vue'
         background: linear-gradient(99deg,#EC6316 3%,#c75b13 90%) !important;
     }
 
+    .carousel-link-mobile {
+        display: none;
+    }
+
+    .carousel-link-mobile select {
+        width: 75%;
+    }
+
+    .carousel-link-mobile button {
+        height: 45px;
+        margin-bottom: 10px;
+    }
+
     .carousel-link {
+        display: flex;
         box-shadow: 0px 0px 4px var(--footer-light-background-color) !important;
     }
 
-    .carousel-link button {
+    .carousel-link button, .carousel-link-mobile button {
         border: 2px solid #ff9901 !important;
         background: linear-gradient(99deg,#fd9e0f 3%,#ff9901 90%) !important;
         border-radius: 0px 18px 0 18px;
@@ -154,9 +181,6 @@ import { onMounted, ref } from 'vue'
             font-size: 20px;
         }
 
-        .carousel-content button {
-           padding: 3px 10px;
-        }
     }
 
     @media (max-width: 1110px) {
@@ -196,8 +220,28 @@ import { onMounted, ref } from 'vue'
         .carousel-content h2 {
             font-size: 25px;
         }
+
         .carousel-content p {
             font-size: 16px;
+        }
+
+        .carousel-link-mobile {
+            padding: 0 5px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .carousel-link-mobile select {
+            background-color: var(--sec-background-color);
+            color: var(--font-color);
+            padding: 10px 20px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-link {
+            display: none;
         }
         .indicator .text-slide {
             font-size: 12px;
