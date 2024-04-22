@@ -2,7 +2,7 @@
   <v-app>
     <Carousel></Carousel>
     <Products></Products>
-    <!-- <GlobalInfracture></GlobalInfracture> -->
+    <GlobalInfracture></GlobalInfracture>
     <Solutions></Solutions>
     <SuccessStory></SuccessStory>
     <Pricing></Pricing>
