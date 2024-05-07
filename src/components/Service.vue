@@ -52,7 +52,7 @@
         margin-top: 100px;
     }
     .service .service-detail h3 {
-        font-size: 48px;
+        font-size: 72px;
         font-weight: bolder;
         color: #EC6316;
     }
@@ -72,5 +72,11 @@
     .service span {
         color: #EC6316;
         text-decoration: underline;
+    }
+
+    @media (max-width: 1200px) {
+        .service .service-detail h3 {
+            font-size: 55px;
+        }
     }
 </style>

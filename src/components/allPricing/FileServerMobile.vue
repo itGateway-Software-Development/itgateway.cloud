@@ -1,18 +1,17 @@
 <template>
     <div class="price-item" style="margin-top: 60px;">
-        <div class="d-flex gap-3 plan-btn">
-            <button class="btn primary-btn" :class="{active: fs_plan == 'hourly'}" @click="fs_plan = 'hourly'">Hourly</button>
-            <button class="btn primary-btn" :class="{active: fs_plan == 'monthly'}" @click="fs_plan = 'monthly'">Monthly</button>
-            <button class="btn primary-btn" :class="{active: fs_plan == 'one_year'}" @click="fs_plan = 'one_year'">1 Year</button>
-            <button class="btn primary-btn" :class="{active: fs_plan == 'three_year'}" @click="fs_plan = 'three_year'">3 Year</button>
+        <div class="d-flex" style="padding-left: 30px;">
+            <h4>Elastic ​</h4>
+            <h4 class="fw-bold">File Servers </h4>
         </div>
+        <p style="padding-left: 30px;">Cloud based NAS server provides distributed file services such as file sharing, permission, encryption, sync and data migration. Access your data rapidly from anywhere and at anytime.​​​</p>
         <div class="plan-detail-mobile shadow">
-            <div class="d-flex">
-                <h4>Elastic ​</h4>
-                <h4 class="fw-bold">File Servers </h4>
+            <div class="d-flex gap-3 plan-btn mb-5">
+                <button class="btn primary-btn" :class="{active: fs_plan == 'hourly'}" @click="fs_plan = 'hourly'">Hourly</button>
+                <button class="btn primary-btn" :class="{active: fs_plan == 'monthly'}" @click="fs_plan = 'monthly'">Monthly</button>
+                <button class="btn primary-btn" :class="{active: fs_plan == 'one_year'}" @click="fs_plan = 'one_year'">1 Year</button>
+                <button class="btn primary-btn" :class="{active: fs_plan == 'three_year'}" @click="fs_plan = 'three_year'">3 Year</button>
             </div>
-            <p>Cloud based NAS server provides distributed file services such as file sharing, permission, encryption, sync and data migration. Access your data rapidly from anywhere and at anytime.​​​</p>
-        
             <div class="plan-mobile-detail">
                 <div class="plan-detail-card" :class="{active: active_card == 'card14'}" >
                     <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card14')" data-bs-target="#collapseExample13">

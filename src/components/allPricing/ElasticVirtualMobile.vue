@@ -1,18 +1,18 @@
 <template>
     <div class="price-item">
-        <div class="d-flex gap-3 plan-btn">
-            <button class="btn primary-btn" :class="{active: vm_plan == 'hourly'}" @click="vm_plan = 'hourly'">Hourly</button>
-            <button class="btn primary-btn" :class="{active: vm_plan == 'monthly'}" @click="vm_plan = 'monthly'">Monthly</button>
-            <button class="btn primary-btn" :class="{active: vm_plan == 'one_year'}" @click="vm_plan = 'one_year'">1 Year</button>
-            <button class="btn primary-btn" :class="{active: vm_plan == 'three_year'}" @click="vm_plan = 'three_year'">3 Year</button>
+        <div class="d-flex" style="padding-left: 30px;">
+            <h4>Elastic ​</h4>
+            <h4 class="fw-bold">Virtual Machine</h4>
         </div>
-        <div class="plan-detail-mobile shadow">
-            <div class="d-flex">
-                <h4>Elastic ​</h4>
-                <h4 class="fw-bold">Virtual Machine</h4>
-            </div>
-            <p>Flexible and secure cloud VM using shared resources with cost saving option.​</p>
+        <p style="padding-left: 30px;">Flexible and secure cloud VM using shared resources with cost saving option.​</p>
 
+        <div class="plan-detail-mobile shadow">
+            <div class="d-flex gap-3 plan-btn">
+                <button class="btn primary-btn" :class="{active: vm_plan == 'hourly'}" @click="vm_plan = 'hourly'">Hourly</button>
+                <button class="btn primary-btn" :class="{active: vm_plan == 'monthly'}" @click="vm_plan = 'monthly'">Monthly</button>
+                <button class="btn primary-btn" :class="{active: vm_plan == 'one_year'}" @click="vm_plan = 'one_year'">1 Year</button>
+                <button class="btn primary-btn" :class="{active: vm_plan == 'three_year'}" @click="vm_plan = 'three_year'">3 Year</button>
+            </div>
             <div class="d-flex gap-3 os-btn">
                 <button class="btn primary-btn" :class="{active: vm_os == 'linux'}" @click="vm_os = 'linux'">Linux</button>
                 <button class="btn primary-btn" :class="{active: vm_os == 'window'}" @click="vm_os = 'window'">Window</button>
@@ -460,7 +460,7 @@ import { ref } from 'vue'
 </script>
 
 <style >
-    .price-item .plan-btn {
+    .price-item .price-btn-mobile {
         padding: 10px 30px !important;
     }
     .price-item button {

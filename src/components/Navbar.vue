@@ -145,7 +145,7 @@ export default {
     MobileDrawer
   },
   setup(props, {emit}) {
-    const currentTheme = ref('dark');
+    const currentTheme = ref('light');
     const isSearch = ref(false);
     const drawer = ref(false);
     const router = useRouter();

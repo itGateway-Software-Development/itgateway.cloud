@@ -75,6 +75,10 @@
     background: var(--card-background-color);
 }
 
+.solutions .solution-card p {
+    color: var(--font-mute-dark);
+}
+
 @media (max-width: 1500px) {
     .solutions .solution-card {
         height: 150px;

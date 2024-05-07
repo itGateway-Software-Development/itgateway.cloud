@@ -1,3 +1,18 @@
+(function() {
+  function setLightMode() {
+    document.documentElement.style.setProperty("--background-color","#F2F3F4");
+    document.documentElement.style.setProperty("--font-color", "#3F3F3F");
+    document.documentElement.style.setProperty("--font-dark-color", "#ededed");
+    document.documentElement.style.setProperty("--language-bg-color","#dcdcdc");
+    document.documentElement.style.setProperty("--sec-background-color","#dfe6ee");
+    document.documentElement.style.setProperty("--sec-background-light-color","#3a347a");
+    document.documentElement.style.setProperty("--background-light-color","#242142");
+    document.documentElement.style.setProperty("--sec-font-color","#ededed");
+    document.documentElement.style.setProperty("--footer-background-color","#c8d0d8");
+    document.documentElement.style.setProperty("--card-background-color","#f4f5f8");
+  }
+  setLightMode();
+})();
 document.addEventListener("DOMContentLoaded", () => {
     const themeIcon = document.querySelectorAll(".theme-icon");
 
@@ -18,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.documentElement.style.setProperty("--sec-font-color","#ededed");
           document.documentElement.style.setProperty("--footer-background-color","#c8d0d8");
           document.documentElement.style.setProperty("--card-background-color","#f4f5f8");
+          document.documentElement.style.setProperty("--font-mute-dark","#5f6368");
         } else {
           document.documentElement.style.setProperty("--background-color","#242142");
           document.documentElement.style.setProperty("--font-color", "#ededed");
@@ -29,6 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
           document.documentElement.style.setProperty("--sec-font-color","#A22E76");
           document.documentElement.style.setProperty("--footer-background-color","#142142");
           document.documentElement.style.setProperty("--card-background-color","#302142");
+          document.documentElement.style.setProperty("--font-mute-dark","#ededed");
+
         }
       });
     })

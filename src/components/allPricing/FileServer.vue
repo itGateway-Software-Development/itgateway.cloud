@@ -1,18 +1,17 @@
 <template>
     <div class="price-item dedicated_machine">
-        <div class="d-flex gap-3 plan-btn">
-            <button class="btn primary-btn" :class="{active: fs_plan == 'hourly'}" @click="fs_plan = 'hourly'">Hourly</button>
-            <button class="btn primary-btn" :class="{active: fs_plan == 'monthly'}" @click="fs_plan = 'monthly'">Monthly</button>
-            <button class="btn primary-btn" :class="{active: fs_plan == 'one_year'}" @click="fs_plan = 'one_year'">1 Year</button>
-            <button class="btn primary-btn" :class="{active: fs_plan == 'three_year'}" @click="fs_plan = 'three_year'">3 Year</button>
+        <div class="d-flex">
+            <h4>Elastic ​</h4>
+            <h4 class="fw-bold">File Servers </h4>
         </div>
+        <p>Cloud based NAS server provides distributed file services such as file sharing, permission, encryption, sync and data migration. Access your data rapidly from anywhere and at anytime.​​​</p>
         <div class="plan-detail shadow">
-            <div class="d-flex">
-                <h4>Elastic ​</h4>
-                <h4 class="fw-bold">File Servers </h4>
+            <div class="d-flex gap-3 plan-btn">
+                <button class="btn primary-btn" :class="{active: fs_plan == 'hourly'}" @click="fs_plan = 'hourly'">Hourly</button>
+                <button class="btn primary-btn" :class="{active: fs_plan == 'monthly'}" @click="fs_plan = 'monthly'">Monthly</button>
+                <button class="btn primary-btn" :class="{active: fs_plan == 'one_year'}" @click="fs_plan = 'one_year'">1 Year</button>
+                <button class="btn primary-btn" :class="{active: fs_plan == 'three_year'}" @click="fs_plan = 'three_year'">3 Year</button>
             </div>
-            <p>Cloud based NAS server provides distributed file services such as file sharing, permission, encryption, sync and data migration. Access your data rapidly from anywhere and at anytime.​​​</p>
-
             <div class="plan-detail-table">
                 <table class="table">
                     <thead>

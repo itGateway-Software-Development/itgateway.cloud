@@ -42,17 +42,17 @@
         setup() {
             const data = [
                 {
-                    img: require('@/assets/images/price/pay_as_you_go.svg'),
+                    img: require('@/assets/images/price/pay_as_you_go.png'),
                     title: "Pay-As-You-Go",
                     content: "With pay-as-you-go pricing option, you only pay for the services you use typically on an hourly ($/hour) basis. No partial or full upfront fees. This model allows users to scale their usage up or down based on their needs, without being tied to long-term contracts or fixed costs."
                 },
                 {
-                    img: require('@/assets/images/price/reserve.png'),
+                    img: require('@/assets/images/price/cloud_reserve.png'),
                     title: "Cloud Reservation​",
                     content: "itGateway’s Cloud Reservation is a cost saving option offering for a commitment to use with a specific total amount for a one or three year period. This option allows you to prepay for a certain amount of compute capacity upfront, usually at a discounted rate up to 60%.​"
                 },
                 {
-                    img: require('@/assets/images/price/spot.png'),
+                    img: require('@/assets/images/price/spot_request.png'),
                     title: "Spot Request​",
                     content: "This pricing option allows users to request and utilize spare capacity. It reduce the cost at deep discount up to 90% compared to pay-as-you-go price. Spot instances are suitable for workloads that are flexible and can tolerate interruptions.​"
                 },

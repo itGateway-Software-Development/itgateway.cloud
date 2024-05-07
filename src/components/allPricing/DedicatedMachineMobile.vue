@@ -1,18 +1,17 @@
 <template>
     <div class="price-item" style="margin-top: 60px;">
-        <div class="d-flex gap-3 plan-btn">
-            <button class="btn primary-btn" :class="{active: dm_plan == 'hourly'}" @click="dm_plan = 'hourly'">Hourly</button>
-            <button class="btn primary-btn" :class="{active: dm_plan == 'monthly'}" @click="dm_plan = 'monthly'">Monthly</button>
-            <button class="btn primary-btn" :class="{active: dm_plan == 'one_year'}" @click="dm_plan = 'one_year'">1 Year</button>
-            <button class="btn primary-btn" :class="{active: dm_plan == 'three_year'}" @click="dm_plan = 'three_year'">3 Year</button>
+        <div class="d-flex" style="padding-left: 30px;">
+            <h4>Elastic ​</h4>
+            <h4 class="fw-bold">Dedicated Machine​</h4>
         </div>
+        <p style="padding-left: 30px;">Optimize performance with dedicate resource VM in the cloud.​​</p>
         <div class="plan-detail-mobile shadow">
-            <div class="d-flex">
-                <h4>Elastic ​</h4>
-                <h4 class="fw-bold">Dedicated Machine​</h4>
+            <div class="d-flex gap-3 plan-btn ">
+                <button class="btn primary-btn" :class="{active: dm_plan == 'hourly'}" @click="dm_plan = 'hourly'">Hourly</button>
+                <button class="btn primary-btn" :class="{active: dm_plan == 'monthly'}" @click="dm_plan = 'monthly'">Monthly</button>
+                <button class="btn primary-btn" :class="{active: dm_plan == 'one_year'}" @click="dm_plan = 'one_year'">1 Year</button>
+                <button class="btn primary-btn" :class="{active: dm_plan == 'three_year'}" @click="dm_plan = 'three_year'">3 Year</button>
             </div>
-            <p>Optimize performance with dedicate resource VM in the cloud.​​</p>
-
             <div class="d-flex gap-3 os-btn">
                 <button class="btn primary-btn" :class="{active: dm_os == 'linux'}" @click="dm_os = 'linux'">Linux</button>
                 <button class="btn primary-btn" :class="{active: dm_os == 'window'}" @click="dm_os = 'window'">Window</button>

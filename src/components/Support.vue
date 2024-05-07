@@ -7,31 +7,31 @@
                     <div class="bg-color"></div>
                     <div class="content d-flex flex-column justify-content-center">
                         <h3 class="">Standard​</h3>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Deployment </div>
                             <div class="col-6">:  Install & Config​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Supports  </div>
                             <div class="col-6">:  8x5x365 Office Days ​​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Response   </div>
                             <div class="col-6">:  20~40 Minutes ​​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Reporting & Analysis  </div>
                             <div class="col-6">:  Weekly</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Monitoring & Alert  </div>
                             <div class="col-6">:  Weekly</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Server Maintenance  </div>
                             <div class="col-6">:  Monthly​​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Patch/Upgrade/Fix   </div>
                             <div class="col-6">:  Monthly ​</div>
                         </div>
@@ -47,31 +47,31 @@
                     <div class="bg-color"></div>
                     <div class="content d-flex flex-column justify-content-center">
                         <h3 class="">Prefessional</h3>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Deployment </div>
                             <div class="col-6">:  Install & Config​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Supports  </div>
                             <div class="col-6">:  8x7x365​ ​​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Response   </div>
                             <div class="col-6">:  15~30 Minutes ​​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Reporting & Analysis  </div>
                             <div class="col-6">:  Weekly</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Monitoring & Alert  </div>
                             <div class="col-6">:  Weekly</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Server Maintenance  </div>
                             <div class="col-6">:  Monthly​​</div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Patch/Upgrade/Fix   </div>
                             <div class="col-6">:  Monthly ​</div>
                         </div>
@@ -88,31 +88,31 @@
                     <div class="bg-color"></div>
                     <div class="content d-flex flex-column justify-content-center">
                         <h3 class="mb-5">Premium​</h3>
-                        <div class="row w-100 mb-1">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Deployment </div>
                             <div class="col-6">:  Install & Config​</div>
                         </div>
-                        <div class="row w-100 mb-1">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Supports  </div>
                             <div class="col-6">:  24x7x365​</div>
                         </div>
-                        <div class="row w-100 mb-1">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Response   </div>
                             <div class="col-6">:  5~15 Minutes​​</div>
                         </div>
-                        <div class="row w-100 mb-1">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Reporting & Analysis  </div>
                             <div class="col-6">:  Weekly​​</div>
                         </div>
-                        <div class="row w-100 mb-1">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Monitoring & Alert  </div>
                             <div class="col-6">:  Daily​​</div>
                         </div>
-                        <div class="row w-100 mb-1">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Server Maintenance  </div>
                             <div class="col-6">:  Monthly​​</div>
                         </div>
-                        <div class="row w-100 mb-1">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 col-sm-5">Patch/Upgrade/Fix   </div>
                             <div class="col-6">:  Weekly​​</div>
                         </div>
@@ -144,7 +144,7 @@
     }
 
     .support .standard-card {
-        height: 293px;
+        height: 400px;
         background-image: url('@/assets/images/support/standard.jpeg');
         background-size: cover;
         position: relative;
@@ -152,7 +152,7 @@
     }
 
     .support .professional-card {
-        height: 293px;
+        height: 400px;
         background-image: url('@/assets/images/support/professional.jpeg');
         background-size: cover;
         position: relative;
@@ -160,10 +160,11 @@
     }
 
     .support .premium-card {
-        height: 600px;
+        height: 814px;
         background-image: url('@/assets/images/support/premium.jpeg');
         background-size: 100%;
         position: relative;
+        background-size: cover;
     }
 
     .support .bg-color {
@@ -209,6 +210,20 @@
 
     .support .readmore span {
         color: #ffb006 !important;
+    }
+
+    .support .small-card .readmore, .support .premium-card .readmore {
+        overflow: hidden;
+    }
+
+    .support .small-card a, .support .premium-card a {
+        transform: translateX(-80px);
+        transition: .5s ease;
+    }
+
+    .support .small-card:hover a, .support .premium-card:hover a {
+        transform: translateX(0);
+        color: #EC6316 !important;
     }
 
     @media (max-width: 1090px) {

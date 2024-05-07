@@ -1,18 +1,17 @@
 <template>
     <div class="price-item bare_metal">
-        <div class="d-flex gap-3 plan-btn">
-            <button class="btn primary-btn" :class="{active: bm_plan == 'hourly'}" @click="bm_plan = 'hourly'">Hourly</button>
-            <button class="btn primary-btn" :class="{active: bm_plan == 'monthly'}" @click="bm_plan = 'monthly'">Monthly</button>
-            <button class="btn primary-btn" :class="{active: bm_plan == 'one_year'}" @click="bm_plan = 'one_year'">1 Year</button>
-            <button class="btn primary-btn" :class="{active: bm_plan == 'three_year'}" @click="bm_plan = 'three_year'">3 Year</button>
+        <div class="d-flex">
+            <h4>Elastic ​</h4>
+            <h4 class="fw-bold">Bare-Metal Server​</h4>
         </div>
+        <p>Dedicated physical server with single or dual processor that can build your customized cloud infrastructure. You can deploy and manage physical server infrastructure within an hour.​​</p>
         <div class="plan-detail shadow">
-            <div class="d-flex">
-                <h4>Elastic ​</h4>
-                <h4 class="fw-bold">Bare-Metal Server​</h4>
+            <div class="d-flex gap-3 plan-btn">
+                <button class="btn primary-btn" :class="{active: bm_plan == 'hourly'}" @click="bm_plan = 'hourly'">Hourly</button>
+                <button class="btn primary-btn" :class="{active: bm_plan == 'monthly'}" @click="bm_plan = 'monthly'">Monthly</button>
+                <button class="btn primary-btn" :class="{active: bm_plan == 'one_year'}" @click="bm_plan = 'one_year'">1 Year</button>
+                <button class="btn primary-btn" :class="{active: bm_plan == 'three_year'}" @click="bm_plan = 'three_year'">3 Year</button>
             </div>
-            <p>Dedicated physical server with single or dual processor that can build your customized cloud infrastructure. You can deploy and manage physical server infrastructure within an hour.​​</p>
-
             <div class="d-flex gap-3 os-btn">
                 <button class="btn primary-btn bm_btn" :class="{active: bm_processor == 'single'}" @click="bm_processor = 'single'">Single Processor</button>
                 <button class="btn primary-btn bm_btn" :class="{active: bm_processor == 'dual'}" @click="bm_processor = 'dual'">Dual Processor</button>

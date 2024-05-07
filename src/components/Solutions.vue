@@ -85,6 +85,8 @@ import { ref } from 'vue'
         padding: 5px 15px;
         position: relative;
         cursor: pointer;
+        height:40px;
+        color: var(--font-mute-dark);
     }
 
     .solutions ul li.active {
@@ -96,7 +98,7 @@ import { ref } from 'vue'
         top: 0;
         left: -30px;
         width: 3px;
-        height: 35px;
+        height:40px;
         background: #e7e2e2;
     }
 
@@ -106,7 +108,7 @@ import { ref } from 'vue'
         top: 0;
         left: -30px;
         width: 3px;
-        height: 35px;
+        height:40px;
         background: var(--sec-main-color);
     }
 
