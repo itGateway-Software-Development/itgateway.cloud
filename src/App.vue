@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!-- <Loading /> -->
     <Navbar @menuHoverStatus="menuHoverEffect"/>
     <v-main :class="{blurPage : isHover}">
       <Loading v-if="loading" />

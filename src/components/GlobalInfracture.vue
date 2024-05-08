@@ -1,7 +1,7 @@
 <template>
     <div class="global_map">
         <div class="content-wrapper d-flex justify-content-center">
-            <img :src="require('@/assets/images/file.png')" alt="">
+            <img :src="require('@/assets/images/map.png')" alt="">
             <div class="pin myanmar"><span>Myanmar <br> Launched 2024 </span></div>
             <div class="pin singapore"><span>Singapore <br>Launched 2022 </span></div>
             <div class="pin netherland"><span>Netherland <br>Launched 2023 </span></div>
@@ -49,14 +49,14 @@
         width: 8px;
         height: 8px;
         border-radius: 100%;
-        background: #02A4A6;
+        background: #00796B;
         box-shadow: 0 0 0 2px #8fd5d6; 
         cursor: pointer;
     }
 
     .global_map .pin::before {
         content: '';
-        background: #02A4A6;
+        background: #00796B;
         position: absolute;
         top: 50%;
         left: 50%;
