@@ -10,18 +10,17 @@
     }
 </script>
 
-<style scoped>
+<style>
 .load {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0;
     z-index: 99999;
-    height: 100vh;
 }
 .loader {
     width: 40px;
     height: 40px;
-    --c:no-repeat linear-gradient(orange 0 0);
+    --c:no-repeat linear-gradient(#EC6316);
     background: var(--c),var(--c),var(--c),var(--c);
     background-size: 21px 21px;
     animation: l5 1.5s infinite cubic-bezier(0.3,1,0,1);

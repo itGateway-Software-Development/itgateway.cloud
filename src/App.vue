@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <!-- <Loading /> -->
     <Navbar @menuHoverStatus="menuHoverEffect"/>
     <v-main :class="{blurPage : isHover}">
       <Loading v-if="loading" />
@@ -13,11 +12,10 @@
 <script>
 import Footer from './components/Footer'
 import Navbar from "@/components/Navbar.vue";
-import Loading from "./components/Loading.vue";
 import { onMounted, ref } from 'vue';
 export default {
   components: {
-    Footer, Navbar, Loading },
+    Footer, Navbar },
   setup() {
     const loading = ref(true);
     const isHover = ref(false);
