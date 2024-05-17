@@ -89,6 +89,10 @@
         left: 66%;
     }
 
+    .global_map .myanmar span, .global_map .singapore span,.global_map .netherland span {
+        color: #333;
+    }
+
     .global_map .netherland {
         top: 37%;
         left: 49%;

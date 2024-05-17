@@ -88,6 +88,7 @@
       <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-">{{ $t('solutions') }}</span>
         <i class="mdi mdi-menu-down"></i>
+        <Solution :dropdownContent=solutionDropdownContent />
       </router-link>
       <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-">{{ $t('pricing') }}</span>
@@ -128,6 +129,7 @@
 </template>
 
 <script>
+import Solution from './navDropdown/Solution'
 import Pricing from './navDropdown/Pricing'
 import Product from './navDropdown/Product'
 import Explore from './navDropdown/Explore'
@@ -139,6 +141,7 @@ import { useStore } from "vuex";
 
 export default {
   components: {
+    Solution,
     Pricing,
     Product,
     Explore,
@@ -149,7 +152,8 @@ export default {
     const isSearch = ref(false);
     const drawer = ref(false);
     const router = useRouter();
-    const dropdownContent = ref('compute');
+    const dropdownContent = ref('most_demand');
+    const solutionDropdownContent = ref('use_cases');
     const store = useStore();
     const language = ref('EN');
     const isScroll = ref(false);
@@ -200,7 +204,7 @@ export default {
       window.addEventListener('scroll', handleNavShadow);
     })
 
-      return { currentTheme,changeTheme, isSearch, drawer, navigate,handleChangeRoute, dropdownContent, changeLanguage,handleSwitchLanguage, language, menuHover, isScroll, handleSearch, isMobileSearch}
+      return { currentTheme,changeTheme, isSearch, drawer, navigate,handleChangeRoute, dropdownContent,solutionDropdownContent, changeLanguage,handleSwitchLanguage, language, menuHover, isScroll, handleSearch, isMobileSearch}
   }
 };
 </script>

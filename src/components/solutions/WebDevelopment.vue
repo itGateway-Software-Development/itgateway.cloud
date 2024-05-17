@@ -21,50 +21,45 @@
         setup() {
             const items =[
                 {
-                    prefix: "Elastic",
-                    name: "Virtual Machine​",
-                    description : "Flexible and secure cloud VM using shared resources.​"
+                    prefix: "Elastic​",
+                    name: "Web Instance​​",
+                    description : "Flexible and secure cloud VM using shared resources.​​"
                 },
                 {
-                    prefix: "Elastic",
-                    name: "Dedicate Machine​",
-                    description : "FlexOptimize performance with dedicate resource VM in the cloud.​​"
+                    prefix: "API",
+                    name: "Gateway​",
+                    description : "Optimize performance with dedicate resource VM in the cloud.​​​"
                 },
                 {
-                    prefix: "Elastic",
-                    name: "Bare-Metal Server​",
-                    description : "Deploy and manage physical server infrastructure within an hour.​​"
+                    prefix: "Web",
+                    name: "Test​​",
+                    description : "Deploy and manage physical server infrastructure within an hour.​​​​"
                 },
                 {
-                    prefix: "Elastic",
-                    name: "Database Instance​",
-                    description : "Fully managed and enterprise grade Relational Database Services​"
+                    prefix: "Certificate",
+                    name: "Manager​​",
+                    description : "Fully managed and enterprise grade Relational Database Services​."
                 },
                 {
-                    prefix: "Elastic",
-                    name: "Container Instance​",
-                    description : "Deploy a reliable and scalable container instance rapidly.​​"
+                    prefix: "Key​",
+                    name: "Management Services",
+                    description : "Deploy a reliable and scalable container instance rapidly.​"
                 },
                 {
-                    prefix: "Elastic",
-                    name: "Object Storage​",
-                    description : "Secure, durable and scalable object storage with cost saving.​​"
+                    prefix: "Web​",
+                    name: "Application Firewall",
+                    description : "Secure, durable and scalable object storage with cost saving​."
                 },
                 {
-                    prefix: "Elastic",
-                    name: "File Storage​",
+                    prefix: "Host",
+                    name: "53",
                     description : "Fully managed and high performance file level storage.​​"
                 },
                 {
                     prefix: "Elastic",
-                    name: "Web Instance​",
+                    name: "CDN​",
                     description : "Build and create website & web app with low-cost.​"
                 },
-                {
-                    prefix: "Elastic",
-                    name: "Virtual Network​",
-                    description : "Create isolated virtual networks in the cloud for your resources.​​"
-                }
             ];
 
             return {items}

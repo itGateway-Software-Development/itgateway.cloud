@@ -21,50 +21,35 @@
         setup() {
             const items =[
                 {
-                    prefix: "Elastic",
+                    prefix: "Elastic​",
                     name: "Virtual Machine​",
-                    description : "Flexible and secure cloud VM using shared resources.​"
+                    description : "Flexible and secure cloud VM using shared resources​​.​"
                 },
                 {
                     prefix: "Elastic",
-                    name: "Dedicate Machine​",
-                    description : "FlexOptimize performance with dedicate resource VM in the cloud.​​"
+                    name: "Dedicate Machine​​",
+                    description : "Optimize performance with dedicate resource VM in the cloud​.​​"
                 },
                 {
                     prefix: "Elastic",
-                    name: "Bare-Metal Server​",
-                    description : "Deploy and manage physical server infrastructure within an hour.​​"
+                    name: "Bare-Metal Server​​",
+                    description : "Deploy and manage physical server infrastructure within an hour.​​​"
                 },
                 {
                     prefix: "Elastic",
-                    name: "Database Instance​",
-                    description : "Fully managed and enterprise grade Relational Database Services​"
+                    name: "App Machine​",
+                    description : "Build and run your apps without managing the server​."
+                },
+                {
+                    prefix: "Code",
+                    name: "Runner​​​",
+                    description : "Test and run your code rapidly without managing the platform​."
                 },
                 {
                     prefix: "Elastic",
-                    name: "Container Instance​",
-                    description : "Deploy a reliable and scalable container instance rapidly.​​"
+                    name: "Running Machine​​",
+                    description : "Managed cloud VPS easy to deploy and cost optimization​."
                 },
-                {
-                    prefix: "Elastic",
-                    name: "Object Storage​",
-                    description : "Secure, durable and scalable object storage with cost saving.​​"
-                },
-                {
-                    prefix: "Elastic",
-                    name: "File Storage​",
-                    description : "Fully managed and high performance file level storage.​​"
-                },
-                {
-                    prefix: "Elastic",
-                    name: "Web Instance​",
-                    description : "Build and create website & web app with low-cost.​"
-                },
-                {
-                    prefix: "Elastic",
-                    name: "Virtual Network​",
-                    description : "Create isolated virtual networks in the cloud for your resources.​​"
-                }
             ];
 
             return {items}
