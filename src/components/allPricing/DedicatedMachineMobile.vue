@@ -23,10 +23,10 @@
                         <div class="col-6">edm.cl.mini</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="dm_plan=='hourly' && dm_os=='linux'">$0.034/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='linux'">$23/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='linux'">$253</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='linux'">$683</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.034</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$23​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$253</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$683</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">1 TB/Month</div>
+                            <div class="col-6 text-end">1 TB</div>
                             <hr>
                         </div>
 
@@ -78,15 +78,15 @@
                         <div v-else class="col-6">edm.cw.small​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="dm_plan=='hourly' && dm_os=='linux'">$0.067/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='linux'">$46/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='linux'">$506</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='linux'">$1,366</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.067</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$46​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$506</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$1,366</span>
 
-                                <span v-if="dm_plan=='hourly' && dm_os=='window'">$0.086/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='window'">$59/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='window'">$649</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='window'">$1,752</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.086</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$59​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$649</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$1,752</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">2 TB/Month</div>
+                            <div class="col-6 text-end">2 TB</div>
                             <hr>
                         </div>
 
@@ -139,15 +139,15 @@
                         <div v-else class="col-6">edm.cw.medium​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="dm_plan=='hourly' && dm_os=='linux'">$0.134/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='linux'">$92/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='linux'">$1,010</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='linux'">$2,727</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.134</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$92​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$1,010</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$2,727</span>
 
-                                <span v-if="dm_plan=='hourly' && dm_os=='window'">$0.175/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='window'">$120/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='window'">$1,320</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='window'">$3,564</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.175</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$120​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$1,320</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$3,564</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -176,8 +176,8 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div v-if="dm_os=='linux'" class="col-6 text-end">3 TB/Month</div>
-                            <div v-if="dm_os=='window'" class="col-6 text-end">2 TB/Month</div>
+                            <div v-if="dm_os=='linux'" class="col-6 text-end">3 TB</div>
+                            <div v-if="dm_os=='window'" class="col-6 text-end">2 TB</div>
                             <hr>
                         </div>
 
@@ -201,15 +201,15 @@
                         <div v-else class="col-6">edm.cw.large​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="dm_plan=='hourly' && dm_os=='linux'">$0.174/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='linux'">$119/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='linux'">$1,310</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='linux'">$3,537</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.174</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$119​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$1,310</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$3,537</span>
                                 
-                                <span v-if="dm_plan=='hourly' && dm_os=='window'">$0.217/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='window'">$149/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='window'">$1,599</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='window'">$4,317</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.217</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$149​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$1,599</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$4,317</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -239,7 +239,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">3 TB/Month</div>
+                            <div class="col-6 text-end">3 TB</div>
                             <hr>
                         </div>
 
@@ -263,15 +263,15 @@
                         <div v-else class="col-6">edm.cw.xlarge</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="dm_plan=='hourly' && dm_os=='linux'">$0.348/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='linux'">$239/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='linux'">$2,620</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='linux'">$7,074</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.348</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$239​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$2,620</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$7,074</span>
                                 
-                                <span v-if="dm_plan=='hourly' && dm_os=='window'">$0.436/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='window'">$299/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='window'">$3,280</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='window'">$8,856</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.436</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$299​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$3,280</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$8,856</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -300,8 +300,8 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div v-if="dm_os == 'linux'" class="col-6 text-end">4 TB/Month</div>
-                            <div v-else class="col-6 text-end">3 TB/Month</div>
+                            <div v-if="dm_os == 'linux'" class="col-6 text-end">4 TB</div>
+                            <div v-else class="col-6 text-end">3 TB</div>
                             <hr>
                         </div>
 
@@ -325,15 +325,15 @@
                         <div v-else class="col-6">edm.cw.2xlarge</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="dm_plan=='hourly' && dm_os=='linux'">$0.699/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='linux'">$479/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='linux'">$5,260</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='linux'">$14,202</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.699</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$479​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$5,260</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$14,202</span>
                                 
-                                <span v-if="dm_plan=='hourly' && dm_os=='window'">$0.801/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='window'">$549/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='window'">$5,999</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='window'">$16,197</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.801</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$549​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$5,999</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$16,197</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -362,7 +362,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">4 TB/Month</div>
+                            <div class="col-6 text-end">4 TB</div>
                             <hr>
                         </div>
 
@@ -385,10 +385,10 @@
                         <div class="col-6">evm.cw.4xlarge</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="dm_plan=='hourly' && dm_os=='window'">$1,444/Hour</span>
-                                <span v-if="dm_plan=='monthly' && dm_os=='window'">$990/Month​</span>
-                                <span v-if="dm_plan=='one_year' && dm_os=='window'">$9,990</span>
-                                <span v-if="dm_plan=='three_year' && dm_os=='window'">$26,973</span>
+                                <span class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$1,444</span>
+                                <span class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$990​</span>
+                                <span class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$9,990</span>
+                                <span class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$26,973</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -417,7 +417,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">4 TB/Month</div>
+                            <div class="col-6 text-end">4 TB</div>
                             <hr>
                         </div>
 
@@ -460,4 +460,12 @@ import { ref } from 'vue'
         }
     }
 </script>
+
+<style>
+.price-tag {
+    color: #ff9901;
+    font-weight: bold;
+    font-size: 18px;
+}
+</style>
 

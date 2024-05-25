@@ -80,15 +80,15 @@
                                 </div>
                             </td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='single'">$0.350/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='single'">$240/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='single'">$2,640</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='single'">$7,120</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.350</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$240​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$2,640</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$7,120</td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='dual'">$0.801/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='dual'">$549/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='dual'">$6,039</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='dual'">$16,305</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$0.801</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$549​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$6,039</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$16,305</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -139,15 +139,15 @@
                                 </div>
                             </td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='single'">$0.430/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='single'">$295/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='single'">$3,245</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='single'">$8,760</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.430</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$295​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$3,245</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$8,760</td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.019/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='dual'">$699/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='dual'">$7,689</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='dual'">$20,760</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.019</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$699​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$7,689</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$20,760</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -199,15 +199,15 @@
                                 </div>
                             </td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='single'">$0.518/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='single'">$355/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='single'">$3,905</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='single'">$11,715</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.518</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$355​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$3,905</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$11,715</td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.238/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='dual'">$849/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='dual'">$9,339</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='dual'">$25,215</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.238</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$849​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$9,339</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$25,215</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -259,15 +259,15 @@
                                 </div>
                             </td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='single'">$0.582/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='single'">$399/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='single'">$4,389</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='single'">$10,540</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.582</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$399​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$4,389</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$10,540</td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.384/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='dual'">$949/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='dual'">$10,439</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='dual'">$28,180</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.384</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$949​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$10,439</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$28,180</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -319,15 +319,15 @@
                                 </div>
                             </td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='single'">$0.608/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='single'">$417/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='single'">$4,587</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='single'">$12,380</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.608</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$417​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$4,587</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$12,380</td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.186/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,499/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='dual'">$16,489</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='dual'">$44,520</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.186</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,499​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$16,489</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$44,520</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -379,15 +379,15 @@
                                 </div>
                             </td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='single'">$0.436/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='single'">$299/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='single'">$3,949</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='single'">$10,660</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.436</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$299​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$3,949</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$10,660</td>
 
-                            <td v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.405/Hour</td>
-                            <td v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,649/Month​</td>
-                            <td v-if="bm_plan=='one_year' && bm_processor=='dual'">$18,139</td>
-                            <td v-if="bm_plan=='three_year' && bm_processor=='dual'">$48,970</td>
+                            <td class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.405</td>
+                            <td class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,649​</td>
+                            <td class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$18,139</td>
+                            <td class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$48,970</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                     </tbody>

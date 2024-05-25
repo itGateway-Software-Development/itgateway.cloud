@@ -118,7 +118,8 @@ import { ref } from 'vue'
     }
 
     .solutions ul li.active {
-        color: var(--sec-main-color);
+        color: #ff9901;
+        font-weight: bold;
     }
     .solutions ul li::before {
         content: '';
@@ -137,7 +138,31 @@ import { ref } from 'vue'
         left: -30px;
         width: 3px;
         height:40px;
-        background: var(--sec-main-color);
+        background: #ff9901;
+    }
+
+    .solution-card {
+        height: 127px;
+    }
+
+    .solution-card h6 {
+        font-size: 19px;
+    }
+
+    .solution-card h6 b {
+        font-size: 19px;
+    }
+
+    @media (max-width: 1500px) {
+        .solution-card {
+            height: 150px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .solution-card {
+            height: 130px;
+        }
     }
 
     @media (max-width: 1235px) {
@@ -185,6 +210,12 @@ import { ref } from 'vue'
     
         .solutions .solution-content {
             width: 100%;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .solutions .solution-card {
+            height: 180px;
         }
     }
     

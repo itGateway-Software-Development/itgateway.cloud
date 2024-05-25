@@ -13,12 +13,12 @@
     </div>
     <div class="carousel-link shadow content-wrapper justify-content-between align-items-center gap-3">
         <div class="d-flex align-items-center gap-3">
-            <router-link to="#" :class="{active: currentSection == 'product'}">Compare Products​</router-link>
-            <router-link to="#">Global Infrastructure​</router-link>
-            <router-link to="#">Solutions​</router-link>
-            <router-link to="#">Pricing​</router-link>
-            <router-link to="#">Success Story​</router-link>
-            <router-link to="#">Business​</router-link>
+            <router-link :to="{ path: '/', hash: '#compareProduct' }" :class="{active: currentSection == 'product'}">Compare Products</router-link>
+            <router-link :to="{ path: '/', hash: '#globalInfrastructure' }">Global Infrastructure</router-link>
+            <router-link :to="{ path: '/', hash: '#solutions' }">Solutions</router-link>
+            <router-link :to="{ path: '/', hash: '#pricing' }">Pricing</router-link>
+            <router-link :to="{ path: '/', hash: '#successStory' }">Success Story</router-link>
+            <router-link :to="{ path: '/', hash: '#business' }">Business</router-link>
         </div>
         <button class="btn d-flex gap-2 align-items-center text-white register-btn">Get Started <span class="material-symbols-outlined">east</span></button>
     </div>
@@ -54,7 +54,7 @@ import { onMounted, ref } from 'vue'
         width: 100%;
         height: 650px;
         position: relative;
-        margin-top: 112px;
+        margin-top: 85px;
     }
 
     .carousel-wrapper .carousel-bg-color {

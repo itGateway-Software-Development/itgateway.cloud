@@ -12,19 +12,23 @@
             <ElasticVirtual />
             <DedicatedMachine />
             <FileServer />
+            <ManageCloudVpn />
             <BareMetal />
         </div>
         <div class="mobile-pricing">
             <ElasticVirtualMobile />
             <DedicatedMachineMobile />
             <FileServerMobile />
+            <ManageCloudVpnMobile />
             <BareMetalMobile />
         </div>
     </div>
 </template>
 
 <script>
-    import BareMetalMobile from '../components/allPricing/BareMetalMobile'
+    import ManageCloudVpnMobile from '../components/allPricing/ManageCloudVpnMobile'
+import ManageCloudVpn from '../components/allPricing/ManageCloudVpn'
+import BareMetalMobile from '../components/allPricing/BareMetalMobile'
 import FileServerMobile from '../components/allPricing/FileServerMobile'
 import DedicatedMachineMobile from '../components/allPricing/DedicatedMachineMobile'
 import ElasticVirtualMobile from '../components/allPricing/ElasticVirtualMobile'
@@ -35,6 +39,8 @@ import FileServer from '../components/allPricing/FileServer'
     import { onMounted } from 'vue';
     export default {
         components: {
+    ManageCloudVpnMobile,
+    ManageCloudVpn,
     BareMetalMobile,
     FileServerMobile,
     DedicatedMachineMobile,

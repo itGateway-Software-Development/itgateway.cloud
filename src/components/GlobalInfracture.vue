@@ -2,9 +2,9 @@
     <div class="global_map">
         <div class="content-wrapper d-flex justify-content-center">
             <img :src="require('@/assets/images/map.png')" alt="">
-            <div class="pin myanmar"><span>Myanmar <br> Launched 2024 </span></div>
-            <div class="pin singapore"><span>Singapore <br>Launched 2022 </span></div>
-            <div class="pin netherland"><span>Netherland <br>Launched 2023 </span></div>
+            <div class="pin myanmar"><span>Myanmar <br> Launched 2024 <br> 1 x Availability Zones</span></div>
+            <div class="pin singapore"><span>Singapore <br>Launched 2022 <br> 2 x Availability Zones </span></div>
+            <div class="pin netherland"><span>Netherland <br>Launched 2023 <br> 2 x Availability Zones </span></div>
         </div>
         <div class="globalinfracture_info content-wrapper d-flex justify-content-center align-items-center flex-wrap gap-3 mt-1 mt-lg-4">
             <div class="info-card">

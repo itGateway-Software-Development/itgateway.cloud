@@ -6,12 +6,16 @@
                 Explore itGateway
               </div>
               <div class="col-12 col-sm-5" style="margin-bottom: 40px;">
-                <h5>Partner Network​</h5>
-                <router-link to="#">Become a partner with itGateway Cloud to transform digital business​</router-link>
+                <router-link to="#" class="menu-route">
+                  <h5>Partner Network​</h5>
+                  <span>Become a partner with itGateway Cloud to transform digital business​</span>
+                </router-link>
               </div>
               <div class="col-12 col-sm-7" style="margin-bottom: 40px;">
-                <h5>Global Infrastructure​</h5>
-                <router-link to="#">View our Cloud Infrastructure and regions to build the trusted resources​</router-link>
+                <router-link to="/explore/global-infrastructure" class="menu-route">
+                  <h5>Global Infrastructure​</h5>
+                  <span>View our Cloud Infrastructure and regions to build the trusted resources​</span>
+                </router-link>
               </div>
               <div class="col-12 col-sm-5" style="margin-bottom: 40px;">
                 <h5>Managed Cloud Services​</h5>
@@ -46,39 +50,24 @@
     }
 </script>
 
-<style scoped>
- 
-  .dropdown-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 10px;
-    border-radius: 10px;
+<style>
+  .dropdown h5 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .dropdown .dropdown-content-row a {
+    color: var(--font-mute-dark) !important;
+  }
+
+  .dropdown .menu-route h5, .dropdown .menu-route span{
     transition: .3s ease;
   }
 
-  .dropdown-content:hover {
-    transform: translateY(-5px);
+  .dropdown .menu-route:hover h5, .dropdown .menu-route:hover span{
+    color: #EC6316;
   }
 
-  .dropdown-content:hover h5 {
-    color: var(--main-color);
-  }
-
-  .dropdown-content img {
-    width: 100px;
-  }
-
-  @media (max-width: 1200px) {
-    .dropdown-content{
-      padding: 0px 10px 20px;
-    }
-    .dropdown-content h5 {
-      font-size: 16px;
-    }
-  }
 </style>
 
 

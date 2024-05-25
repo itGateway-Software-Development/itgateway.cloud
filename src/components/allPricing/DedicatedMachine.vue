@@ -39,12 +39,12 @@
                             <td>2 GB DDR4​</td>
                             <td>50 GB NVMe​</td>
                             <td>1 Gbps​</td>
-                            <td>2 TB/Month​</td>
+                            <td>2 TB​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.034/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='linux'">$23/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$253</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$683</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.034</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$23​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$253</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$683</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td> 
                         </tr>
                         <tr>
@@ -54,17 +54,17 @@
                             <td>4 GB DDR4​</td>
                             <td>100 GB NVMe​</td>
                             <td>1 Gbps​</td>
-                            <td>2 TB/Month​</td>
+                            <td>2 TB​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.067/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='linux'">$46/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$506</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$1,366</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.067</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$46​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$506</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$1,366</td>
 
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.086/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='window'">$59/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$649</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$1,752</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.086</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$59​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$649</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$1,752</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -74,18 +74,18 @@
                             <td>8 GB DDR4​</td>
                             <td>200 GB NVMe​</td>
                             <td>1 Gbps​</td>
-                            <td v-if="dm_os=='linux'">3 TB/Month​</td>
-                            <td v-if="dm_os=='window'">2 TB/Month​</td>
+                            <td v-if="dm_os=='linux'">3 TB​</td>
+                            <td v-if="dm_os=='window'">2 TB​</td>
                             <td>1 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.134/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='linux'">$92/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$1,010</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$2,727</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.134</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$92​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$1,010</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$2,727</td>
 
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.175/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='window'">$120/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$1,320</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$3,564</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.175</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$120​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$1,320</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$3,564</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -96,17 +96,17 @@
                             <td>200 GB NVMe​</td>
                             <td v-if="dm_os == 'linux'">5 Gbps​</td>
                             <td v-else>1 Gbps​</td>
-                            <td>3 TB/Month​</td>
+                            <td>3 TB​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.174/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='linux'">$119/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$1,310</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$3,537</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.174</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$119​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$1,310</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$3,537</td>
                             
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.217/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='window'">$149/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$1,599</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$4,317</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.217</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$149​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$1,599</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$4,317</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>                        <tr>
                             <td v-if="dm_os == 'linux'">edm.cl.xlarge</td>
@@ -115,18 +115,18 @@
                             <td>32 GB DDR4​</td>
                             <td>300 GB NVMe​</td>
                             <td>5 Gbps​</td>
-                            <td v-if="dm_os == 'linux'">4 TB/Month​</td>
-                            <td v-else>3 TB/Month​</td>
+                            <td v-if="dm_os == 'linux'">4 TB​</td>
+                            <td v-else>3 TB​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.348/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='linux'">$239/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$2,620</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$7,074</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.348</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$239​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$2,620</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$7,074</td>
                             
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.436/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='window'">$299/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$3,280</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$8,856</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.436</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$299​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$3,280</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$8,856</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                         <tr>
@@ -136,17 +136,17 @@
                             <td>64 GB DDR4​</td>
                             <td>500 GB NVMe​</td>
                             <td>10 Gbps​</td>
-                            <td>4 TB/Month​</td>
+                            <td>4 TB​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='linux'">$0.699/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='linux'">$479/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='linux'">$5,260</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='linux'">$14,202</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='linux'">$0.699</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='linux'">$479​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='linux'">$5,260</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='linux'">$14,202</td>
                             
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$0.801/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='window'">$549/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$5,999</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$16,197</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$0.801</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$549​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$5,999</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$16,197</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
 
@@ -156,12 +156,12 @@
                             <td>128 GB DDR4​</td>
                             <td>1 TB NVMe​</td>
                             <td>10 Gbps​</td>
-                            <td>4 TB/Month​</td>
+                            <td>4 TB​</td>
                             <td>2 Snapshot​</td>
-                            <td v-if="dm_plan=='hourly' && dm_os=='window'">$1,444/Hour</td>
-                            <td v-if="dm_plan=='monthly' && dm_os=='window'">$990/Month​</td>
-                            <td v-if="dm_plan=='one_year' && dm_os=='window'">$9,990</td>
-                            <td v-if="dm_plan=='three_year' && dm_os=='window'">$26,973</td>
+                            <td class="price-tag" v-if="dm_plan=='hourly' && dm_os=='window'">$1,444</td>
+                            <td class="price-tag" v-if="dm_plan=='monthly' && dm_os=='window'">$990​</td>
+                            <td class="price-tag" v-if="dm_plan=='one_year' && dm_os=='window'">$9,990</td>
+                            <td class="price-tag" v-if="dm_plan=='three_year' && dm_os=='window'">$26,973</td>
                             <td><button class="btn primary-btn deploy-btn">Deploy</button></td>
                         </tr>
                     </tbody>
@@ -188,4 +188,5 @@ import { ref } from 'vue'
     .dedicated_machine {
         margin-top: 100px;
     }
+
 </style>

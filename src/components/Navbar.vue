@@ -75,12 +75,12 @@
     </nav>
 
     <nav class=" main-nav pt-0 position-relative d-flex align-items-center" :class="{active: isScroll}">
-      <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
+      <router-link to="" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-menu">{{ $t('explore') }}</span>
         <i class="mdi mdi-menu-down"></i>
         <Explore />
       </router-link>
-      <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
+      <router-link to="" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-menu">{{ $t('product') }}</span>
         <i class="mdi mdi-menu-down"></i>
         <Product :dropdownContent=dropdownContent />
@@ -90,7 +90,7 @@
         <i class="mdi mdi-menu-down"></i>
         <Solution :dropdownContent=solutionDropdownContent />
       </router-link>
-      <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
+      <router-link to="" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-">{{ $t('pricing') }}</span>
         <i class="mdi mdi-menu-down"></i>
         <Pricing />

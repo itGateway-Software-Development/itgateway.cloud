@@ -1,11 +1,10 @@
 <template>
 <div class="dropdown">
-        <div class="content d-flex gap-5 px-5 ">
-            <ul class="pt-5 pe-5 multi">
-              <div class="d-flex flex-column align-items-center justify-content-start" style="height: 50px;">
-                <h5 class="" @mouseover="dropdownContent = 'most_demand'">Most Demand</h5>
-                <div class="line" v-if="dropdownContent == 'most_demand'"></div>
-              </div>
+        <div class="content dropdown-content-row d-flex gap-5 px-5 ">
+            <ul class=" pe-5 multi">
+              <li @mouseover="dropdownContent = 'most_demand'" :class="{ active: dropdownContent == 'most_demand'}">
+                Most Demand
+              </li>
               <li @mouseover="dropdownContent = 'compute'" :class="{ active: dropdownContent == 'compute'}">
                 Compute
               </li>
@@ -37,10 +36,7 @@
                 <router-link to="#"><u>View All Products</u></router-link>
               </li>
             </ul>
-            <div class="compute pt-5 content-multi">
-              <div class="" style="height: 50px;">
-                &nbsp;
-              </div>
+            <div class="compute content-multi">
               <div v-if="dropdownContent == 'most_demand'">
                   <div class="row">
                     <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px;">

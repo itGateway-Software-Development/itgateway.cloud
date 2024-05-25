@@ -1,33 +1,33 @@
 <template>
     <div class="price-item" style="margin-top: 60px;">
         <div class="d-flex" style="padding-left: 30px;">
-            <h4>Elastic ​</h4>
-            <h4 class="fw-bold">File Servers </h4>
+            <h4>Manage ​</h4>
+            <h4 class="fw-bold">Cloud VPN </h4>
         </div>
-        <p style="padding-left: 30px;">Cloud based NAS server provides distributed file services such as file sharing, permission, encryption, sync and data migration. Access your data rapidly from anywhere and at anytime.​​​</p>
+        <p style="padding-left: 30px;">Cloud based VPN services provide VPN solutions such as Secure Remote Access, Site-to-Site Networking, Secure Internet Access and Secure IoT Communication.</p>
         <div class="plan-detail-mobile shadow">
             <div class="d-flex gap-3 plan-btn mb-5">
-                <button class="btn primary-btn" :class="{active: fs_plan == 'hourly'}" @click="fs_plan = 'hourly'">Hourly</button>
-                <button class="btn primary-btn" :class="{active: fs_plan == 'monthly'}" @click="fs_plan = 'monthly'">Monthly</button>
-                <button class="btn primary-btn" :class="{active: fs_plan == 'one_year'}" @click="fs_plan = 'one_year'">1 Year</button>
-                <button class="btn primary-btn" :class="{active: fs_plan == 'three_year'}" @click="fs_plan = 'three_year'">3 Year</button>
+                <button class="btn primary-btn" :class="{active: c_vpn_plan == 'hourly'}" @click="c_vpn_plan = 'hourly'">Hourly</button>
+                <button class="btn primary-btn" :class="{active: c_vpn_plan == 'monthly'}" @click="c_vpn_plan = 'monthly'">Monthly</button>
+                <button class="btn primary-btn" :class="{active: c_vpn_plan == 'one_year'}" @click="c_vpn_plan = 'one_year'">1 Year</button>
+                <button class="btn primary-btn" :class="{active: c_vpn_plan == 'three_year'}" @click="c_vpn_plan = 'three_year'">3 Year</button>
             </div>
             <div class="plan-mobile-detail">
-                <div class="plan-detail-card" :class="{active: active_card == 'card14'}" >
-                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card14')" data-bs-target="#collapseExample13">
-                        <div class="col-6">efs.mini​</div>
+                <div class="plan-detail-card" :class="{active: active_card == 'card26'}" >
+                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card26')" data-bs-target="#collapseExample25">
+                        <div class="col-6">mcv.mini​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span class="price-tag" v-if="fs_plan=='hourly'">$0.042</span>
-                                <span class="price-tag" v-if="fs_plan=='monthly'">$29​</span>
-                                <span class="price-tag" v-if="fs_plan=='one_year'">$299</span>
-                                <span class="price-tag" v-if="fs_plan=='three_year'">$897</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='hourly'">$0.042​</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='monthly'">$29​</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='one_year'">$299</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='three_year'">$810</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
                         <hr>
                     </div>
-                    <div class="collapse" id="collapseExample13">
+                    <div class="collapse" id="collapseExample25">
                         <div class="row">
                             <div class="col-6">Max User</div>
                             <div class="col-6 text-end">20 Users​</div>
@@ -45,7 +45,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Storage</div>
-                            <div class="col-6 text-end">300 GB SSD​</div>
+                            <div class="col-6 text-end">30 GB NVMe</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -55,15 +55,10 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">2 TB</div>
+                            <div class="col-6 text-end">1 TB</div>
                             <hr>
                         </div>
 
-                        <div class="row">
-                            <div class="col-6">Cloud Backup</div>
-                            <div class="col-6 text-end">300 GB​</div>
-                            <hr>
-                        </div>
                         <div class="row">
                             <div class="col-6"><button class="btn primary-btn deploy-btn">Deploy</button></div>
                             <hr>
@@ -72,21 +67,21 @@
                     </div>
                 </div>
 
-                <div class="plan-detail-card" :class="{active: active_card == 'card15'}" >
-                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card15')" data-bs-target="#collapseExample12">
-                        <div class="col-6">efs.small​</div>
+                <div class="plan-detail-card" :class="{active: active_card == 'card27'}" >
+                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card27')" data-bs-target="#collapseExample26">
+                        <div class="col-6">mcv.small​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span class="price-tag" v-if="fs_plan=='hourly'">$0.086</span>
-                                <span class="price-tag" v-if="fs_plan=='monthly'">$59​</span>
-                                <span class="price-tag" v-if="fs_plan=='one_year'">$590</span>
-                                <span class="price-tag" v-if="fs_plan=='three_year'">$1,770</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='hourly'">$0.086</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='monthly'">$59​</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='one_year'">$590</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='three_year'">$1,590</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
                         <hr>
                     </div>
-                    <div class="collapse" id="collapseExample12">
+                    <div class="collapse" id="collapseExample26">
                         <div class="row">
                             <div class="col-6">Max User</div>
                             <div class="col-6 text-end">50 Users​</div>
@@ -104,7 +99,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Storage</div>
-                            <div class="col-6 text-end">500 GB SSD​</div>
+                            <div class="col-6 text-end">50 GB NVMe</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -114,15 +109,10 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">2 TB</div>
+                            <div class="col-6 text-end">3 TB</div>
                             <hr>
                         </div>
 
-                        <div class="row">
-                            <div class="col-6">Cloud Backup</div>
-                            <div class="col-6 text-end">500 GB​</div>
-                            <hr>
-                        </div>
                         <div class="row">
                             <div class="col-6"><button class="btn primary-btn deploy-btn">Deploy</button></div>
                             <hr>
@@ -131,21 +121,21 @@
                     </div>
                 </div>
 
-                <div class="plan-detail-card" :class="{active: active_card == 'card16'}" >
-                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card16')" data-bs-target="#collapseExample15">
-                        <div class="col-6">efs.medium​</div>
+                <div class="plan-detail-card" :class="{active: active_card == 'card28'}" >
+                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card28')" data-bs-target="#collapseExample27">
+                        <div class="col-6">mcv.medium​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span class="price-tag" v-if="fs_plan=='hourly' && fs_os=='linux'">$0.175</span>
-                                <span class="price-tag" v-if="fs_plan=='monthly' && fs_os=='linux'">$120​</span>
-                                <span class="price-tag" v-if="fs_plan=='one_year' && fs_os=='linux'">$1,200</span>
-                                <span class="price-tag" v-if="fs_plan=='three_year' && fs_os=='linux'">$3,600</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='hourly'">$0.175</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='monthly'">$120​</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='one_year'">$1,200</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='three_year'">$3,240</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
                         <hr>
                     </div>
-                    <div class="collapse" id="collapseExample15">
+                    <div class="collapse" id="collapseExample27">
                         <div class="row">
                             <div class="col-6">Max User</div>
                             <div class="col-6 text-end">100 Users​</div>
@@ -163,7 +153,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Storage</div>
-                            <div class="col-6 text-end">1 TB SSD​</div>
+                            <div class="col-6 text-end">50 GB NVMe​</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -173,13 +163,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">2 TB</div>
-                            <hr>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">Cloud Backup</div>
-                            <div class="col-6 text-end">1 TB</div>
+                            <div class="col-6 text-end">5 TB</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -190,21 +174,21 @@
                     </div>
                 </div>
 
-                <div class="plan-detail-card" :class="{active: active_card == 'card17'}" >
-                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card17')" data-bs-target="#collapseExample16">
-                        <div class="col-6">efs.large​</div>
+                <div class="plan-detail-card" :class="{active: active_card == 'card29'}" >
+                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card29')" data-bs-target="#collapseExample28">
+                        <div class="col-6">mcv.large​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span class="price-tag" v-if="fs_plan=='hourly' && fs_os=='linux'">$0.247</span>
-                                <span class="price-tag" v-if="fs_plan=='monthly' && fs_os=='linux'">$169​</span>
-                                <span class="price-tag" v-if="fs_plan=='one_year' && fs_os=='linux'">$1,690</span>
-                                <span class="price-tag" v-if="fs_plan=='three_year' && fs_os=='linux'">$5,070</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='hourly'">$0.247</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='monthly'">$169​</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='one_year'">$1,690</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='three_year'">$4,560</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
                         <hr>
                     </div>
-                    <div class="collapse" id="collapseExample16">
+                    <div class="collapse" id="collapseExample28">
                         <div class="row">
                             <div class="col-6">Max User</div>
                             <div class="col-6 text-end">200 Users​</div>
@@ -222,7 +206,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Storage</div>
-                            <div class="col-6 text-end">2 TB SSD​</div>
+                            <div class="col-6 text-end">100 GB NVMe​</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -232,13 +216,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">3 TB</div>
-                            <hr>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">Cloud Backup</div>
-                            <div class="col-6 text-end">2 TB</div>
+                            <div class="col-6 text-end">10 TB</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -249,21 +227,21 @@
                     </div>
                 </div>
 
-                <div class="plan-detail-card" :class="{active: active_card == 'card18'}" >
-                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card18')" data-bs-target="#collapseExample17">
-                        <div class="col-6">efs.xlarge​</div>
+                <div class="plan-detail-card" :class="{active: active_card == 'card30'}" >
+                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card30')" data-bs-target="#collapseExample29">
+                        <div class="col-6">mcv.xlarge​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span class="price-tag" v-if="fs_plan=='hourly' && fs_os=='linux'">$0.481</span>
-                                <span class="price-tag" v-if="fs_plan=='monthly' && fs_os=='linux'">$329​</span>
-                                <span class="price-tag" v-if="fs_plan=='one_year' && fs_os=='linux'">$3,290</span>
-                                <span class="price-tag" v-if="fs_plan=='three_year' && fs_os=='linux'">$9,870</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='hourly'">$0.481</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='monthly'">$329​</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='one_year'">$3,290</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='three_year'">$8,880</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
                         <hr>
                     </div>
-                    <div class="collapse" id="collapseExample17">
+                    <div class="collapse" id="collapseExample29">
                         <div class="row">
                             <div class="col-6">Max User</div>
                             <div class="col-6 text-end">500 Users​</div>
@@ -281,7 +259,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Storage</div>
-                            <div class="col-6 text-end">4 TB SSD​</div>
+                            <div class="col-6 text-end">100 GB NVMe​​​</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -291,13 +269,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">6 TB</div>
-                            <hr>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">Cloud Backup</div>
-                            <div class="col-6 text-end">4 TB</div>
+                            <div class="col-6 text-end">20 TB</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -308,21 +280,21 @@
                     </div>
                 </div>
 
-                <div class="plan-detail-card" :class="{active: active_card == 'card19'}" >
-                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card19')" data-bs-target="#collapseExample18">
-                        <div class="col-6">efs.2xlarge​</div>
+                <div class="plan-detail-card" :class="{active: active_card == 'card31'}" >
+                    <div class="row" data-bs-toggle="collapse"  @click="toggleActiveCard('card31')" data-bs-target="#collapseExample30">
+                        <div class="col-6">mcv.2xlarge​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span class="price-tag" v-if="fs_plan=='hourly' && fs_os=='linux'">$0.917</span>
-                                <span class="price-tag" v-if="fs_plan=='monthly' && fs_os=='linux'">$629​</span>
-                                <span class="price-tag" v-if="fs_plan=='one_year' && fs_os=='linux'">$6,290</span>
-                                <span class="price-tag" v-if="fs_plan=='three_year' && fs_os=='linux'">$18,870</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='hourly'">$0.917</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='monthly'">$629​</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='one_year'">$6,290</span>
+                                <span class="price-tag" v-if="c_vpn_plan=='three_year'">$16,980</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
                         <hr>
                     </div>
-                    <div class="collapse" id="collapseExample18">
+                    <div class="collapse" id="collapseExample30">
                         <div class="row">
                             <div class="col-6">Max User</div>
                             <div class="col-6 text-end">1,000 Users​</div>
@@ -340,7 +312,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Storage</div>
-                            <div class="col-6 text-end">8 TB SSD​</div>
+                            <div class="col-6 text-end">200 GB NVMe​​​</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -350,13 +322,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Data Transfer Out</div>
-                            <div class="col-6 text-end">10 TB</div>
-                            <hr>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">Cloud Backup</div>
-                            <div class="col-6 text-end">8 TB</div>
+                            <div class="col-6 text-end">50 TB</div>
                             <hr>
                         </div>
                         <div class="row">
@@ -376,7 +342,7 @@
 import { ref } from 'vue'
     export default {
         setup() {
-            const fs_plan = ref('monthly');
+            const c_vpn_plan = ref('monthly');
             const fs_os = ref('linux');
             const active_card = ref(false);
 
@@ -388,7 +354,7 @@ import { ref } from 'vue'
                 }
             }
 
-            return {fs_plan, fs_os, active_card, toggleActiveCard}
+            return {c_vpn_plan, fs_os, active_card, toggleActiveCard}
         }
     }
 </script>

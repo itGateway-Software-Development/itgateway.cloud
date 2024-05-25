@@ -24,15 +24,15 @@
                         <div class="col-6" v-else>c2m2.ebms.small​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="bm_plan=='hourly' && bm_processor=='single'">$0.350/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='single'">$240/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='single'">$2,640</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='single'">$7,120</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.350</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$240​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$2,640</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$7,120</span>
 
-                                <span v-if="bm_plan=='hourly' && bm_processor=='dual'">$0.801/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='dual'">$549/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='dual'">$6,039</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='dual'">$16,305</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$0.801</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$549​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$6,039</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$16,305</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -107,15 +107,15 @@
                         <div class="col-6" v-else>c2m2.ebms.medium​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="bm_plan=='hourly' && bm_processor=='single'">$0.430/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='single'">$295/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='single'">$3,245</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='single'">$8,760</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.430</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$295​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$3,245</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$8,760</span>
 
-                                <span v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.019/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='dual'">$699/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='dual'">$7,689</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='dual'">$20,760</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.019</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$699​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$7,689</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$20,760</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -190,15 +190,15 @@
                         <div class="col-6" v-else>c2m4.ebms.small​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="bm_plan=='hourly' && bm_processor=='single'">$0.518/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='single'">$355/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='single'">$3,905</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='single'">$11,715</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.518</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$355​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$3,905</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$11,715</span>
 
-                                <span v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.238/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='dual'">$849/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='dual'">$9,339</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='dual'">$25,215</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.238</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$849​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$9,339</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$25,215</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -273,15 +273,15 @@
                         <div class="col-6" v-else>c2m4.ebms.medium​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="bm_plan=='hourly' && bm_processor=='single'">$0.582/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='single'">$399/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='single'">$4,389</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='single'">$10,540</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.582</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$399​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$4,389</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$10,540</span>
 
-                                <span v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.384/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='dual'">$949/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='dual'">$10,439</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='dual'">$28,180</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$1.384</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$949​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$10,439</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$28,180</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -356,15 +356,15 @@
                         <div class="col-6" v-else>c2m8.ebms.medium​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="bm_plan=='hourly' && bm_processor=='single'">$0.608/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='single'">$417/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='single'">$4,587</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='single'">$12,380</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.608</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$417​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$4,587</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$12,380</span>
 
-                                <span v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.186/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,499/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='dual'">$16,489</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='dual'">$44,520</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.186</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,499​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$16,489</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$44,520</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -439,15 +439,15 @@
                         <div class="col-6" v-else>c2m8.ebms.large​</div>
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
-                                <span v-if="bm_plan=='hourly' && bm_processor=='single'">$0.436/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='single'">$299/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='single'">$3,949</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='single'">$10,660</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='single'">$0.436</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='single'">$299​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='single'">$3,949</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='single'">$10,660</span>
 
-                                <span v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.405/Hour</span>
-                                <span v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,649/Month​</span>
-                                <span v-if="bm_plan=='one_year' && bm_processor=='dual'">$18,139</span>
-                                <span v-if="bm_plan=='three_year' && bm_processor=='dual'">$48,970</span>
+                                <span class="price-tag" v-if="bm_plan=='hourly' && bm_processor=='dual'">$2.405</span>
+                                <span class="price-tag" v-if="bm_plan=='monthly' && bm_processor=='dual'">$1,649​</span>
+                                <span class="price-tag" v-if="bm_plan=='one_year' && bm_processor=='dual'">$18,139</span>
+                                <span class="price-tag" v-if="bm_plan=='three_year' && bm_processor=='dual'">$48,970</span>
                                 <span class="material-symbols-outlined"> expand_more</span>
                             </div>
                         </div>
@@ -549,5 +549,11 @@ import { ref } from 'vue'
 
 .price-item .bm_btn {
     width: 150px;
+}
+
+.price-tag {
+    color: #ff9901;
+    font-weight: bold;
+    font-size: 18px;
 }
 </style>

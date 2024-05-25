@@ -7,26 +7,43 @@
     </v-main>
     <Footer />
   </v-app>
+  <Loading v-if="isLoad" />
 </template>
 
 <script>
+import Loading from './components/Loading'
 import Footer from './components/Footer'
 import Navbar from "@/components/Navbar.vue";
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 export default {
   components: {
+    Loading,
     Footer, Navbar },
   setup() {
-    const loading = ref(true);
+    const isLoad = ref(true);
     const isHover = ref(false);
+    const route = useRoute();
 
     const menuHoverEffect = (data) => isHover.value = data;
+
+    const loadContent = () => {
+        isLoad.value = true;
+        
+        setTimeout(() => {
+          isLoad.value = false;
+        }, 1000);
+      };
     
     onMounted(() => {
-      loading.value = false;
+      window.addEventListener('load', () => {
+          isLoad.value = false;
+        })
     })
 
-    return {loading, menuHoverEffect, isHover}
+    watch(route, () => loadContent())
+
+    return {isLoad, menuHoverEffect, isHover}
   },
 
 };

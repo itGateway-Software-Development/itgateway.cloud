@@ -8,7 +8,7 @@
         <div class="col-6 col-xl-4 mb-3" v-for="(item,i) in items" :key="i">
             <div class="solution-card shadow">
                 <h6>{{item.prefix}} <b>{{item.name}}</b></h6>
-                <p class="text-justify mt-3">
+                <p class=" mt-3">
                     {{ item.description }}
                 </p>
             </div>
@@ -58,15 +58,4 @@
     color: var(--font-mute-dark);
 }
 
-@media (max-width: 1500px) {
-    .solutions .solution-card {
-        height: 150px;
-    }
-}
-
-@media (max-width: 450px) {
-    .solutions .solution-card {
-        height: 180px;
-    }
-}
 </style>

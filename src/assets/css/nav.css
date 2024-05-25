@@ -13,11 +13,13 @@ nav .logo {
 
 nav .logo h5 {
     color: #EC6316;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 nav .logo img {
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 nav .top-menu {

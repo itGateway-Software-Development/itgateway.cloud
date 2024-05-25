@@ -1,5 +1,5 @@
 <template>
-    <div class="content-wrapper products">
+    <div class="content-wrapper products" id="compareProduct">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-3" v-for="(product, i) in products" :key="i">
                 <div class="product-card shadow d-flex flex-column gap-3" >

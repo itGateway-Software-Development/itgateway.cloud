@@ -1,20 +1,17 @@
 <template>
   <v-app>
     <Carousel></Carousel>
-    <Products></Products>
-    <GlobalInfracture></GlobalInfracture>
-    <Solutions></Solutions>
-    <SuccessStory></SuccessStory>
-    <Pricing></Pricing>
-    <Service></Service>
+    <Products id="compareProduct"></Products>
+    <GlobalInfracture id="globalInfrastructure"></GlobalInfracture>
+    <Solutions id="solutions"></Solutions>
+    <SuccessStory id="successStory"></SuccessStory>
+    <Pricing id="pricing"></Pricing>
+    <Service id="business"></Service>
     <Support></Support>
-    
-    <Loading v-if="isLoad" />
   </v-app>
 </template>
 
 <script>
-import Loading from '../components/Loading'
 import Support from '../components/Support'
 import Service from '../components/Service'
 import Pricing from '../components/Pricing'
@@ -23,11 +20,10 @@ import Solutions from '../components/Solutions'
 import GlobalInfracture from '../components/GlobalInfracture'
 import Products from '../components/Products'
 import Carousel from '../components/Carousel'
-import { onMounted, ref } from 'vue'
+
 // Components
 export default {
     components: {
-      Loading,
       Support,
       Service,
       Pricing,
@@ -38,15 +34,6 @@ export default {
       Carousel,
     },
     setup() {
-      const isLoad = ref(true);
-
-      onMounted(() => {
-        window.addEventListener('load', () => {
-          isLoad.value = false;
-        })
-      })
-
-      return {isLoad}
     }
 };
 </script>
