@@ -73,9 +73,8 @@
       </div>
     </div>
     </nav>
-
     <nav class=" main-nav pt-0 position-relative d-flex align-items-center" :class="{active: isScroll}">
-      <router-link to="" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
+      <router-link to="" class="menu" :class="{active: route.path.slice(0,8) == '/explore'}" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-menu">{{ $t('explore') }}</span>
         <i class="mdi mdi-menu-down"></i>
         <Explore />
@@ -90,7 +89,7 @@
         <i class="mdi mdi-menu-down"></i>
         <Solution :dropdownContent=solutionDropdownContent />
       </router-link>
-      <router-link to="" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
+      <router-link to="" class="menu" :class="{active: route.path.slice(0,8) == '/pricing'}" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-">{{ $t('pricing') }}</span>
         <i class="mdi mdi-menu-down"></i>
         <Pricing />
@@ -136,7 +135,7 @@ import Explore from './navDropdown/Explore'
 import MobileDrawer from './MobileDrawer'
 import "@/assets/css/nav.css";
 import { onMounted, ref } from "vue";
-import { useRouter } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { useStore } from "vuex";
 
 export default {
@@ -152,6 +151,7 @@ export default {
     const isSearch = ref(false);
     const drawer = ref(false);
     const router = useRouter();
+    const route = useRoute();
     const dropdownContent = ref('most_demand');
     const solutionDropdownContent = ref('use_cases');
     const store = useStore();
@@ -204,10 +204,16 @@ export default {
       window.addEventListener('scroll', handleNavShadow);
     })
 
-      return { currentTheme,changeTheme, isSearch, drawer, navigate,handleChangeRoute, dropdownContent,solutionDropdownContent, changeLanguage,handleSwitchLanguage, language, menuHover, isScroll, handleSearch, isMobileSearch}
+      return { currentTheme,changeTheme, isSearch, drawer, navigate,handleChangeRoute, dropdownContent,solutionDropdownContent, changeLanguage,handleSwitchLanguage, language, menuHover, isScroll, handleSearch, isMobileSearch, route}
   }
 };
 </script>
 
-<style >
+<style scoped>
+
+  a.menu.active {
+    color: #EC6316 !important;
+  }
+
+
 </style>

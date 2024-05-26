@@ -28,4 +28,16 @@ export default {
         line-height: 1.5;
         font-size: 18px;
     }
+
+    @media (max-width: 1550px) {
+        .global-infra p {
+            padding-right: 500px;
+        }
+    }
+
+    @media (max-width: 1120px) {
+        .global-infra p {
+            padding-right: 60px;
+        }
+    }
 </style>

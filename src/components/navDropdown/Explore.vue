@@ -12,7 +12,7 @@
                 </router-link>
               </div>
               <div class="col-12 col-sm-7" style="margin-bottom: 40px;">
-                <router-link to="/explore/global-infrastructure" class="menu-route">
+                <router-link to="/explore/global-infrastructure" class="menu-route" :class="{active: route.path == '/explore/global-infrastructure'}">
                   <h5>Global Infrastructure​</h5>
                   <span>View our Cloud Infrastructure and regions to build the trusted resources​</span>
                 </router-link>
@@ -45,8 +45,13 @@
 </template>
 
 <script>
+import { useRoute } from 'vue-router'
     export default {
-        
+        setup() {
+          const route = useRoute();
+
+          return {route}
+        }
     }
 </script>
 
@@ -54,6 +59,10 @@
   .dropdown h5 {
     font-weight: bold;
     font-size: 18px;
+  }
+
+  .menu-route.active h5, .menu-route.active span {
+    color: #EC6316 !important;
   }
 
   .dropdown .dropdown-content-row a {

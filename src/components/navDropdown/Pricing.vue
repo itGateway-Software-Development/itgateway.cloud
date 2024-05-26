@@ -3,10 +3,10 @@
         <div class="content d-flex gap-5">
             <div class="row dropdown-content-row w-100">
               <div class="col-12 mb-5">
-                Explore Cost & Pricing
+                Explore Cost & Pricing 
               </div>
               <div class="col-12 col-sm-5" style="margin-bottom: 40px;">
-                <router-link to="/pricing/all-pricing" class="menu-route">
+                <router-link to="/pricing/all-pricing" class="menu-route" :class="{active: route.path == '/pricing/all-pricing'}">
                     <h5>See All Pricing</h5>
                     <span>Compare, choose and purchase cloud solutions you need.​</span>
                 </router-link>
@@ -33,12 +33,21 @@
 </template>
 
 <script>
+import { useRoute } from 'vue-router'
     export default {
-        
+        setup() {
+          const route = useRoute();
+
+          return {route}
+        }
     }
 </script>
 
 <style scoped>
+  /* sub menu active */
+  .menu-route.active h5, .menu-route.active span {
+    color: #EC6316 !important;
+  }
  
   .dropdown-content{
     display: flex;
