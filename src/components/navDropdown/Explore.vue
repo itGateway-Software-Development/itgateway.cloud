@@ -18,18 +18,20 @@
                 </router-link>
               </div>
               <div class="col-12 col-sm-5" style="margin-bottom: 40px;">
-                <h5>Managed Cloud Services​</h5>
-                <div class="d-flex gap-3">
-                    <div class="d-flex align-items-center gap-1">
-                        <router-link to="#">Standard Supports</router-link>
-                        <span class="mdi mdi-chevron-double-right"></span>
-                    </div>
-                    <div class="d-flex align-items-center gap-1">
-                        <router-link to="#">Professional Supports</router-link>
-                        <span class="mdi mdi-chevron-double-right"></span>
-                    </div>
-                    <router-link to="#">Premium Supports</router-link>
-                </div>
+                <router-link to="/explore/manage-cloud-services" class="menu-route" :class="{active: route.path == '/explore/manage-cloud-services'}">
+                  <h5>Managed Cloud Services​</h5>
+                  <div class="d-flex gap-3">
+                      <div class="d-flex align-items-center gap-1">
+                          <router-link to="#">Standard Supports</router-link>
+                          <span class="mdi mdi-chevron-double-right"></span>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <router-link to="#">Professional Supports</router-link>
+                          <span class="mdi mdi-chevron-double-right"></span>
+                      </div>
+                      <router-link to="#">Premium Supports</router-link>
+                  </div>
+                </router-link>
               </div>
               <div class="col-12 col-sm-7" style="margin-bottom: 40px;">
                 <h5>Reports & Insights​</h5>
@@ -61,7 +63,7 @@ import { useRoute } from 'vue-router'
     font-size: 18px;
   }
 
-  .menu-route.active h5, .menu-route.active span {
+  .menu-route.active h5, .menu-route.active span, .menu-route.active div a {
     color: #EC6316 !important;
   }
 

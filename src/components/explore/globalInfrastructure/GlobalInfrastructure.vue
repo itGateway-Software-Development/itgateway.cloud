@@ -7,11 +7,11 @@
             centers globally.
         </p>
     </div>
-    <GlobalInfracture></GlobalInfracture>
+    <GlobalInfracture />
 </template>
 
 <script>
-    import GlobalInfracture from '../GlobalInfracture'
+import GlobalInfracture from '../../GlobalInfracture'
 export default {
   components: { GlobalInfracture },
         
