@@ -4,7 +4,7 @@
         <img :src="require('@/assets/images/carousel/banner.png')" alt="">
         <div class="carousel-content">
             <h2 class="mb-5" data-aos="fade-down">Build, Deploy and Access Anywhere.​</h2>
-            <p class="text-white">Break the limits of applications, ` and resources with our cloud infrastructure. Try itGateway cloud for up to 30 days.​</p>
+            <p class="text-white">Break the limits of applications, and resources with our cloud infrastructure. Try itGateway cloud for up to 30 days.​</p>
             <div class="d-flex align-items-center gap-3">
                 <button class="btn primary-btn d-flex gap-2 align-items-center register-btn">Register <span class="material-symbols-outlined">east</span></button>
                 <button class="btn primary-btn d-flex gap-2 align-items-center">Try for Free <span class="material-symbols-outlined">east</span></button>
