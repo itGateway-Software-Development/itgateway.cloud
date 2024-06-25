@@ -2,7 +2,7 @@
     <div class="msc-resource content-wrapper">
         <div class="row mt-5">
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="msc-resource-card">
+                <div class="msc-resource-card shadow">
                     <h3>Read Our Technical Blogs and Content</h3>
                     <div class="readmore">
                         <router-link to="#" class="d-flex align-items-center gap-2">
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="msc-resource-card">
+                <div class="msc-resource-card shadow">
                     <h3>View itGateway Cloud Pricing and Calculation​</h3>
                     <div class="readmore pricing">
                         <router-link to="/pricing/all-pricing" class="d-flex align-items-center gap-2">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="msc-resource-card">
+                <div class="msc-resource-card shadow">
                     <h3>Find The Right Cloud Services and Solutions</h3>
                     <div class="readmore cloud-solution">
                         <router-link to="#" class="d-flex align-items-center gap-2">

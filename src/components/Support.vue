@@ -36,7 +36,7 @@
                             <div class="col-6">:  Monthly ​</div>
                         </div>
                         <div class="readmore mt-1">
-                            <router-link to="#" class="d-flex align-items-center gap-2">
+                            <router-link to="/explore/manage-cloud-services" class="d-flex align-items-center gap-2">
                                 <span>Read More</span> <span class="material-symbols-outlined mt-1 ms-1">arrow_right_alt</span>
                             </router-link>
                         </div>
@@ -76,7 +76,7 @@
                             <div class="col-6">:  Monthly ​</div>
                         </div>
                         <div class="readmore mt-1">
-                            <router-link to="#" class="d-flex align-items-center gap-2">
+                            <router-link to="/explore/manage-cloud-services" class="d-flex align-items-center gap-2">
                                 <span>Read More</span> <span class="material-symbols-outlined mt-1 ms-1">arrow_right_alt</span>
                             </router-link>
                         </div>
@@ -117,7 +117,7 @@
                             <div class="col-6">:  Weekly​​</div>
                         </div>
                         <div class="readmore mt-5">
-                            <router-link to="#" class="d-flex align-items-center gap-2">
+                            <router-link to="/explore/manage-cloud-services" class="d-flex align-items-center gap-2">
                                 <span>Read More</span> <span class="material-symbols-outlined mt-1 ms-1">arrow_right_alt</span>
                             </router-link>
                         </div>

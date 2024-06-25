@@ -2,7 +2,7 @@
     <div class="resource content-wrapper">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="resource-card">
+                <div class="resource-card shadow">
                     <h3>Read Our Technical Blogs and Content</h3>
                     <div class="readmore">
                         <router-link to="#" class="d-flex align-items-center gap-2">
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="resource-card">
+                <div class="resource-card shadow">
                     <h3>Learn About Managed Cloud Services and Supports</h3>
                     <div class="readmore mcs">
                         <router-link to="#" class="d-flex align-items-center gap-2">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="resource-card">
+                <div class="resource-card shadow">
                     <h3>Find The Right Cloud Services and Solutions</h3>
                     <div class="readmore cloud-solution">
                         <router-link to="#" class="d-flex align-items-center gap-2">

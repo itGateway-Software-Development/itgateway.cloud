@@ -168,14 +168,16 @@ nav .language {
     top: 130%;
     left: 0;
     margin-left: -10px;
-    background: var(--language-bg-color);
-    color: #A22E76;
-    padding: 10px 15px;
+    background: #fff;
+    color: #333;
+    padding: 10px 25px;
     z-index: 99;
     height: 0px;
     visibility: hidden;
     opacity: 0;
     transition: .3s ease-in-out;
+    border: 1px solid #333;
+    border-radius: 7px;
 }
 
 nav .language::before {
@@ -186,13 +188,13 @@ nav .language::before {
     margin-left: -5px;
     border-width: 7px;
     border-style: solid;
-    border-color: transparent transparent var(--language-bg-color) transparent;
+    border-color: transparent transparent var(--background-light-color) transparent;
 }
 
 nav .language-wrapper:hover .language {
     opacity: 1;
     visibility: visible;
-    height: 80px;
+    height: 100px;
 }
 
 .active-lang {

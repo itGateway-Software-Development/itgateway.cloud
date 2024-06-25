@@ -19,7 +19,7 @@
                 <h6 class="section-header">Products & Pricing​</h6>
                 <div class="content">
                     <router-link to="#">Products​</router-link>
-                    <router-link to="#">Pricing​</router-link>
+                    <router-link to="/pricing/all-pricing">Pricing​</router-link>
                     <router-link to="#">Free Tier​</router-link>
                     <router-link to="#">Solutions​</router-link>
                     <router-link to="#">Services​</router-link>
@@ -55,7 +55,7 @@
             <hr class="d-block d-md-none">
             <div class="col-md-12 col-lg-3 mb-5">
                 <div class="d-flex flex-column">
-                    <a href="" class="portal-btn primary-btn fill">Sign In</a>
+                    <a href="" class="portal-btn primary-btn fill">Cloud Portal Sign In</a>
                     <div class="social d-flex justify-content-center gap-5 align-items-center mt-5">
                         <a href="https://www.facebook.com/ITGatewayTechnologyGroup" target="_blink"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="" target="_blink"><i class="fa-brands fa-youtube"></i></a>

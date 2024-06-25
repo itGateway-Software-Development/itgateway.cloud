@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-xl-5 offset-xl-1 mb-5 mb-md-0 order-5 order-md-1">
                 <div class="collapse-items">
-                    <div class="item" v-for="(content, index) in contents" :key="index">
+                    <div class="item mb-3" :class="{active: activeIndex == index}" v-for="(content, index) in contents" :key="index" @click="toggleActive(index)">
                         <div class="head d-flex justify-content-between">
                             <h5>{{content.title}}​</h5>
                             <span class="material-symbols-outlined plus">add</span>
@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import { ref } from 'vue';
     export default {
         setup() {
             const contents = [
@@ -60,7 +61,13 @@
                 },
             ];
 
-            return {contents}
+            let activeIndex = ref(null);
+
+            let toggleActive = (index) => {
+                activeIndex.value = activeIndex.value == index ? null : index;
+            }
+
+            return {contents, activeIndex, toggleActive}
         }
     }
 </script>
@@ -103,23 +110,22 @@
         display: none;
     }
 
-    .mcs-benifit .item:hover .head {
-        background: rgb(236,99,22);
-        background: radial-gradient(circle, rgba(236,99,22,0.700717787114846) 18%, rgba(252,70,199,0.5186449579831933) 95%);
+    .mcs-benifit .item.active .head {
+        background: radial-gradient(circle, #ff9901 25%, #ec6416de 95%);
     }
    
-    .mcs-benifit .item:hover .info {
+    .mcs-benifit .item.active .info {
         display: block;
         height: 110px;
         visibility: visible;
         opacity: 1;
     }
 
-    .mcs-benifit .item:hover .minus {
+    .mcs-benifit .item.active .minus {
         display: inline-block;
     }
 
-    .mcs-benifit .item:hover .plus {
+    .mcs-benifit .item.active .plus {
         display: none;
     }
 

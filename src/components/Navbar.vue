@@ -45,11 +45,13 @@
         </router-link>
         <router-link to="" class="menu d-flex align-items-center position-relative language-wrapper">
           <span v-if="language == 'EN'" class="span-menu">English</span>
-          <span v-else class="span-menu">မြန်မာ</span>
+          <span v-if="language == 'MM'" class="span-menu">မြန်မာ</span>
+          <span v-if="language == 'TH'" class="span-menu">ประเทศไทย</span>
           <i class="mdi mdi-menu-down"></i>
           <div class="language">
             <button @click="changeLanguage('EN')">English</button>
             <button @click="changeLanguage('MM')">Myanmar</button>
+            <button @click="changeLanguage('TH')">Thailand</button>
           </div>
         </router-link>
         <router-link to="" class="menu d-flex align-items-center position-relative">

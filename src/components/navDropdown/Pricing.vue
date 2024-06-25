@@ -24,8 +24,10 @@
                 <router-link to="#">Save and manage to optimize your cloud usage costs.​</router-link>
               </div>
               <div class="col-12 col-sm-5" style="margin-bottom: 40px;">
-                <h5>Cloud Supports​</h5>
-                <router-link to="#">View our Managed Cloud Services fees and plans.​</router-link>
+                <router-link to="/explore/manage-cloud-services" class="menu-route">
+                  <h5>Cloud Supports​</h5>
+                  <span>View our Managed Cloud Services fees and plans.</span>
+                ​</router-link>
               </div>
             </div>
         </div>

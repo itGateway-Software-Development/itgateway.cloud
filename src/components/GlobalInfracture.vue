@@ -6,26 +6,33 @@
             <div class="pin singapore"><span>Singapore <br>Launched 2022 <br> 2 x Availability Zones </span></div>
             <div class="pin netherland"><span>Netherland <br>Launched 2023 <br> 2 x Availability Zones </span></div>
         </div>
-        <div class="globalinfracture_info content-wrapper d-flex justify-content-center align-items-center flex-wrap gap-3 mt-1 mt-lg-4">
-            <div class="info-card">
+        <div class="globalinfracture_info content-wrapper d-flex justify-content-center align-items-center flex-wrap gap-3 mt-1 mt-lg-4 mb-3">
+            <div class="info-card shadow">
                 <h4 class="fw-bold">3 Geographical Regions​</h4>
                 <p>Each has at least 2 data center for high availability.​</p>
             </div>
-            <div class="info-card">
+            <div class="info-card shadow">
                 <h4 class="fw-bold">6+ Data Center</h4>
                 <p>Connect each other using premium list of network bandwidth.​​</p>
             </div>
-            <div class="info-card">
+            <div class="info-card shadow">
                 <h4 class="fw-bold">20+ Cloud Services​​</h4>
                 <p>Offers Compute, Storage, Network, Security, Database Services and more.​​</p>
             </div>
+        </div>
+        <div class="d-flex justify-content-center" v-if="route.fullPath == '/'">
+            <router-link to="/explore/global-infrastructure" class="explore-more-about-infra">Explore more about our Infrastructure</router-link>
         </div>
     </div>
 </template>
 
 <script>
+    import { useRoute } from 'vue-router';
     export default {
         setup() {
+            let route = useRoute();
+
+            return {route}
         }
     }
 </script>
@@ -116,6 +123,17 @@
         padding: 15px;
         border-radius: 7px;
         width: 300px;
+    }
+
+    .global_map .explore-more-about-infra {
+        font-size: 17px;
+        font-weight: bold;
+        color: #EC6316 !important;
+        transition: .5s ease;
+    }
+
+    .global_map .explore-more-about-infra:hover {
+        transform: translateY(-10px);
     }
 
     @media (max-width: 1825px) {
