@@ -2,8 +2,8 @@
     <div class="mcs-support content-wrapper">
         <h2 class="text-center fw-bold">Support Plans</h2>
         <br>
-        <div class="row mb-5">
-            <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 mx-0 mb-3 p-0 pe-2" v-for="(support, index) in supports" :key="index">
+        <div class="support-card-container mb-5">
+            <div class="suppport-card-wrap" v-for="(support, index) in supports" :key="index">
                 <div class="support-card shadow d-flex flex-column gap-3" >
                     <h6 class="plan">{{support.plan}}</h6>
                     <div class="price">
@@ -11,34 +11,34 @@
                         <p>{{support.plan_duration}}</p>
                     </div>
                     <div class="plan-info">
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Deployment</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
                                     <span>:</span>
                                     <span>{{support.department}}</span>
                                 </div>
-                            ​</div>
+                            </div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Supports</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
                                     <span>:</span>
                                     <span>{{support.support}}</span>
                                 </div>
-                            ​​</div>
+                            </div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Response</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
                                     <span>:</span>
-                                    <span>{{ support.Response }}</span>
+                                    <span>{{support.Response}}</span>
                                 </div>
-                            ​​</div>
+                            </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Reporting & Analysis</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Monitoring & Alert</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Server Maintenance</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Patch/Upgrade/Fix</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 mx-0 mb-3 p-0 pe-2">
+            <div class="suppport-card-wrap">
                 <div class="support-card shadow d-flex flex-column gap-3" >
                     <h6 class="plan">Enterprise​</h6>
                     <div class="price">
@@ -86,34 +86,34 @@
                         <p>Monthly</p>
                     </div>
                     <div class="plan-info">
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Deployment</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
                                     <span>:</span>
-                                    <span> Install & Config​</span>
+                                    <span>Install & Config​</span>
                                 </div>
-                            ​</div>
+                            </div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Supports</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
                                     <span>:</span>
-                                    <span> 24x7x365​</span>
+                                    <span>24x7x365</span>
                                 </div>
-                            ​​</div>
+                            </div>
                         </div>
-                        <div class="row w-100">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Response</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
                                     <span>:</span>
                                     <span>Proactive Response​</span>
                                 </div>
-                            ​​</div>
+                            </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Support Engineer</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -122,7 +122,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Architect: ​  </span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Disaster Recovery</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row w-100 mb-2">
+                        <div class="row w-100 mb-3">
                             <div class="col-6 mb-0"><span>Management Level</span></div>
                             <div class="col-6 mb-0">
                                 <div class="d-flex gap-1">
@@ -212,13 +212,25 @@
         margin-top: 80px;
     }
 
+    .mcs-support .support-card-container {
+        padding: 0px 6%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .mcs-support .suppport-card-wrap {
+        width: 370px;
+    }
+
     .mcs-support .support-card {
         padding: 15px;
         border: 2px solid var(--main-color);
         border-radius: 10px;
         background: var(--card-background-color);
         position: relative;
-        height: 550px;
+        height: 500px;
     }
 
     .mcs-support .support-card h6 {
@@ -252,7 +264,7 @@
     }
 
     .mcs-support span {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .mcs-support .btn {
@@ -273,64 +285,56 @@
         transform: translateY(-10px);
     }
 
-    @media (max-width: 1563px) {
-        .mcs-support .support-card {
-            height: 600px;
+    @media (max-width: 1753px) {
+        .mcs-support .support-card-container {
+            padding: 0px 3%;
         }
     }
 
-    @media (max-width: 1448px) {
-        .mcs-support .support-card {
-            height: 620px;
+    @media (max-width: 1557px) {
+        .mcs-support .support-card-container {
+            padding: 0px 1%;
         }
     }
 
-    @media (max-width: 1399px) {
-        .mcs-support .support-card {
-            height: 500px;
+    @media (max-width: 1491px) {
+        .mcs-support .support-card-container {
+            padding: 0px 1%;
+            justify-content: center
         }
     }
 
-    @media (max-width: 1281px) {
-        .mcs-support .support-card {
-            height: 530px;
+    @media (max-width: 795px) {
+        .mcs-support.content-wrapper {
+            padding: 10px 1% !important;
+        }
+        .mcs-support .suppport-card-wrap {
+            width: 350px;
         }
     }
 
-    @media (max-width: 1111px) {
-        .mcs-support .support-card {
-            height: 580px;
+    @media (max-width: 722px) {
+        .mcs-support .suppport-card-wrap {
+            width: 330px;
+        }
+
+        .mcs-support span {
+            font-size: 15px;
         }
     }
 
-    @media (max-width: 1026px) {
-        .mcs-support .support-card {
-            height: 600px;
+    @media (max-width: 681px) {
+        .mcs-support.content-wrapper {
+            padding: 10px 3% !important;
+        }
+
+        .mcs-support .suppport-card-wrap {
+            width: 450px;
+        }
+
+        .mcs-support span {
+            font-size: 16px;
         }
     }
 
-    @media (max-width: 991px) {
-        .mcs-support .support-card {
-            height: 500px;
-        }
-    }
-
-    @media (max-width: 699px) {
-        .mcs-support .support-card {
-            height: 550px;
-        }
-    }
-
-    @media (max-width: 599px) {
-        .mcs-support .support-card {
-            height: 580px;
-        }
-    }
-
-    @media (max-width: 575px) {
-        .mcs-support .support-card {
-            margin: 0px 15px;
-            height: 500px;
-        }
-    }
 </style>
