@@ -58,7 +58,7 @@
                     <a href="" class="portal-btn primary-btn fill">Cloud Portal Sign In</a>
                     <div class="social d-flex justify-content-center gap-5 align-items-center mt-5">
                         <a href="https://www.facebook.com/ITGatewayTechnologyGroup" target="_blink"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" target="_blink"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://youtube.com/@itgateway5550?si=5zyeDKoKErzMrGYF" target="_blink"><i class="fa-brands fa-youtube"></i></a>
                         <a href="" target="_blink"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="" target="_blink"><i class="fa-brands fa-instagram"></i></a>
                     </div>

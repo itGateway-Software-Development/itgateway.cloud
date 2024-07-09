@@ -17,6 +17,11 @@ const routes = [
     path: '/explore/:slug', 
     component: () => import('@/views/Explore.vue'),
     props: true
+  },
+  {
+    path: '/company/:slug',
+    component: () => import('@/views/Company.vue'),
+    props: true
   }
 ];
 

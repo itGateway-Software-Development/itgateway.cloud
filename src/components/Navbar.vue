@@ -98,9 +98,9 @@
       </router-link>
       <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">{{ $t('market_place') }}</router-link>
       <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">{{ $t('event') }}</router-link>
-      <router-link to="#" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
+      <router-link to="/company/about-company" class="menu" @mouseenter="menuHover(true)" @mouseleave="menuHover(false)">
         <span class="span-">{{ $t('company') }}</span>
-        <i class="mdi mdi-menu-down"></i>
+        <!-- <i class="mdi mdi-menu-down"></i> -->
       </router-link>
     </nav>
 
