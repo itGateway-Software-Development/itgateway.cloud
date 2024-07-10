@@ -324,7 +324,7 @@
                         <div class="col-6">
                             <div class="d-flex justify-content-end gap-3">
                                 <span class="price-tag" v-if="vm_plan=='hourly' && vm_os=='linux'">$0.417</span>
-                                <span class="price-tag" v-if="vm_plan=='monthly' && vm_os=='linux'">$286​</span>
+                                <span class="price-tag" v-if="vm_plan=='monthly' && vm_os=='linux'">$287​</span>
                                 <span class="price-tag" v-if="vm_plan=='one_year' && vm_os=='linux'">$3,349</span>
                                 <span class="price-tag" v-if="vm_plan=='three_year' && vm_os=='linux'">$9,042</span>
 

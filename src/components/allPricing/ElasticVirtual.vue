@@ -138,7 +138,7 @@
                             <td>3 TB​</td>
                             <td>2 Snapshot​</td>
                             <td class="price-tag" v-if="vm_plan=='hourly' && vm_os=='linux'">$0.417</td>
-                            <td class="price-tag" v-if="vm_plan=='monthly' && vm_os=='linux'">$286​</td>
+                            <td class="price-tag" v-if="vm_plan=='monthly' && vm_os=='linux'">$287​</td>
                             <td class="price-tag" v-if="vm_plan=='one_year' && vm_os=='linux'">$3,349</td>
                             <td class="price-tag" v-if="vm_plan=='three_year' && vm_os=='linux'">$9,042</td>
                             

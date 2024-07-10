@@ -7,7 +7,7 @@
                     {{ info.text }}
                 </p>
                 <div class="readmore" :class="info.read_more">
-                    <router-link to="#" class="d-flex align-items-center gap-2">
+                    <router-link :to="info.link" class="d-flex align-items-center gap-2">
                         <span>{{info.link_text}}</span> <span class="material-symbols-outlined mt-1 ms-1">arrow_right_alt</span>
                     </router-link>
                 </div>
@@ -24,18 +24,21 @@
                     title: "Global Cloud Infrastructure",
                     text: "Cloud resources can be deployed across various regions, offering reliable, secure, and high-performance solutions to meet global business needs.​",
                     link_text: "Read More About Global Infrastructure",
+                    link: "/explore/global-infrastructure",
                     read_more: 'global',
                 },
                 {
                     title: "Cloud Products & Solutions​",
                     text: "Over 20+ Cloud products & solutions can be used widely for many organization such as Retails, Healthcare, Manufacturing, Production, Logistics and other industries.​​",
                     link_text: "Read More About Products & Solutions",
+                    link: '#',
                     read_more: 'product',
                 },
                 {
                     title: "Pricing and Calculations​",
                     text: "itGateway Cloud has many types of pricing and billing for each services such as Pay-as-You-Go, Monthly, Yearly and Contract Based.​​",
                     link_text: "View Cloud Pricing & Calculation",
+                    link: '/pricing/all-pricing',
                     read_more: 'pricing',
                 },
             ];
