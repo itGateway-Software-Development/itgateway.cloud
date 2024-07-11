@@ -56,7 +56,7 @@
     .more-about-company .more-info-card {
         border: 1px solid #302d58;
         border-top: 5px solid #EC6316;
-        padding: 20px;
+        padding: 25px;
         border-radius: 7px;
         position: relative;
         cursor: pointer;
@@ -70,7 +70,7 @@
 
     .more-about-company .card-wrapper .readmore {
         position: absolute;
-        bottom: 0px;
+        bottom: 10px;
         overflow: hidden;
     }
 
