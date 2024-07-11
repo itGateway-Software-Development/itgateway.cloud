@@ -60,6 +60,10 @@
   color: var(--font-color);
 }
 
+#app p {
+  font-size: 17px;
+}
+
 #app .section-header {
   background: linear-gradient(99deg,#EC6316 3%,#ff6600 90%);
   -webkit-background-clip: text;

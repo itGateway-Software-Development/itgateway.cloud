@@ -38,8 +38,10 @@
                 <router-link to="#">Explore Business Reports and read the executive insight​</router-link>
               </div>
               <div class="col-12 col-sm-5" style="margin-bottom: 40px;">
-                <h5>Customer Success Story​</h5>
-                <router-link to="#">Discover the cloud solutions utilized by our customers​</router-link>
+                <router-link to="/explore/customer-success-story" class="menu-route">
+                  <h5>Customer Success Story​</h5>
+                  <span>Discover the cloud solutions utilized by our customers​</span>
+                </router-link>
               </div>
             </div>
         </div>
