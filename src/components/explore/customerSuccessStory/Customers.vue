@@ -146,13 +146,6 @@
                     desc: "Migrating the Server and VM from On-Premises to the Cloud for upgrading their Datacenter.​​",
                     link: "#",
                 },
-                {
-                    img: require('@/assets/images/customers/13.png'),
-                    title: "Kinetic Myanmar​​​",
-                    type: "Telecommunication​",
-                    desc: "Migrating the Server and VM from On-Premises to the Cloud for upgrading their Datacenter.​​",
-                    link: "#",
-                },
             ];
 
             return {customers}
