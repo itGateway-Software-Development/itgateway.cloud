@@ -2,7 +2,7 @@
     <div class="content-wrapper youtube">
         <div class="row">
             <div class="col-12 col-md-6 mb-3 mb-md-0">
-                <a href="https://youtube.com/@itgateway5550?si=5zyeDKoKErzMrGYF" target="_blank">
+                <a href="https://youtu.be/iEq-HjJ85HI?si=C8TaSU7nzLr2xkmf" target="_blank">
                     <img class="w-100 h-100" :src="require('@/assets/images/company/about_company/yt.png')" alt="">
                 </a>
             </div>
