@@ -10,7 +10,7 @@
             :class="{ active: route.path == '/pricing/all-pricing' }"
           >
             <h5>See All Pricing</h5>
-            <span>Compare, choose and purchase cloud solutions you ​</span>
+            <span>Compare, choose and purchase cloud solutions you need.​</span>
           </router-link>
         </div>
         <div class="col-12 col-sm-7" style="margin-bottom: 40px">
