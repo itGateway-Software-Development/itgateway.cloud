@@ -224,18 +224,14 @@
               <div class="col-6 text-end">1 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="vm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="vm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6 text-end" v-if="vm_os == 'linux'">100 GB</div>
-              <div class="col-6" v-if="vm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div class="col-6 text-end" v-if="vm_os == 'window'">1 TB</div>
+              <div class="col-6">Cloud Backup</div>
+              <div class="col-6 text-end">100 GB</div>
               <hr />
             </div>
 
@@ -334,18 +330,14 @@
               <div class="col-6 text-end">1 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="vm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="vm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6 text-end" v-if="vm_os == 'linux'">200 GB</div>
-              <div class="col-6" v-if="vm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div class="col-6 text-end" v-if="vm_os == 'window'">2 TB</div>
+              <div class="col-6">Cloud Backup</div>
+              <div class="col-6 text-end">200 GB</div>
               <hr />
             </div>
 
@@ -441,21 +433,18 @@
             </div>
             <div class="row">
               <div class="col-6">Network</div>
-              <div class="col-6 text-end">5 Gbps</div>
+              <div class="col-6 text-end" v-if="vm_os == 'linux'">5 Gbps</div>
+              <div class="col-6 text-end" v-if="vm_os == 'window'">1 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="vm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="vm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6 text-end" v-if="vm_os == 'linux'">200 GB</div>
-              <div class="col-6" v-if="vm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div class="col-6 text-end" v-if="vm_os == 'window'">2 TB</div>
+              <div class="col-6">Cloud Backup</div>
+              <div class="col-6 text-end">200 GB</div>
               <hr />
             </div>
 
@@ -554,18 +543,14 @@
               <div class="col-6 text-end">5 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="vm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="vm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6 text-end" v-if="vm_os == 'linux'">300 GB</div>
-              <div class="col-6" v-if="vm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div class="col-6 text-end" v-if="vm_os == 'window'">3 TB</div>
+              <div class="col-6">Cloud Backup</div>
+              <div class="col-6 text-end">300 GB</div>
               <hr />
             </div>
 
@@ -664,18 +649,14 @@
               <div class="col-6 text-end">10 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="vm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="vm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6 text-end" v-if="vm_os == 'linux'">500 GB</div>
-              <div class="col-6" v-if="vm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div class="col-6 text-end" v-if="vm_os == 'window'">3 TB</div>
+              <div class="col-6">Cloud Backup</div>
+              <div class="col-6 text-end">500 GB</div>
               <hr />
             </div>
 
@@ -696,13 +677,13 @@
         <div
           v-if="vm_os == 'window'"
           class="plan-detail-card"
-          :class="{ active: active_card == 'card6' }"
+          :class="{ active: active_card == 'card7' }"
         >
           <div
             class="row"
-            @click="toggleActiveCard('card6')"
+            @click="toggleActiveCard('card7')"
             data-bs-toggle="collapse"
-            data-bs-target="#collapseExample5"
+            data-bs-target="#collapseExample6"
           >
             <div class="col-6">evm.cw.4xlarge</div>
             <div class="col-6">
@@ -732,7 +713,7 @@
             </div>
             <hr />
           </div>
-          <div class="collapse" id="collapseExample5">
+          <div class="collapse" id="collapseExample6">
             <div class="row">
               <div class="col-6">CPU</div>
               <div class="col-6 text-end">32 vCPU</div>
@@ -754,8 +735,13 @@
               <hr />
             </div>
             <div class="row">
-              <div class="col-6">Data Transfer Out</div>
-              <div class="col-6 text-end">3 TB</div>
+              <div class="col-6">Elastic IP</div>
+              <div class="col-6 text-end">1</div>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="col-6">Cloud Backup</div>
+              <div class="col-6 text-end">1 TB</div>
               <hr />
             </div>
 

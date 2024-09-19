@@ -222,7 +222,7 @@
               <div class="col-6 text-end">1 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="dm_os == 'linux'">
+            <div>
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
@@ -232,12 +232,6 @@
               <div class="col-6 text-end">100 GB</div>
               <hr />
             </div>
-            <div class="row" v-if="dm_os == 'window'">
-              <div class="col-6">Data Transfer Out</div>
-              <div class="col-6 text-end">1 TB</div>
-              <hr />
-            </div>
-
             <div class="row">
               <div class="col-6">Snapshot</div>
               <div class="col-6 text-end">1 Snapshot</div>
@@ -333,18 +327,16 @@
               <div class="col-6 text-end">1 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="dm_os == 'linux'">
+            <div>
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="dm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6" v-if="dm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div v-if="dm_os == 'linux'" class="col-6 text-end">200 GB</div>
-              <div v-if="dm_os == 'window'" class="col-6 text-end">2 TB</div>
+              <div class="col-6">Cloud Backup</div>
+
+              <div class="col-6 text-end">200 GB</div>
+
               <hr />
             </div>
 
@@ -444,18 +436,16 @@
               <div v-else class="col-6 text-end">1 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="dm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="dm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6" v-if="dm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div v-if="dm_os == 'linux'" class="col-6 text-end">200 GB</div>
-              <div v-if="dm_os == 'window'" class="col-6 text-end">3 TB</div>
+              <div class="col-6">Cloud Backup</div>
+
+              <div class="col-6 text-end">200 GB</div>
+
               <hr />
             </div>
 
@@ -554,18 +544,16 @@
               <div class="col-6 text-end">5 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="dm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="dm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6" v-if="dm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div v-if="dm_os == 'linux'" class="col-6 text-end">300 GB</div>
-              <div v-if="dm_os == 'window'" class="col-6 text-end">3 TB</div>
+              <div class="col-6">Cloud Backup</div>
+
+              <div class="col-6 text-end">300 GB</div>
+
               <hr />
             </div>
 
@@ -664,18 +652,16 @@
               <div class="col-6 text-end">10 Gbps</div>
               <hr />
             </div>
-            <div class="row" v-if="dm_os == 'linux'">
+            <div class="row">
               <div class="col-6">Elastic IP</div>
               <div class="col-6 text-end">1</div>
               <hr />
             </div>
             <div class="row">
-              <div class="col-6" v-if="dm_os == 'linux'">Cloud Backup</div>
-              <div class="col-6" v-if="dm_os == 'window'">
-                Data Transfer Out
-              </div>
-              <div v-if="dm_os == 'linux'" class="col-6 text-end">500 GB</div>
-              <div v-if="dm_os == 'window'" class="col-6 text-end">4 TB</div>
+              <div class="col-6">Cloud Backup</div>
+
+              <div class="col-6 text-end">500 GB</div>
+
               <hr />
             </div>
 
@@ -754,8 +740,13 @@
               <hr />
             </div>
             <div class="row">
-              <div class="col-6">Data Transfer Out</div>
-              <div class="col-6 text-end">4 TB</div>
+              <div class="col-6">Elastic IP</div>
+              <div class="col-6 text-end">1</div>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="col-6">Cloud Backup</div>
+              <div class="col-6 text-end">1 TB</div>
               <hr />
             </div>
 

@@ -62,9 +62,9 @@
               <th>RAM</th>
               <th>Storage</th>
               <th>Network</th>
-              <th v-if="dm_os == 'linux'">Elastice IP</th>
-              <th v-if="dm_os == 'linux'">Cloud Backup</th>
-              <th v-if="dm_os == 'window'">Data Transfer Out</th>
+              <th>Elastice IP</th>
+              <th>Cloud Backup</th>
+
               <th>Snapshot</th>
               <th>Price</th>
               <th>&nbsp;</th>
@@ -115,9 +115,9 @@
               <td>4 GB DDR4​</td>
               <td>100 GB NVMe​</td>
               <td>1 Gbps​</td>
-              <td v-if="dm_os == 'linux'">1</td>
-              <td v-if="dm_os == 'linux'">100 GB​</td>
-              <td v-if="dm_os == 'window'">2 TB</td>
+              <td>1</td>
+              <td>100 GB​</td>
+
               <td>1 Snapshot​</td>
               <td
                 class="price-tag"
@@ -179,9 +179,9 @@
               <td>8 GB DDR4​</td>
               <td>200 GB NVMe​</td>
               <td>1 Gbps​</td>
-              <td v-if="dm_os == 'linux'">1</td>
-              <td v-if="dm_os == 'linux'">200 GB​</td>
-              <td v-if="dm_os == 'window'">2 TB​</td>
+              <td>1</td>
+              <td>200 GB​</td>
+
               <td>1 Snapshot​</td>
               <td
                 class="price-tag"
@@ -244,9 +244,8 @@
               <td>200 GB NVMe​</td>
               <td v-if="dm_os == 'linux'">5 Gbps​</td>
               <td v-else>1 Gbps​</td>
-              <td v-if="dm_os == 'linux'">1</td>
-              <td v-if="dm_os == 'linux'">200 GB​</td>
-              <td v-if="dm_os == 'window'">3 TB</td>
+              <td>1</td>
+              <td>200 GB​</td>
               <td>2 Snapshot​</td>
               <td
                 class="price-tag"
@@ -308,9 +307,8 @@
               <td>32 GB DDR4​</td>
               <td>300 GB NVMe​</td>
               <td>5 Gbps​</td>
-              <td v-if="dm_os == 'linux'">1</td>
-              <td v-if="dm_os == 'linux'">300 GB​</td>
-              <td v-else>3 TB​</td>
+              <td>1</td>
+              <td>300 GB​</td>
               <td>2 Snapshot​</td>
               <td
                 class="price-tag"
@@ -372,9 +370,8 @@
               <td>64 GB DDR4​</td>
               <td>500 GB NVMe​</td>
               <td>10 Gbps​</td>
-              <td v-if="dm_os == 'linux'">1</td>
-              <td v-if="dm_os == 'linux'">500 GB​</td>
-              <td v-if="dm_os == 'window'">4 TB</td>
+              <td>1</td>
+              <td>500 GB​</td>
               <td>2 Snapshot​</td>
               <td
                 class="price-tag"
@@ -436,7 +433,8 @@
               <td>128 GB DDR4​</td>
               <td>1 TB NVMe​</td>
               <td>10 Gbps​</td>
-              <td>4 TB​</td>
+              <td>1</td>
+              <td>1 TB​</td>
               <td>2 Snapshot​</td>
               <td
                 class="price-tag"
