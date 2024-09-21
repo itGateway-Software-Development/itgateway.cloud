@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import ElasticVM from "../views/products/ElasticVM.vue";
 
 const routes = [
   {
@@ -9,20 +10,26 @@ const routes = [
   },
 
   {
-    path: '/pricing/:slug', 
-    component: () => import('@/views/Pricing.vue'),
-    props: true
+    path: "/pricing/:slug",
+    component: () => import("@/views/Pricing.vue"),
+    props: true,
   },
   {
-    path: '/explore/:slug', 
-    component: () => import('@/views/Explore.vue'),
-    props: true
+    path: "/explore/:slug",
+    component: () => import("@/views/Explore.vue"),
+    props: true,
   },
   {
-    path: '/company/:slug',
-    component: () => import('@/views/Company.vue'),
-    props: true
-  }
+    path: "/company/:slug",
+    component: () => import("@/views/Company.vue"),
+    props: true,
+  },
+  {
+    path: "/evm",
+    name: "elasticvm",
+    component: ElasticVM,
+    props: true,
+  },
 ];
 
 const router = createRouter({
@@ -36,8 +43,11 @@ const router = createRouter({
             const element = document.querySelector(to.hash);
             if (element) {
               const topOffset = 100;
-              const y = element.getBoundingClientRect().top + window.pageYOffset - topOffset;
-              window.scrollTo({ top: y, behavior: 'smooth' });
+              const y =
+                element.getBoundingClientRect().top +
+                window.pageYOffset -
+                topOffset;
+              window.scrollTo({ top: y, behavior: "smooth" });
             }
             resolve();
           }, 300);
