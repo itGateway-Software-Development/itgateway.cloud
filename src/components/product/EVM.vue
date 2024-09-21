@@ -72,7 +72,7 @@
               <div class="name d-flex flex-column gap-2">
                 <div class="d-flex align-items-center gap-3">
                   <img :src="product.img" alt="" />
-                  <h6>{{ product.type }}</h6>
+                  <h4>{{ product.type }}</h4>
                 </div>
                 <h5>{{ product.name }}</h5>
               </div>
@@ -100,7 +100,9 @@
                 <h5>{{ product.resource_name }}</h5>
                 <p>{{ product.info }}​</p>
               </div>
-              <button class="btn primary-btn">{{ product.btn_text }}</button>
+              <button class="btn primary-btn product-btn">
+                {{ product.btn_text }}
+              </button>
             </div>
           </div>
         </div>
@@ -108,7 +110,7 @@
     </div>
     <div class="cloud-window content-wrapper">
       <div class="heading-content">
-        <h4>Cloud Linux Server</h4>
+        <h4>Cloud Window Server</h4>
         <p>
           Flexible and secure cloud virtual machine for Linux OS based app and
           users. This types of VM will be shared resources for cost saving and
@@ -126,7 +128,7 @@
               <div class="name d-flex flex-column gap-2">
                 <div class="d-flex align-items-center gap-3">
                   <img :src="product.img" alt="" />
-                  <h6>{{ product.type }}</h6>
+                  <h4>{{ product.type }}</h4>
                 </div>
                 <h5>{{ product.name }}</h5>
               </div>
@@ -151,7 +153,9 @@
                 <h5>{{ product.resource_name }}</h5>
                 <p>{{ product.info }}​</p>
               </div>
-              <button class="btn primary-btn">{{ product.btn_text }}</button>
+              <button class="btn primary-btn product-btn">
+                {{ product.btn_text }}
+              </button>
             </div>
           </div>
         </div>
@@ -412,6 +416,17 @@ export default {
   transform: translateY(-10px);
 }
 
+.heading-content h4 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 32px;
+  color: #ec6316;
+}
+
+.heading-content p {
+  font-size: 25px !important;
+  opacity: 0.9;
+}
+
 .cloud-linux,
 .cloud-window {
   margin-top: 90px;
@@ -427,6 +442,10 @@ export default {
   background: var(--card-background-color);
 }
 
+.product-btn {
+  margin-top: 20px;
+}
+
 .product-card .name img {
   width: 35px;
 }
@@ -438,9 +457,10 @@ export default {
   margin-top: 10px;
 }
 
-.product-card .name h6 {
+.product-card .name h4 {
   letter-spacing: 4px;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 28px;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -493,6 +513,22 @@ export default {
 @media (max-width: 600px) {
   .product-card .info {
     height: max-content;
+  }
+  .product-card .price h2 {
+    font-size: 30px;
+  }
+
+  .product-card .name h5 {
+    height: 30px;
+    font-size: 20px;
+  }
+  .product-card .name h4 {
+    height: 30px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .heading-content p {
+    font-size: 17px !important;
   }
 }
 </style>
