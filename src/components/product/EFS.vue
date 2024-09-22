@@ -479,7 +479,7 @@ export default {
   border-radius: 10px;
   background: var(--card-background-color);
   margin: 0px 10px;
-  height: 100%;
+  height: 1000px;
 }
 
 .product-card .os-list img {

@@ -519,6 +519,7 @@ export default {
 }
 
 .product-card .info {
+  height: 180px;
 }
 
 .product-card .info p {

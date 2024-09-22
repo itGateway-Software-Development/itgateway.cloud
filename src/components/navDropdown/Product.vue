@@ -70,8 +70,10 @@
         <div v-if="dropdownContent == 'most_demand'">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/evm"><h5>Virtual Machine​</h5></router-link>
-              <router-link to="/evm"
+              <router-link to="/products/compute/evm"
+                ><h5>Virtual Machine​</h5></router-link
+              >
+              <router-link to="/products/compute/evm"
                 >Deploy Windows and Linux VM in minute​</router-link
               >
             </div>
@@ -82,8 +84,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/edm"><h5>Dedicated Instance​</h5></router-link>
-              <router-link to="/edm"
+              <router-link to="/products/compute/edm"
+                ><h5>Dedicated Instance​</h5></router-link
+              >
+              <router-link to="/products/compute/edm"
                 >Deploy VM instance for Performance Optimization​</router-link
               >
             </div>
@@ -117,18 +121,18 @@
         <div v-if="dropdownContent == 'compute'">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/evm">
+              <router-link to="/products/compute/evm">
                 <h5>Elastic Virtual Machine​​</h5></router-link
               >
-              <router-link to="/evm"
+              <router-link to="/products/compute/evm"
                 >Shared Virtual Machine in the Cloud​​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/edm"
+              <router-link to="/products/compute/edm"
                 ><h5>Dedicated Virtual Machine​​</h5></router-link
               >
-              <router-link to="/edm"
+              <router-link to="/products/compute/edm"
                 >Virtual Machine with Dedicated Resources​​</router-link
               >
             </div>
@@ -149,10 +153,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/baremetal"
+              <router-link to="/products/compute/baremetal"
                 ><h5>Elastic Bare-Metal Server​</h5></router-link
               >
-              <router-link to="/baremetal"
+              <router-link to="/products/compute/baremetal"
                 >Build your physical server infrastructure ​in the
                 Cloud​​</router-link
               >
@@ -293,10 +297,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/efs"
+              <router-link to="/products/storage/efs"
                 ><h5>Elastic File Storage (EFS)​​​​​</h5></router-link
               >
-              <router-link to="/efs"
+              <router-link to="/products/storage/efs"
                 >Managed and centralized storage for compute
                 resources​</router-link
               >

@@ -96,11 +96,11 @@
               <div class="price d-flex flex-column gap-0">
                 <h5 class="mb-3">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.price }}</h2>
+                  <h2 class="color-text">{{ product.price }}</h2>
                   <span>/Month</span>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.yearly }}</h2>
+                  <h2 class="color-text">{{ product.yearly }}</h2>
                   <span>/Year</span>
                 </div>
               </div>
@@ -109,6 +109,8 @@
                 <p class="mt-4">{{ product.info }}​</p>
                 <p>{{ product.info2 }}</p>
                 <p>{{ product.info3 }}</p>
+                <p>{{ product.info4 }}</p>
+                <p>{{ product.info5 }}</p>
               </div>
               <button class="btn primary-btn product-btn">
                 {{ product.btn_text }}
@@ -150,19 +152,24 @@
               <div class="price d-flex flex-column gap-0">
                 <h5 class="mb-5">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.price }}</h2>
+                  <h2 class="color-text">{{ product.price }}</h2>
                   <span>/Month</span>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.yearly }}</h2>
+                  <h2 class="color-text">{{ product.yearly }}</h2>
                   <span>/Year</span>
                 </div>
               </div>
               <div class="info">
                 <h5>{{ product.resource_name }}</h5>
-                <p class="mt-4">{{ product.info }}​</p>
-                <p>{{ product.info2 }}</p>
-                <p>{{ product.info3 }}</p>
+                <p class="mt-4">{{ product.cpu }}​</p>
+                <p>{{ product.memory }}</p>
+                <p>{{ product.storage }}</p>
+                <p>{{ product.network }}</p>
+                <p>{{ product.ip }}</p>
+                <p>{{ product.snapshot }}</p>
+                <p>{{ product.backup }}</p>
+                <p>{{ product.monitoring }}</p>
               </div>
               <button class="btn primary-btn product-btn">
                 {{ product.btn_text }}
@@ -191,9 +198,11 @@ export default {
         yearly: "$167",
         resource_name: "Resources",
         type: "Mini",
-        info: "2 vCPU, 2 GB RAM, 50 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 1 Snapshot, 50 GB Cloud Backup, Cloud Monitoring.",
+        info: "2 vCPU, 4 GB RAM",
+        info2: "100 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 1 Snapshot",
+        info5: "100 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -203,9 +212,11 @@ export default {
         yearly: "$331",
         resource_name: "Resources",
         type: "Small",
-        info: "2 vCPU, 4 GB RAM, 100 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 1 Snapshot, 100 GB Cloud Backup, Cloud Monitoring.",
+        info: "2 vCPU, 4 GB RAM",
+        info2: "100 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 1 Snapshot",
+        info5: "100 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -215,9 +226,11 @@ export default {
         yearly: "$651",
         resource_name: "Resources",
         type: "Medium",
-        info: "4vCPU, 8 GB RAM, 200 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 1 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
+        info: "2 vCPU, 4 GB RAM",
+        info2: "100 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 1 Snapshot",
+        info5: "100 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -227,9 +240,11 @@ export default {
         yearly: "$870",
         resource_name: "Resources",
         type: "Large",
-        info: "4 vCPU, 16 GB RAM, 200 GB NVMe SSD, ",
-        info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 2 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
+        info: "2 vCPU, 4 GB RAM",
+        info2: "100 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 1 Snapshot",
+        info5: "100 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -239,9 +254,11 @@ export default {
         yearly: "$1742",
         resource_name: "Resources",
         type: "xLarge",
-        info: "8 vCPU, 32 GB RAM, 300 GB NVMe SSD, ",
-        info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 2 Snapshot, 300 GB Cloud Backup, Cloud Monitoring.",
+        info: "2 vCPU, 4 GB RAM",
+        info2: "100 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 1 Snapshot",
+        info5: "100 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -251,9 +268,11 @@ export default {
         yearly: "$3516",
         resource_name: "Resources",
         type: "2xLarge",
-        info: "16 vCPU, 64 GB RAM, 500 GB NVMe SSD, ",
-        info2: "10 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 2 Snapshot, 500 GB Cloud Backup, Cloud Monitoring.",
+        info: "2 vCPU, 4 GB RAM",
+        info2: " 100 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 1 Snapshot",
+        info5: "100 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
     ];
@@ -266,9 +285,14 @@ export default {
         yearly: "$399",
         resource_name: "Resources",
         type: "Small",
-        info: "2 vCPU, 4 GB RAM, 100 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 1 Snapshot, 100 GB Cloud Backup, Cloud Monitoring.",
+        cpu: "2 vCPU",
+        memory: "2 GB RAM",
+        storage: "50 GB NVMe SSD",
+        network: "1 Gbps Virtual Network Firewall",
+        ip: "1 Elastic IP",
+        snapshot: "1 Sanpshot",
+        backup: "50 GB Cloud Backup",
+        monitoring: "Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -278,9 +302,14 @@ export default {
         yearly: "$799",
         resource_name: "Resources",
         type: "Medium",
-        info: "4 vCPU, 8 GB RAM, 200 GB NVMe SSD, 1 Elastic IP,",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: "  1 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
+        cpu: "2 vCPU",
+        memory: "2 GB RAM",
+        storage: "50 GB NVMe SSD",
+        network: "1 Gbps Virtual Network Firewall",
+        ip: "1 Elastic IP",
+        snapshot: "1 Sanpshot",
+        backup: "50 GB Cloud Backup",
+        monitoring: "Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -290,9 +319,14 @@ export default {
         yearly: "$999",
         resource_name: "Resources",
         type: "Large",
-        info: "4 vCPU, 16 GB RAM, 200 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 2 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
+        cpu: "2 vCPU",
+        memory: "2 GB RAM",
+        storage: "50 GB NVMe SSD",
+        network: "1 Gbps Virtual Network Firewall",
+        ip: "1 Elastic IP",
+        snapshot: "1 Sanpshot",
+        backup: "50 GB Cloud Backup",
+        monitoring: "Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -302,9 +336,14 @@ export default {
         yearly: "$1,999",
         resource_name: "Resources",
         type: "xLarge",
-        info: "8 vCPU, 32 GB RAM, 300 GB NVMe SSD,",
-        info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 2 Snapshot, 300 GB Cloud Backup, Cloud Monitoring",
+        cpu: "2 vCPU",
+        memory: "2 GB RAM",
+        storage: "50 GB NVMe SSD",
+        network: "1 Gbps Virtual Network Firewall",
+        ip: "1 Elastic IP",
+        snapshot: "1 Sanpshot",
+        backup: "50 GB Cloud Backup",
+        monitoring: "Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -314,9 +353,14 @@ export default {
         yearly: "$3,999",
         resource_name: "Resources",
         type: "2xLarge",
-        info: "16 vCPU, 64 GB RAM, 500 GB NVMe SSD,  ",
-        info2: "10 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 2 Snapshot, 500 GB Cloud Backup, Cloud Monitoring.",
+        cpu: "2 vCPU",
+        memory: "2 GB RAM",
+        storage: "50 GB NVMe SSD",
+        network: "1 Gbps Virtual Network Firewall",
+        ip: "1 Elastic IP",
+        snapshot: "1 Sanpshot",
+        backup: "50 GB Cloud Backup",
+        monitoring: "Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -326,9 +370,14 @@ export default {
         yearly: "$7,199",
         resource_name: "Resources",
         type: "4xLarge",
-        info: "32 vCPU, 128 GB RAM, 1 TB NVMe SSD,  ",
-        info2: "10 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 2 Snapshot, 1 TB Cloud Backup, Cloud Monitoring",
+        cpu: "2 vCPU",
+        memory: "2 GB RAM",
+        storage: "50 GB NVMe SSD",
+        network: "1 Gbps Virtual Network Firewall",
+        ip: "1 Elastic IP",
+        snapshot: "1 Sanpshot",
+        backup: "50 GB Cloud Backup",
+        monitoring: "Cloud Monitoring",
         btn_text: "Deploy",
       },
     ];
@@ -493,6 +542,10 @@ export default {
   width: 35px;
 }
 
+.color-text {
+  color: #ec6316 !important;
+}
+
 .product-card .name h5 {
   font-family: "Courier New", Courier, monospace;
   font-size: 24px;
@@ -516,7 +569,6 @@ export default {
 }
 
 .product-card .info {
-  height: 100%;
 }
 
 .product-card .info p {
