@@ -530,7 +530,7 @@ export default {
   border: 2px solid var(--main-color);
   border-radius: 10px;
   background: var(--card-background-color);
-  margin: 0px 10px;
+  margin: 0px 0px;
   height: 100%;
 }
 
@@ -544,6 +544,7 @@ export default {
 
 .color-text {
   color: #ec6316 !important;
+  font-weight: bold;
 }
 
 .product-card .name h5 {
