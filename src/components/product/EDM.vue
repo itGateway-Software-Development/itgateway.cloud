@@ -190,7 +190,7 @@
 
 <script>
 import { useRoute } from "vue-router";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 import { useStore } from "vuex";
 export default {
   setup() {
