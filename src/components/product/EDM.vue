@@ -481,7 +481,8 @@ export default {
   border: 2px solid var(--main-color);
   border-radius: 10px;
   background: var(--card-background-color);
-  margin: 40px 40px;
+  margin: 0px 10px;
+  height: 100%;
 }
 
 .product-card .os-list img {
@@ -489,7 +490,6 @@ export default {
 }
 
 .product-btn {
-  margin-top: 20px;
 }
 
 .product-card .name img {
@@ -519,7 +519,6 @@ export default {
 }
 
 .product-card .info {
-  margin-bottom: 20px;
 }
 
 .product-card .info p {
