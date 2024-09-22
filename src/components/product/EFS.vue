@@ -87,11 +87,11 @@
               <div class="price d-flex flex-column gap-0">
                 <h5 class="mb-3">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.price }}</h2>
+                  <h2 class="text-color">{{ product.price }}</h2>
                   <span>/Month</span>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.yearly }}</h2>
+                  <h2 class="text-color">{{ product.yearly }}</h2>
                   <span>/Year</span>
                 </div>
               </div>
@@ -100,6 +100,9 @@
                 <p class="mt-4">{{ product.info }}​</p>
                 <p>{{ product.info2 }}</p>
                 <p>{{ product.info3 }}</p>
+                <p>{{ product.info4 }}</p>
+                <p>{{ product.info5 }}</p>
+                <p>{{ product.info6 }}</p>
               </div>
               <button class="btn primary-btn product-btn">
                 {{ product.btn_text }}
@@ -182,10 +185,12 @@ export default {
         yearly: "$299",
         resource_name: "Resources",
         type: "efs.Mini",
-        info: "2 vCPU, 2 GB RAM, 300 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3:
-          "300 GB Cloud Backup, Cloud Monitoring, 24x7x365 Supports, Up to 20 Users",
+        info: "2 vCPU, 2 GB RAM,",
+        info2: "300 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP",
+        info5: "300 GB Cloud Backup, Cloud Monitoring",
+        info6: "24x7x365 Supports, Up to 20 Users",
         btn_text: "Deploy",
       },
       {
@@ -195,10 +200,12 @@ export default {
         yearly: "$590",
         resource_name: "Resources",
         type: "efs.Small",
-        info: "2 vCPU, 4 GB RAM, 500 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3:
-          "500 GB Cloud Backup, Cloud Monitoring, 24x7x365 Supports, Up to 50 Users",
+        info: "2 vCPU, 4 GB RAM,",
+        info2: "500 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP",
+        info5: "500 GB Cloud Backup, Cloud Monitoring",
+        info6: "24x7x365 Supports, Up to 20 Users",
         btn_text: "Deploy",
       },
       {
@@ -208,10 +215,12 @@ export default {
         yearly: "$1,200",
         resource_name: "Resources",
         type: "efs.Medium",
-        info: "4 vCPU, 8 GB RAM, 1 TB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3:
-          "1 TB Cloud Backup, Cloud Monitoring, 24x7x365 Supports, Up to 100 Users",
+        info: "4 vCPU, 8 GB RAM,",
+        info2: "1 TB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP",
+        info5: "1 TB Cloud Backup, Cloud Monitoring",
+        info6: "24x7x365 Supports, Up to 20 Users",
         btn_text: "Deploy",
       },
       {
@@ -221,10 +230,12 @@ export default {
         yearly: "$1,690",
         resource_name: "Resources",
         type: "efs.Large",
-        info: "4 vCPU, 16 GB RAM, 2 TB NVMe SSD, ",
-        info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3:
-          "2 TB Cloud Backup, Cloud Monitoring, 24x7x365 Supports, Up to 200 Users",
+        info: "4 vCPU, 16 GB RAM,",
+        info2: "2 TB NVMe SSD",
+        info3: "5 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP",
+        info5: "2 TB Cloud Backup, Cloud Monitoring",
+        info6: "24x7x365 Supports, Up to 20 Users",
         btn_text: "Deploy",
       },
       {
@@ -234,10 +245,12 @@ export default {
         yearly: "$3,290",
         resource_name: "Resources",
         type: "efs.xLarge",
-        info: "8 vCPU, 32 GB RAM, 4 TB NVMe SSD, ",
-        info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3:
-          "4 TB Cloud Backup, Cloud Monitoring, 24x7x365 Supports, Up to 500 Users",
+        info: "8 vCPU, 32 GB RAM,",
+        info2: "4 TB NVMe SSD",
+        info3: "5 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP",
+        info5: "4 TB Cloud Backup, Cloud Monitoring",
+        info6: "24x7x365 Supports, Up to 20 Users",
         btn_text: "Deploy",
       },
       {
@@ -247,10 +260,12 @@ export default {
         yearly: "$6,290",
         resource_name: "Resources",
         type: "efs.2xLarge",
-        info: "16 vCPU, 64 GB RAM, 8 TB NVMe SSD, ",
-        info2: "10 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3:
-          "8 TB Cloud Backup, Cloud Monitoring, 24x7x365 Supports, Up to 1,000 Users",
+        info: "16 vCPU, 64 GB RAM,",
+        info2: "8 TB NVMe SSD",
+        info3: "10 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP",
+        info5: "8 TB Cloud Backup, Cloud Monitoring",
+        info6: "24x7x365 Supports, Up to 20 Users",
         btn_text: "Deploy",
       },
     ];
@@ -263,9 +278,11 @@ export default {
         yearly: "$649",
         resource_name: "Resources",
         type: "cw.Small",
-        info: "2 vCPU, 4 GB RAM, 100 GB NVMe SSD, ",
-        info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
-        info3: " 1 Snapshot, 100 GB Cloud Backup, Cloud Monitoring.",
+        info: "2 vCPU, 4 GB RAM ",
+        info2: "100 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: " 1 Elastic IP, 1 Snapshot",
+        info5: "100 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -470,6 +487,11 @@ export default {
   margin-top: 90px;
 }
 
+.text-color {
+  color: #ec6316 !important;
+  font-weight: bold;
+}
+
 .products {
   margin-top: 20px;
 }
@@ -478,8 +500,7 @@ export default {
   border: 2px solid var(--main-color);
   border-radius: 10px;
   background: var(--card-background-color);
-  margin: 0px 10px;
-  height: 1000px;
+  height: 100%;
 }
 
 .product-card .os-list img {
@@ -544,13 +565,6 @@ export default {
 }
 
 @media (max-width: 1375px) {
-  .product-card .info {
-    height: 180px;
-  }
-  .product-card {
-    margin: 30px 0px;
-  }
-
   .product-card .name h4 {
     font-size: 25px;
   }
@@ -575,9 +589,6 @@ export default {
   .product-card .name h4 {
     font-size: 28px;
   }
-  .product-card .info {
-    height: 100%;
-  }
 }
 
 @media (max-width: 600px) {
@@ -587,10 +598,6 @@ export default {
 
   .product-card .type {
     flex-direction: column;
-  }
-
-  .product-card .info {
-    height: 260px;
   }
 
   .product-card .name h5 {
@@ -613,7 +620,11 @@ export default {
   }
 
   .product-card .name h4 {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .text-color {
+    margin-bottom: 20px;
   }
 }
 </style>

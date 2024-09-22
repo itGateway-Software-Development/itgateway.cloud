@@ -273,6 +273,7 @@ export default {
 
     const changeTheme = (theme) => {
       currentTheme.value = theme;
+      store.dispatch("saveTheme", currentTheme.value);
     };
     const menuHover = (value) => emit("menuHoverStatus", value);
 

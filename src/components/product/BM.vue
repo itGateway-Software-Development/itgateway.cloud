@@ -78,11 +78,11 @@
               <div class="price d-flex flex-column gap-0">
                 <h5 class="mb-3">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.price }}</h2>
+                  <h2 class="color-text">{{ product.price }}</h2>
                   <span>/Month</span>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.yearly }}</h2>
+                  <h2 class="color-text">{{ product.yearly }}</h2>
                   <span>/Year</span>
                 </div>
               </div>
@@ -142,11 +142,11 @@
               <div class="price d-flex flex-column gap-0">
                 <h5 class="mb-5">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.price }}</h2>
+                  <h2 class="color-text">{{ product.price }}</h2>
                   <span>/Month</span>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                  <h2>{{ product.yearly }}</h2>
+                  <h2 class="color-text">{{ product.yearly }}</h2>
                   <span>/Year</span>
                 </div>
               </div>
@@ -548,7 +548,6 @@ export default {
   border: 2px solid var(--main-color);
   border-radius: 10px;
   background: var(--card-background-color);
-  margin: 0px 10px;
   height: 100%;
 }
 
@@ -593,6 +592,11 @@ export default {
   font-family: "Courier New", Courier, monospace;
 }
 
+.color-text {
+  color: #ec6316;
+  font-weight: bold;
+}
+
 .product-card .info {
 }
 
@@ -622,20 +626,12 @@ export default {
 }
 
 @media (max-width: 1450px) {
-  .product-card {
-    margin: 30px 0px;
-  }
-
   .product-card .name h4 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1250px) {
-  .product-card {
-    margin: 30px 0px;
-  }
-
   .product-card .name h4 {
     font-size: 20px;
   }
@@ -659,9 +655,6 @@ export default {
 @media (max-width: 760px) {
   .product-card .name h4 {
     font-size: 18px;
-  }
-  .product-card .info {
-    height: 100%;
   }
 }
 
@@ -699,6 +692,12 @@ export default {
 
   .product-card .info {
     height: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .product-card .info {
+    height: 400px;
   }
 }
 </style>

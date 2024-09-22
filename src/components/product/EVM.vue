@@ -70,7 +70,7 @@
           >
             <div class="product-card shadow d-flex flex-column gap-3">
               <div class="name d-flex flex-column gap-2">
-                <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center gap-3 type">
                   <img
                     :src="require('@/assets/images/vm/evm_black.png')"
                     alt=""
@@ -138,8 +138,17 @@
           >
             <div class="product-card shadow d-flex flex-column gap-3">
               <div class="name d-flex flex-column gap-2">
-                <div class="d-flex align-items-center gap-3">
-                  <img :src="product.img" alt="" />
+                <div class="d-flex align-items-center gap-3 type">
+                  <img
+                    :src="require('@/assets/images/vm/evmw_black.png')"
+                    alt=""
+                    v-if="currentTheme == 'light'"
+                  />
+                  <img
+                    :src="require('@/assets/images/vm/evmw.png')"
+                    alt=""
+                    v-if="currentTheme == 'dark'"
+                  />
                   <h4>{{ product.type }}</h4>
                 </div>
               </div>
@@ -162,14 +171,11 @@
               </div>
               <div class="info">
                 <h5>{{ product.resource_name }}</h5>
-                <p class="mt-4">{{ product.cpu }}​</p>
-                <p>{{ product.memory }}</p>
-                <p>{{ product.storage }}</p>
-                <p>{{ product.network }}</p>
-                <p>{{ product.ip }}</p>
-                <p>{{ product.snapshot }}</p>
-                <p>{{ product.backup }}</p>
-                <p>{{ product.monitoring }}</p>
+                <p class="mt-4">{{ product.info }}​</p>
+                <p>{{ product.info2 }}</p>
+                <p>{{ product.info3 }}</p>
+                <p>{{ product.info4 }}</p>
+                <p>{{ product.info5 }}</p>
               </div>
               <button class="btn primary-btn product-btn">
                 {{ product.btn_text }}
@@ -184,12 +190,13 @@
 
 <script>
 import { useRoute } from "vue-router";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
+import { useStore } from "vuex";
 export default {
   setup() {
     let route = useRoute();
-    const currentTheme = ref("light");
-
+    const store = useStore();
+    const currentTheme = computed(() => store.getters.theme);
     const linux_products = [
       {
         img: require("@/assets/images/vm/evm_black.png"),
@@ -198,11 +205,11 @@ export default {
         yearly: "$167",
         resource_name: "Resources",
         type: "Mini",
-        info: "2 vCPU, 4 GB RAM",
-        info2: "100 GB NVMe SSD",
+        info: "2 vCPU, 2 GB RAM",
+        info2: "50 GB NVMe SSD",
         info3: "1 Gbps Virtual Network Virtual Firewall",
         info4: "1 Elastic IP, 1 Snapshot",
-        info5: "100 GB Cloud Backup, Cloud Monitoring",
+        info5: "50 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -226,11 +233,11 @@ export default {
         yearly: "$651",
         resource_name: "Resources",
         type: "Medium",
-        info: "2 vCPU, 4 GB RAM",
-        info2: "100 GB NVMe SSD",
+        info: "4 vCPU, 8 GB RAM",
+        info2: "200 GB NVMe SSD",
         info3: "1 Gbps Virtual Network Virtual Firewall",
         info4: "1 Elastic IP, 1 Snapshot",
-        info5: "100 GB Cloud Backup, Cloud Monitoring",
+        info5: "200 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
@@ -240,20 +247,51 @@ export default {
         yearly: "$870",
         resource_name: "Resources",
         type: "Large",
-        info: "2 vCPU, 4 GB RAM",
-        info2: "100 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 1 Snapshot",
-        info5: "100 GB Cloud Backup, Cloud Monitoring",
+        info: "4 vCPU, 16 GB RAM",
+        info2: "200 GB NVMe SSD",
+        info3: "5 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 2 Snapshot",
+        info5: "200 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
         img: require("@/assets/images/vm/evm_black.png"),
         name: " Linux Server",
         price: "$150",
-        yearly: "$1742",
+        yearly: "$1,742",
         resource_name: "Resources",
         type: "xLarge",
+        info: "8 vCPU, 32 GB RAM",
+        info2: "300 GB NVMe SSD",
+        info3: "5 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 2 Snapshot",
+        info5: "300 GB Cloud Backup, Cloud Monitoring",
+        btn_text: "Deploy",
+      },
+      {
+        img: require("@/assets/images/vm/evm_black.png"),
+        name: " Linux Server",
+        price: "$301",
+        yearly: "$3,516",
+        resource_name: "Resources",
+        type: "2xLarge",
+        info: "16 vCPU, 64 GB RAM",
+        info2: " 500 GB NVMe SSD",
+        info3: "10 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 2 Snapshot",
+        info5: "500 GB Cloud Backup, Cloud Monitoring",
+        btn_text: "Deploy",
+      },
+    ];
+
+    const window_products = [
+      {
+        img: require("@/assets/images/vm/evm_black.png"),
+        name: " Windows Server",
+        price: "$35",
+        yearly: "$399",
+        resource_name: "Resources",
+        type: "Small",
         info: "2 vCPU, 4 GB RAM",
         info2: "100 GB NVMe SSD",
         info3: "1 Gbps Virtual Network Virtual Firewall",
@@ -263,127 +301,78 @@ export default {
       },
       {
         img: require("@/assets/images/vm/evm_black.png"),
-        name: " Linux Server",
-        price: "$301",
-        yearly: "$3516",
-        resource_name: "Resources",
-        type: "2xLarge",
-        info: "2 vCPU, 4 GB RAM",
-        info2: " 100 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 1 Snapshot",
-        info5: "100 GB Cloud Backup, Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-    ];
-
-    const window_products = [
-      {
-        img: require("@/assets/images/vm/evmw_black.png"),
-        name: " Window Server",
-        price: "$35",
-        yearly: "$399",
-        resource_name: "Resources",
-        type: "Small",
-        cpu: "2 vCPU",
-        memory: "2 GB RAM",
-        storage: "50 GB NVMe SSD",
-        network: "1 Gbps Virtual Network Firewall",
-        ip: "1 Elastic IP",
-        snapshot: "1 Sanpshot",
-        backup: "50 GB Cloud Backup",
-        monitoring: "Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-      {
-        img: require("@/assets/images/vm/evmw_black.png"),
-        name: " Window Server",
+        name: " Windows Server",
         price: "$70",
         yearly: "$799",
         resource_name: "Resources",
         type: "Medium",
-        cpu: "2 vCPU",
-        memory: "2 GB RAM",
-        storage: "50 GB NVMe SSD",
-        network: "1 Gbps Virtual Network Firewall",
-        ip: "1 Elastic IP",
-        snapshot: "1 Sanpshot",
-        backup: "50 GB Cloud Backup",
-        monitoring: "Cloud Monitoring",
+        info: "4 vCPU, 8 GB RAM",
+        info2: "200 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 1 Snapshot",
+        info5: "200 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/evmw_black.png"),
-        name: " Window Server",
+        img: require("@/assets/images/vm/evm_black.png"),
+        name: " Windows Server",
         price: "$90",
         yearly: "$999",
         resource_name: "Resources",
         type: "Large",
-        cpu: "2 vCPU",
-        memory: "2 GB RAM",
-        storage: "50 GB NVMe SSD",
-        network: "1 Gbps Virtual Network Firewall",
-        ip: "1 Elastic IP",
-        snapshot: "1 Sanpshot",
-        backup: "50 GB Cloud Backup",
-        monitoring: "Cloud Monitoring",
+        info: "4 vCPU, 16 GB RAM",
+        info2: "200 GB NVMe SSD",
+        info3: "1 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 2 Snapshot",
+        info5: "200 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/evmw_black.png"),
-        name: " Window Server",
+        img: require("@/assets/images/vm/evm_black.png"),
+        name: " Windows Server",
         price: "$180",
         yearly: "$1,999",
         resource_name: "Resources",
         type: "xLarge",
-        cpu: "2 vCPU",
-        memory: "2 GB RAM",
-        storage: "50 GB NVMe SSD",
-        network: "1 Gbps Virtual Network Firewall",
-        ip: "1 Elastic IP",
-        snapshot: "1 Sanpshot",
-        backup: "50 GB Cloud Backup",
-        monitoring: "Cloud Monitoring",
+        info: "8 vCPU, 32 GB RAM",
+        info2: "300 GB NVMe SSD",
+        info3: "5 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 2 Snapshot",
+        info5: "300 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/evmw_black.png"),
-        name: " Window Server",
+        img: require("@/assets/images/vm/evm_black.png"),
+        name: " Windows Server",
         price: "$350",
         yearly: "$3,999",
         resource_name: "Resources",
         type: "2xLarge",
-        cpu: "2 vCPU",
-        memory: "2 GB RAM",
-        storage: "50 GB NVMe SSD",
-        network: "1 Gbps Virtual Network Firewall",
-        ip: "1 Elastic IP",
-        snapshot: "1 Sanpshot",
-        backup: "50 GB Cloud Backup",
-        monitoring: "Cloud Monitoring",
+        info: "16 vCPU, 64 GB RAM",
+        info2: "500 GB NVMe SSD",
+        info3: "5 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 2 Snapshot",
+        info5: "500 GB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/evmw_black.png"),
-        name: " Window Server",
+        img: require("@/assets/images/vm/evm_black.png"),
+        name: " Windows Server",
         price: "$630",
         yearly: "$7,199",
         resource_name: "Resources",
         type: "4xLarge",
-        cpu: "2 vCPU",
-        memory: "2 GB RAM",
-        storage: "50 GB NVMe SSD",
-        network: "1 Gbps Virtual Network Firewall",
-        ip: "1 Elastic IP",
-        snapshot: "1 Sanpshot",
-        backup: "50 GB Cloud Backup",
-        monitoring: "Cloud Monitoring",
+        info: "32 vCPU, 128 GB RAM",
+        info2: " 1 TB NVMe SSD",
+        info3: "10 Gbps Virtual Network Virtual Firewall",
+        info4: "1 Elastic IP, 2 Snapshot",
+        info5: "1 TB Cloud Backup, Cloud Monitoring",
         btn_text: "Deploy",
       },
     ];
 
     onMounted(() => {
-      console.log(currentTheme);
+      console.log(currentTheme.value);
     });
 
     return { route, linux_products, window_products, currentTheme };
@@ -530,7 +519,6 @@ export default {
   border: 2px solid var(--main-color);
   border-radius: 10px;
   background: var(--card-background-color);
-  margin: 0px 0px;
   height: 100%;
 }
 
@@ -569,9 +557,6 @@ export default {
   font-family: "Courier New", Courier, monospace;
 }
 
-.product-card .info {
-}
-
 .product-card .info p {
   margin: 0px;
 }
@@ -598,13 +583,6 @@ export default {
 }
 
 @media (max-width: 1375px) {
-  .product-card .info {
-    margin-bottom: 40px;
-  }
-  .product-card {
-    margin: 30px 0px;
-  }
-
   .product-card .name h4 {
     font-size: 25px;
   }
@@ -619,12 +597,12 @@ export default {
   }
 }
 @media (max-width: 600px) {
-  .product-card .info {
-    height: 200px;
-    margin-bottom: 0px;
-  }
   .product-card .price h2 {
     font-size: 30px;
+  }
+
+  .type {
+    flex-direction: column;
   }
 
   .product-card .name h5 {
@@ -645,8 +623,22 @@ export default {
     font-size: 20px;
   }
 
+  .cloud-window {
+    margin-top: 20px;
+  }
+
   .product-card .name h4 {
+    font-size: 18px;
+  }
+
+  .product-card .info p {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .product-card .info {
+    height: 340px;
   }
 }
 </style>

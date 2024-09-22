@@ -70,11 +70,10 @@
         <div v-if="dropdownContent == 'most_demand'">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/products/compute/evm"
-                ><h5>Virtual Machine​</h5></router-link
-              >
-              <router-link to="/products/compute/evm"
-                >Deploy Windows and Linux VM in minute​</router-link
+              <router-link to="/products/compute/evm" class="menu-route">
+                <h5>Virtual Machine​​</h5>
+                <span>Deploy Windows and Linux VM in minute</span>
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
@@ -84,11 +83,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/products/compute/edm"
-                ><h5>Dedicated Instance​</h5></router-link
-              >
-              <router-link to="/products/compute/edm"
-                >Deploy VM instance for Performance Optimization​</router-link
+              <router-link to="/products/compute/edm" class="menu-route">
+                <h5>Dedicated Instance​​</h5>
+                <span>Deploy VM instance for Performance Optimization</span>
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
@@ -121,19 +119,17 @@
         <div v-if="dropdownContent == 'compute'">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/products/compute/evm">
-                <h5>Elastic Virtual Machine​​</h5></router-link
-              >
-              <router-link to="/products/compute/evm"
-                >Shared Virtual Machine in the Cloud​​</router-link
+              <router-link to="/products/compute/evm" class="menu-route">
+                <h5>Elastic Virtual Machine​​</h5>
+                <span>Shared Virtual Machine in Cloud</span>
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/products/compute/edm"
-                ><h5>Dedicated Virtual Machine​​</h5></router-link
-              >
-              <router-link to="/products/compute/edm"
-                >Virtual Machine with Dedicated Resources​​</router-link
+              <router-link to="/products/compute/edm" class="menu-route">
+                <h5>Dedicated Virtual Machine​​</h5>
+                <span>Virtual Machine with Dedicated Resources</span>
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
@@ -153,12 +149,12 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/products/compute/baremetal"
-                ><h5>Elastic Bare-Metal Server​</h5></router-link
-              >
-              <router-link to="/products/compute/baremetal"
-                >Build your physical server infrastructure ​in the
-                Cloud​​</router-link
+              <router-link to="/products/compute/baremetal" class="menu-route">
+                <h5>Elastic Bare-Metal Server​​</h5>
+                <span
+                  >Build your physical server infrastructure ​in the Cloud</span
+                >
+                ​</router-link
               >
             </div>
           </div>
@@ -297,12 +293,12 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <router-link to="/products/storage/efs"
-                ><h5>Elastic File Storage (EFS)​​​​​</h5></router-link
-              >
-              <router-link to="/products/storage/efs"
-                >Managed and centralized storage for compute
-                resources​</router-link
+              <router-link to="/products/storage/efs" class="menu-route">
+                <h5>Elastic File Storage (EFS)​​​​​</h5>
+                <span
+                  >Managed and centralized storage for compute resources</span
+                >
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
@@ -463,5 +459,20 @@ export default {
   height: 3px;
   background: #a22e76;
   margin-top: -5px;
+}
+
+.menu-route.active h5,
+.menu-route.active span {
+  color: #ec6316 !important;
+}
+
+.menu-route h5,
+.menu-route span {
+  transition: 0.3s ease;
+}
+
+.menu-route:hover h5,
+.menu-route:hover span {
+  color: #ec6316;
 }
 </style>
