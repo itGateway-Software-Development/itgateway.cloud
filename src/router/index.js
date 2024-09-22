@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ElasticVM from "../views/products/ElasticVM.vue";
+import ElasticDM from "../views/products/ElasticDM.vue";
+import ElasticFileServer from "../views/products/ElasticFileServer.vue";
+import BareMetal from "../views/products/BareMetal.vue";
 
 const routes = [
   {
@@ -28,6 +31,24 @@ const routes = [
     path: "/evm",
     name: "elasticvm",
     component: ElasticVM,
+    props: true,
+  },
+  {
+    path: "/edm",
+    name: "elasticdm",
+    component: ElasticDM,
+    props: true,
+  },
+  {
+    path: "/efs",
+    name: "elasticfileserver",
+    component: ElasticFileServer,
+    props: true,
+  },
+  {
+    path: "/baremetal",
+    name: "baremetal",
+    component: BareMetal,
     props: true,
   },
 ];

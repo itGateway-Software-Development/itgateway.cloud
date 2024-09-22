@@ -82,8 +82,8 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Dedicated Instance​</h5>
-              <router-link to="#"
+              <router-link to="/edm"><h5>Dedicated Instance​</h5></router-link>
+              <router-link to="/edm"
                 >Deploy VM instance for Performance Optimization​</router-link
               >
             </div>
@@ -125,8 +125,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Dedicated Virtual Machine​​</h5>
-              <router-link to="#"
+              <router-link to="/edm"
+                ><h5>Dedicated Virtual Machine​​</h5></router-link
+              >
+              <router-link to="/edm"
                 >Virtual Machine with Dedicated Resources​​</router-link
               >
             </div>
@@ -147,8 +149,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Elastic Bare-Metal Server​</h5>
-              <router-link to="#"
+              <router-link to="/baremetal"
+                ><h5>Elastic Bare-Metal Server​</h5></router-link
+              >
+              <router-link to="/baremetal"
                 >Build your physical server infrastructure ​in the
                 Cloud​​</router-link
               >
@@ -289,8 +293,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Elastic File Storage (EFS)​​​​​</h5>
-              <router-link to="#"
+              <router-link to="/efs"
+                ><h5>Elastic File Storage (EFS)​​​​​</h5></router-link
+              >
+              <router-link to="/efs"
                 >Managed and centralized storage for compute
                 resources​</router-link
               >

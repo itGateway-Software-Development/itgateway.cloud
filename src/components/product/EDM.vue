@@ -1,7 +1,7 @@
 <template>
   <div class="global_map">
     <div class="content-wrapper">
-      <h2 class="section-header text-center">Elastic Virtual Machine</h2>
+      <h2 class="section-header text-center">Elastic Dedicated Machine</h2>
     </div>
     <div
       class="globalinfracture_info content-wrapper d-flex justify-content-center align-items-center flex-wrap gap-3 mt-1 mt-lg-4 mb-3"
@@ -56,9 +56,9 @@
       <div class="heading-content">
         <h4>Cloud Linux Server</h4>
         <p>
-          Flexible and secure cloud virtual machine for Linux OS based app and
-          users. This types of VM will be shared resources for cost saving and
-          performance optimization.
+          Dedicated VM for high performance Linux OS based app and users. This
+          types of VM will be optimized performance with dedicated resources in
+          the cloud.
         </p>
       </div>
       <div class="products" id="compareProduct">
@@ -122,9 +122,9 @@
       <div class="heading-content">
         <h4>Cloud Windows Server</h4>
         <p>
-          Flexible and secure cloud virtual machine for Linux OS based app and
-          users. This types of VM will be shared resources for cost saving and
-          performance optimization.
+          Dedicated VM for high performance Windows OS based app and users. This
+          types of VM will be optimized performance with dedicated resources in
+          the cloud.
         </p>
       </div>
       <div class="products" id="compareProduct">
@@ -187,10 +187,10 @@ export default {
       {
         img: require("@/assets/images/vm/evm_black.png"),
         name: " Linux Server",
-        price: "$15",
-        yearly: "$167",
+        price: "$23",
+        yearly: "$266",
         resource_name: "Resources",
-        type: "Mini",
+        type: "cl.Mini",
         info: "2 vCPU, 2 GB RAM, 50 GB NVMe SSD, ",
         info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 1 Snapshot, 50 GB Cloud Backup, Cloud Monitoring.",
@@ -199,10 +199,10 @@ export default {
       {
         img: require("@/assets/images/vm/evm_black.png"),
         name: " Linux Server",
-        price: "$30",
-        yearly: "$331",
+        price: "$48",
+        yearly: "$531",
         resource_name: "Resources",
-        type: "Small",
+        type: "cl.Small",
         info: "2 vCPU, 4 GB RAM, 100 GB NVMe SSD, ",
         info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 1 Snapshot, 100 GB Cloud Backup, Cloud Monitoring.",
@@ -211,10 +211,10 @@ export default {
       {
         img: require("@/assets/images/vm/evm_black.png"),
         name: " Linux Server",
-        price: "$58",
-        yearly: "$651",
+        price: "$97",
+        yearly: "$1060",
         resource_name: "Resources",
-        type: "Medium",
+        type: "cl.Medium",
         info: "4vCPU, 8 GB RAM, 200 GB NVMe SSD, ",
         info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 1 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
@@ -223,10 +223,10 @@ export default {
       {
         img: require("@/assets/images/vm/evm_black.png"),
         name: " Linux Server",
-        price: "$76",
-        yearly: "$870",
+        price: "$125",
+        yearly: "$1375",
         resource_name: "Resources",
-        type: "Large",
+        type: "cl.Large",
         info: "4 vCPU, 16 GB RAM, 200 GB NVMe SSD, ",
         info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 2 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
@@ -235,10 +235,10 @@ export default {
       {
         img: require("@/assets/images/vm/evm_black.png"),
         name: " Linux Server",
-        price: "$150",
-        yearly: "$1742",
+        price: "$251",
+        yearly: "$2751",
         resource_name: "Resources",
-        type: "xLarge",
+        type: "cl.xLarge",
         info: "8 vCPU, 32 GB RAM, 300 GB NVMe SSD, ",
         info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 2 Snapshot, 300 GB Cloud Backup, Cloud Monitoring.",
@@ -247,10 +247,10 @@ export default {
       {
         img: require("@/assets/images/vm/evm_black.png"),
         name: " Linux Server",
-        price: "$301",
-        yearly: "$3516",
+        price: "$503",
+        yearly: "$5523",
         resource_name: "Resources",
-        type: "2xLarge",
+        type: "cl.2xLarge",
         info: "16 vCPU, 64 GB RAM, 500 GB NVMe SSD, ",
         info2: "10 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 2 Snapshot, 500 GB Cloud Backup, Cloud Monitoring.",
@@ -262,10 +262,10 @@ export default {
       {
         img: require("@/assets/images/vm/evmw_black.png"),
         name: " Window Server",
-        price: "$35",
-        yearly: "$399",
+        price: "$59",
+        yearly: "$649",
         resource_name: "Resources",
-        type: "Small",
+        type: "cw.Small",
         info: "2 vCPU, 4 GB RAM, 100 GB NVMe SSD, ",
         info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 1 Snapshot, 100 GB Cloud Backup, Cloud Monitoring.",
@@ -274,10 +274,10 @@ export default {
       {
         img: require("@/assets/images/vm/evmw_black.png"),
         name: " Window Server",
-        price: "$70",
-        yearly: "$799",
+        price: "$120",
+        yearly: "$1,320",
         resource_name: "Resources",
-        type: "Medium",
+        type: "cw.Medium",
         info: "4 vCPU, 8 GB RAM, 200 GB NVMe SSD, 1 Elastic IP,",
         info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: "  1 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
@@ -286,10 +286,10 @@ export default {
       {
         img: require("@/assets/images/vm/evmw_black.png"),
         name: " Window Server",
-        price: "$90",
-        yearly: "$999",
+        price: "$149",
+        yearly: "$1,599",
         resource_name: "Resources",
-        type: "Large",
+        type: "cw.Large",
         info: "4 vCPU, 16 GB RAM, 200 GB NVMe SSD, ",
         info2: "1 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 2 Snapshot, 200 GB Cloud Backup, Cloud Monitoring.",
@@ -298,10 +298,10 @@ export default {
       {
         img: require("@/assets/images/vm/evmw_black.png"),
         name: " Window Server",
-        price: "$180",
-        yearly: "$1,999",
+        price: "$299",
+        yearly: "$3,280",
         resource_name: "Resources",
-        type: "xLarge",
+        type: "cw.xLarge",
         info: "8 vCPU, 32 GB RAM, 300 GB NVMe SSD,",
         info2: "5 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 2 Snapshot, 300 GB Cloud Backup, Cloud Monitoring",
@@ -310,10 +310,10 @@ export default {
       {
         img: require("@/assets/images/vm/evmw_black.png"),
         name: " Window Server",
-        price: "$350",
-        yearly: "$3,999",
+        price: "$549",
+        yearly: "$5,999",
         resource_name: "Resources",
-        type: "2xLarge",
+        type: "cw.2xLarge",
         info: "16 vCPU, 64 GB RAM, 500 GB NVMe SSD,  ",
         info2: "10 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 2 Snapshot, 500 GB Cloud Backup, Cloud Monitoring.",
@@ -322,10 +322,10 @@ export default {
       {
         img: require("@/assets/images/vm/evmw_black.png"),
         name: " Window Server",
-        price: "$630",
-        yearly: "$7,199",
+        price: "$990",
+        yearly: "$9,990",
         resource_name: "Resources",
-        type: "4xLarge",
+        type: "cw.4xLarge",
         info: "32 vCPU, 128 GB RAM, 1 TB NVMe SSD,  ",
         info2: "10 Gbps Virtual Network Virtual Firewall, 1 Elastic IP,",
         info3: " 2 Snapshot, 1 TB Cloud Backup, Cloud Monitoring",
@@ -519,7 +519,6 @@ export default {
 }
 
 .product-card .info {
-  height: 100%;
   margin-bottom: 20px;
 }
 
@@ -565,10 +564,25 @@ export default {
   .product-card .os-list img {
     width: 40px;
   }
+
+  .product-card .name h4 {
+    font-size: 20px;
+  }
+
   .product-card .os-list img {
     width: 30px;
   }
 }
+
+@media (max-width: 760px) {
+  .product-card .name h4 {
+    font-size: 28px;
+  }
+  .product-card .info {
+    height: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .product-card .info {
     height: 200px;
