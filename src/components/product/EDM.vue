@@ -191,10 +191,12 @@
 <script>
 import { useRoute } from "vue-router";
 import { ref, onMounted } from "vue";
+import { useStore } from "vuex";
 export default {
   setup() {
     let route = useRoute();
-    const currentTheme = ref("light");
+    const store = useStore();
+    const currentTheme = computed(() => store.getters.theme);
 
     const linux_products = [
       {
