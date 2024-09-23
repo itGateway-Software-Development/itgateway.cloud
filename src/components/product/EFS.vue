@@ -179,7 +179,7 @@ export default {
 
     const linux_products = [
       {
-        img: require("@/assets/images/vm/efs.png"),
+        img: require("@/assets/images/vm/efs_1.png"),
         name: " Elastic File Server",
         price: "$29",
         yearly: "$299",
@@ -194,7 +194,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/efs.png"),
+        img: require("@/assets/images/vm/efs_1.png"),
         name: " Elastic File Server",
         price: "$59",
         yearly: "$590",
@@ -205,11 +205,11 @@ export default {
         info3: "1 Gbps Virtual Network Virtual Firewall",
         info4: "1 Elastic IP",
         info5: "500 GB Cloud Backup, Cloud Monitoring",
-        info6: "24x7x365 Supports, Up to 20 Users",
+        info6: "24x7x365 Supports, Up to 50 Users",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/efs.png"),
+        img: require("@/assets/images/vm/efs_1.png"),
         name: " Elastic File Server",
         price: "$120",
         yearly: "$1,200",
@@ -220,11 +220,11 @@ export default {
         info3: "1 Gbps Virtual Network Virtual Firewall",
         info4: "1 Elastic IP",
         info5: "1 TB Cloud Backup, Cloud Monitoring",
-        info6: "24x7x365 Supports, Up to 20 Users",
+        info6: "24x7x365 Supports, Up to 100 Users",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/efs.png"),
+        img: require("@/assets/images/vm/efs_1.png"),
         name: " Elastic File Server",
         price: "$169",
         yearly: "$1,690",
@@ -235,11 +235,11 @@ export default {
         info3: "5 Gbps Virtual Network Virtual Firewall",
         info4: "1 Elastic IP",
         info5: "2 TB Cloud Backup, Cloud Monitoring",
-        info6: "24x7x365 Supports, Up to 20 Users",
+        info6: "24x7x365 Supports, Up to 200 Users",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/efs.png"),
+        img: require("@/assets/images/vm/efs_1.png"),
         name: " Elastic File Server",
         price: "$329",
         yearly: "$3,290",
@@ -250,11 +250,11 @@ export default {
         info3: "5 Gbps Virtual Network Virtual Firewall",
         info4: "1 Elastic IP",
         info5: "4 TB Cloud Backup, Cloud Monitoring",
-        info6: "24x7x365 Supports, Up to 20 Users",
+        info6: "24x7x365 Supports, Up to 500 Users",
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/efs.png"),
+        img: require("@/assets/images/vm/efs_1.png"),
         name: " Elastic File Server",
         price: "$629",
         yearly: "$6,290",
@@ -265,7 +265,7 @@ export default {
         info3: "10 Gbps Virtual Network Virtual Firewall",
         info4: "1 Elastic IP",
         info5: "8 TB Cloud Backup, Cloud Monitoring",
-        info6: "24x7x365 Supports, Up to 20 Users",
+        info6: "24x7x365 Supports, Up to 1,000 Users",
         btn_text: "Deploy",
       },
     ];

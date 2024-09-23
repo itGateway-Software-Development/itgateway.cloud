@@ -4,6 +4,7 @@ import ElasticVM from "../views/products/ElasticVM.vue";
 import ElasticDM from "../views/products/ElasticDM.vue";
 import ElasticFileServer from "../views/products/ElasticFileServer.vue";
 import BareMetal from "../views/products/BareMetal.vue";
+import ManageCloudVpn from "../views/products/ManageCloudVpn.vue";
 
 const routes = [
   {
@@ -49,6 +50,12 @@ const routes = [
     path: "/products/compute/baremetal",
     name: "baremetal",
     component: BareMetal,
+    props: true,
+  },
+  {
+    path: "/products/networking/vpn",
+    name: "mnvpn",
+    component: ManageCloudVpn,
     props: true,
   },
 ];

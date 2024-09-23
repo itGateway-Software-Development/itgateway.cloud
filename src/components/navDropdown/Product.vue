@@ -258,9 +258,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Elastic VPN​​​​</h5>
-              <router-link to="#"
-                >Secure your connection, resources and apps​​</router-link
+              <router-link to="/products/networking/vpn" class="menu-route">
+                <h5>Elastic VPN​​</h5>
+                <span>Secure your connection, resources and apps​</span>
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
