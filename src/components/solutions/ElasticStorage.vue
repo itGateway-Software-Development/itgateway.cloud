@@ -35,7 +35,7 @@ export default {
         prefix: "Elastic​",
         name: "Object Storage (EOS)​​",
         description: "Flexible and secure cloud VM using shared resources.​​",
-        link: "/",
+        link: "/products/storage/eos",
       },
       {
         prefix: "Elastic",
@@ -103,8 +103,11 @@ export default {
   transform: translateY(-10px);
 }
 
-.solution-card:hover .menu-route h6,
-.menu-route p {
+.solution-card:hover .menu-route h6 {
+  color: #ec6316;
+}
+
+.solution-card:hover .menu-route p {
   color: #ec6316;
 }
 

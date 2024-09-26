@@ -6,6 +6,7 @@ import ElasticFileServer from "../views/products/ElasticFileServer.vue";
 import BareMetal from "../views/products/BareMetal.vue";
 import ManageCloudVpn from "../views/products/ManageCloudVpn.vue";
 import WebHosting from "../views/products/WebHosting.vue";
+import ObjectStorage from "../views/products/ObjectStorage.vue";
 
 const routes = [
   {
@@ -63,6 +64,12 @@ const routes = [
     path: "/products/web/webhosting",
     name: "webhosting",
     component: WebHosting,
+    props: true,
+  },
+  {
+    path: "/products/storage/eos",
+    name: "eos",
+    component: ObjectStorage,
     props: true,
   },
 ];

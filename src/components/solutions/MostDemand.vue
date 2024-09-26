@@ -70,7 +70,7 @@ export default {
         name: "Object Storage​",
         description:
           "Secure, durable and scalable object storage with cost saving.​​",
-        link: "/",
+        link: "/products/storage/eos",
       },
       {
         prefix: "Elastic",
@@ -122,8 +122,11 @@ export default {
   transform: translateY(-10px);
 }
 
-.solution-card:hover .menu-route h6,
-.menu-route p {
+.solution-card:hover .menu-route h6 {
+  color: #ec6316;
+}
+
+.solution-card:hover .menu-route p {
   color: #ec6316;
 }
 

@@ -287,10 +287,13 @@
         <div v-if="dropdownContent == 'storage'">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Elastic Object Storage (EOS)​​​</h5>
-              <router-link to="#"
-                >Flexible, scalable and secure object storage ​in the
-                Cloud​​</router-link
+              <router-link to="/products/storage/eos" class="menu-route">
+                <h5>Elastic Object Storage (EOS)​​​​​</h5>
+                <span
+                  >Flexible, scalable and secure object storage ​in the
+                  Cloud</span
+                >
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
