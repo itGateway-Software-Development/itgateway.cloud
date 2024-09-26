@@ -1,7 +1,7 @@
 <template>
   <div class="global_map">
     <div class="content-wrapper">
-      <h2 class="section-header text-center">Elastic Virtual Machine</h2>
+      <h2 class="section-header text-center">Elastic Dedicated Machine</h2>
     </div>
     <div
       class="globalinfracture_info content-wrapper d-flex justify-content-center align-items-center flex-wrap gap-3 mt-1 mt-lg-4 mb-3"
@@ -56,9 +56,9 @@
       <div class="heading-content">
         <h4>Cloud Linux Server</h4>
         <p>
-          Flexible and secure cloud virtual machine for Linux OS based app and
-          users. This types of VM will be shared resources for cost saving and
-          performance optimization.
+          Dedicated VM for high performance Linux OS based app and users. This
+          types of VM will be optimized performance with dedicated resources in
+          the cloud.
         </p>
       </div>
       <div class="products" id="compareProduct">
@@ -124,9 +124,9 @@
       <div class="heading-content">
         <h4>Cloud Windows Server</h4>
         <p>
-          Flexible and secure cloud virtual machine for Linux OS based app and
-          users. This types of VM will be shared resources for cost saving and
-          performance optimization.
+          Dedicated VM for high performance Windows OS based app and users. This
+          types of VM will be optimized performance with dedicated resources in
+          the cloud.
         </p>
       </div>
       <div class="products" id="compareProduct">
@@ -138,7 +138,9 @@
           >
             <div class="product-card shadow d-flex flex-column gap-3">
               <div class="name d-flex flex-column gap-2">
-                <div class="d-flex align-items-center gap-3">
+                <div
+                  class="d-flex align-items-center gap-3 justify-content-center"
+                >
                   <img
                     :src="require('@/assets/images/vm/evmw_black.png')"
                     alt=""

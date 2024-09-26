@@ -76,7 +76,7 @@
                 </div>
               </div>
               <div class="price d-flex flex-column gap-0">
-                <h5 class="mb-3">Start From</h5>
+                <h5 class="">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
                   <h2 class="color-text">{{ product.price }}</h2>
                   <span>/Month</span>
@@ -89,7 +89,7 @@
               <div class="info">
                 <h5>{{ product.resource_name }}</h5>
 
-                <p class="mt-4 text-bold">{{ product.cpu_name }}​</p>
+                <p class="text-bold">{{ product.cpu_name }}​</p>
                 <p>
                   <span>{{ product.cpu_info }}</span>
                 </p>
@@ -140,7 +140,7 @@
               </div>
 
               <div class="price d-flex flex-column gap-0">
-                <h5 class="mb-5">Start From</h5>
+                <h5 class="mb-2">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
                   <h2 class="color-text">{{ product.price }}</h2>
                   <span>/Month</span>
@@ -153,16 +153,14 @@
               <div class="info">
                 <h5>{{ product.resource_name }}</h5>
 
-                <p class="mt-4 text-bold">{{ product.cpu_name }}​</p>
-                <p>
+                <p class="mt-1 text-bold">{{ product.cpu_name }}​</p>
+                <p class="d-flex align-items-center gap-3">
                   <span>{{ product.cpu_info }}</span>
-                </p>
-                <div class="d-flex align-items-center gap-2">
                   <img :src="product.cpu" alt="" />
-                  <p>
-                    <span class="text-bold">{{ product.core_code }}</span>
-                  </p>
-                </div>
+
+                  <span class="text-bold">{{ product.core_code }}</span>
+                </p>
+
                 <p>{{ product.memory }}</p>
                 <p>{{ product.storage }}</p>
                 <p>{{ product.backup }}</p>
@@ -192,7 +190,7 @@ export default {
 
     const linux_products = [
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "6c/12T x 3.2GHz",
         cpu_name: "Intel Xeon E-2356G",
@@ -209,7 +207,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "8c/16T x 3.2GHz",
         cpu_name: "Intel Xeon E-2388G",
@@ -226,7 +224,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "6c/12T x 3.2GHz",
         cpu_name: "Intel Xeon E-2356G",
@@ -243,7 +241,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "8c/16T x 3.2GHz",
         cpu_name: "Intel Xeon E-2388G",
@@ -260,7 +258,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "6c/12T x 3.2GHz",
         cpu_name: "Intel Xeon E-2288G",
@@ -277,7 +275,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/ryzen.png"),
         cpu_info: "12c/24T x 3.7GHz",
         cpu_name: "AMD Ryzen 9 7900",
@@ -297,7 +295,7 @@ export default {
 
     const window_products = [
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "20c/40T x 2.4GHz",
         cpu_name: "2 x Xeon Silver 4210R",
@@ -314,7 +312,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-1.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "40c/80T x 2.1GHz",
         cpu_name: "2 x Xeon Gold 5218R",
@@ -331,7 +329,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-2.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "20c/40T x 2.4GHz",
         cpu_name: "2 x Xeon Silver 4210R",
@@ -348,7 +346,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-2.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "40c/80T x 2.1GHz",
         cpu_name: "2 x Xeon Gold 5218R",
@@ -365,7 +363,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-3.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "48c/96T x 2.1GHz",
         cpu_name: "2 x Xeon Gold 5418Y",
@@ -382,7 +380,7 @@ export default {
         btn_text: "Deploy",
       },
       {
-        img: require("@/assets/images/vm/server-3.png"),
+        img: require("@/assets/images/vm/server.png"),
         cpu: require("@/assets/images/vm/cpu/intel.png"),
         cpu_info: "64c/128T x 1.9GHz",
         cpu_name: "2 x Xeon Gold 6430",
@@ -567,7 +565,7 @@ export default {
 }
 
 .product-card .name img {
-  width: 80px;
+  width: 60px;
 }
 
 .product-card .name h5 {
@@ -580,7 +578,7 @@ export default {
 .product-card .name h4 {
   letter-spacing: 4px;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   font-family: "Courier New", Courier, monospace;
 }
 

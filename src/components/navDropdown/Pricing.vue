@@ -88,6 +88,7 @@ export default {
 .dropdown .menu-route h5,
 .dropdown .menu-route span {
   transition: 0.3s ease;
+  color: var(--route-font-color);
 }
 
 .dropdown .menu-route:hover h5,

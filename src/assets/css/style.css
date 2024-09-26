@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Chakra+Petch:wght@700&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&family=Chakra+Petch:wght@700&family=Roboto+Condensed&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -21,7 +21,7 @@
 
   --sec-background-color: #302d58;
   --sec-background-light-color: #dfe6ee;
-  
+
   --card-background-color: #302142;
   --card-background-light-color: #f4f5f8;
 
@@ -31,18 +31,19 @@
   --font-color: #ededed;
   --font-dark-color: #3f3f3f;
 
-  --sec-font-color: #A22E76;
+  --sec-font-color: #a22e76;
   --sec-font-light-color: #ededed;
 
-  --main-color: #EC6316;
-  --sec-main-color: #A22E76;
+  --main-color: #ec6316;
+  --sec-main-color: #a22e76;
 
   --language-bg-color: #f2f2f2;
-  --language-bg-light-color : #dcdcdc;
+  --language-bg-light-color: #dcdcdc;
 
   --footer-background-color: #142142;
   --footer-light-background-color: #c8d0d8;
 
+  --route-font-color: #111111;
 }
 
 #app {
@@ -54,7 +55,6 @@
   color: var(--font-color);
 }
 
-
 #app a {
   text-decoration: none;
   color: var(--font-color);
@@ -65,7 +65,7 @@
 }
 
 #app .section-header {
-  background: linear-gradient(99deg,#EC6316 3%,#ff6600 90%);
+  background: linear-gradient(99deg, #ec6316 3%, #ff6600 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -73,7 +73,7 @@
 }
 
 #app .sub-page-header {
-  background: linear-gradient(99deg,#EC6316 3%,#ff6600 90%);
+  background: linear-gradient(99deg, #ec6316 3%, #ff6600 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -82,12 +82,12 @@
 
 #app .primary-btn {
   background: transparent;
-  border: 2px solid #EC6316;
+  border: 2px solid #ec6316;
   border-radius: 0px 18px 0 18px;
   color: var(--font-color);
   font-size: 15px;
   letter-spacing: 0.03rem;
-  transition: .5s ease;
+  transition: 0.5s ease;
   font-weight: 550;
   position: relative;
   z-index: 1;
@@ -96,21 +96,21 @@
 
 #app .primary-btn.fill {
   border: 2px solid #e25a00 !important;
-  background: linear-gradient(99deg,#EC6316 3%,#c75b13 90%) !important;
+  background: linear-gradient(99deg, #ec6316 3%, #c75b13 90%) !important;
   color: #ededed;
 }
 
 #app .primary-btn:hover {
-  border: 2px solid #EC6316 !important;
+  border: 2px solid #ec6316 !important;
   color: #ededed !important;
   transform: translateY(-5px);
 }
 
 #app .primary-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   /* background: linear-gradient(to right,#EC6316, #853a0f); */
-  background: linear-gradient(99deg,#EC6316 3%,#ff6600 90%);
+  background: linear-gradient(99deg, #ec6316 3%, #ff6600 90%);
   z-index: -1;
   padding: 0.25em 0.5em;
   display: block;
@@ -127,7 +127,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  transition: all .8s;
+  transition: all 0.8s;
   transform: skewX(-45deg) scale(2, 1);
 }
 
@@ -145,10 +145,10 @@
   pointer-events: none;
 }
 
-nav, nav .dropdown {
+nav,
+nav .dropdown {
   padding: 5px 3%;
 }
-
 
 .content-wrapper {
   padding: 10px 15%;
@@ -159,20 +159,17 @@ nav, nav .dropdown {
   overflow: hidden;
 }
 
-
 .main-btn:hover {
   background: var(--background-light-color);
   color: var(--sec-font-color);
 }
 
-
 /* ========================
     Mobile Menu Drawer
 ==========================*/
 #drawer {
-    width: 100% !important;
+  width: 100% !important;
 }
-
 
 /* ========================
     Responsive
@@ -190,7 +187,7 @@ nav, nav .dropdown {
 }
 
 @media (max-width: 1200px) {
-  *{
+  * {
     font-size: 15px;
   }
   .content-wrapper {
@@ -210,9 +207,4 @@ nav, nav .dropdown {
   .content-wrapper {
     padding: 10px 3%;
   }
-
 }
-
-
-
-

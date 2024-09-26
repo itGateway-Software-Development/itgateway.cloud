@@ -70,7 +70,7 @@
           >
             <div class="product-card shadow d-flex flex-column gap-3">
               <div class="name d-flex flex-column gap-2">
-                <div class="d-flex align-items-center gap-3 type">
+                <div class="d-flex align-items-center gap-3 type flex-column">
                   <img :src="product.img" alt="" />
                   <h4>{{ product.type }}</h4>
                 </div>
@@ -540,7 +540,7 @@ export default {
 }
 
 .product-card .info p {
-  margin: 0px;
+  margin: 3px 0px;
 }
 
 .product-card .info h5,

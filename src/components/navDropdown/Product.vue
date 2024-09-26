@@ -368,9 +368,10 @@
         <div v-if="dropdownContent == 'web'">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Elastic Web Instance​​</h5>
-              <router-link to="#"
-                >Build and run your website or web apps​​</router-link
+              <router-link to="/products/web/webhosting" class="menu-route">
+                <h5>Elastic Web Instance​​​​​​</h5>
+                <span>Build and run your website or web apps​</span>
+                ​</router-link
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
@@ -470,6 +471,7 @@ export default {
 .menu-route h5,
 .menu-route span {
   transition: 0.3s ease;
+  color: var(--route-font-color);
 }
 
 .menu-route:hover h5,

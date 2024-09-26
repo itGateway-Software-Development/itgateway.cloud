@@ -1,7 +1,7 @@
 <template>
   <div class="global_map">
     <div class="content-wrapper">
-      <h2 class="section-header text-center">Elastic Virtual Machine</h2>
+      <h2 class="section-header text-center">Elastic Web Instance</h2>
     </div>
     <div
       class="globalinfracture_info content-wrapper d-flex justify-content-center align-items-center flex-wrap gap-3 mt-1 mt-lg-4 mb-3"
@@ -54,39 +54,36 @@
 
     <div class="cloud-linux content-wrapper">
       <div class="heading-content">
-        <h4>Cloud Linux Server</h4>
+        <h4>Web Hosting</h4>
         <p>
-          Flexible and secure cloud virtual machine for Linux OS based app and
-          users. This types of VM will be shared resources for cost saving and
-          performance optimization.
+          Linux OS based virtual machine for Commercial Website, E-commence
+          Websites and Web App.
         </p>
       </div>
       <div class="products" id="compareProduct">
         <div class="row">
           <div
             class="col-6 col-sm-6 col-md-4 col-xl-4 mb-5"
-            v-for="(product, i) in linux_products"
+            v-for="(product, i) in web_products"
             :key="i"
           >
             <div class="product-card shadow d-flex flex-column gap-3">
               <div class="name d-flex flex-column gap-2">
-                <div
-                  class="d-flex align-items-center gap-3 type justify-content-center"
-                >
+                <div class="d-flex align-items-center gap-3 type flex-column">
                   <img
-                    :src="require('@/assets/images/vm/evm_black.png')"
+                    :src="require('@/assets/images/vm/web_black.png')"
                     alt=""
                     v-if="currentTheme == 'light'"
                   />
                   <img
-                    :src="require('@/assets/images/vm/evm.png')"
+                    :src="require('@/assets/images/vm/web.png')"
                     alt=""
                     v-if="currentTheme == 'dark'"
                   />
                   <h4>{{ product.type }}</h4>
                 </div>
               </div>
-              <div class="os-list">
+              <!-- <div class="os-list">
                 <h5>Avaliable Os</h5>
                 <div class="d-flex align-items-center gap-3 mt-5">
                   <img :src="require('@/assets/images/vm/os/1.png')" alt="" />
@@ -94,7 +91,7 @@
                   <img :src="require('@/assets/images/vm/os/3.png')" alt="" />
                   <img :src="require('@/assets/images/vm/os/4.png')" alt="" />
                 </div>
-              </div>
+              </div> -->
               <div class="price d-flex flex-column gap-0">
                 <h5 class="mb-3">Start From</h5>
                 <div class="d-flex align-items-center gap-2">
@@ -113,71 +110,7 @@
                 <p>{{ product.info3 }}</p>
                 <p>{{ product.info4 }}</p>
                 <p>{{ product.info5 }}</p>
-              </div>
-              <button class="btn primary-btn product-btn">
-                {{ product.btn_text }}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cloud-window content-wrapper">
-      <div class="heading-content">
-        <h4>Cloud Windows Server</h4>
-        <p>
-          Flexible and secure cloud virtual machine for Linux OS based app and
-          users. This types of VM will be shared resources for cost saving and
-          performance optimization.
-        </p>
-      </div>
-      <div class="products" id="compareProduct">
-        <div class="row justify-content-center">
-          <div
-            class="col-6 col-sm-6 col-md-4 col-xl-4 mb-5"
-            v-for="(product, i) in window_products"
-            :key="i"
-          >
-            <div class="product-card shadow d-flex flex-column gap-3">
-              <div class="name d-flex flex-column gap-2">
-                <div class="d-flex align-items-center gap-3 type">
-                  <img
-                    :src="require('@/assets/images/vm/evmw_black.png')"
-                    alt=""
-                    v-if="currentTheme == 'light'"
-                  />
-                  <img
-                    :src="require('@/assets/images/vm/evmw.png')"
-                    alt=""
-                    v-if="currentTheme == 'dark'"
-                  />
-                  <h4>{{ product.type }}</h4>
-                </div>
-              </div>
-              <div class="os-list mb-3">
-                <h5>Avaliable Os</h5>
-                <div class="d-flex align-items-center gap-3 mt-5">
-                  <img :src="require('@/assets/images/vm/os/5.png')" alt="" />
-                </div>
-              </div>
-              <div class="price d-flex flex-column gap-0">
-                <h5 class="mb-5">Start From</h5>
-                <div class="d-flex align-items-center gap-2">
-                  <h2 class="color-text">{{ product.price }}</h2>
-                  <span>/Month</span>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <h2 class="color-text">{{ product.yearly }}</h2>
-                  <span>/Year</span>
-                </div>
-              </div>
-              <div class="info">
-                <h5>{{ product.resource_name }}</h5>
-                <p class="mt-4">{{ product.info }}​</p>
-                <p>{{ product.info2 }}</p>
-                <p>{{ product.info3 }}</p>
-                <p>{{ product.info4 }}</p>
-                <p>{{ product.info5 }}</p>
+                <p>{{ product.info6 }}</p>
               </div>
               <button class="btn primary-btn product-btn">
                 {{ product.btn_text }}
@@ -199,176 +132,110 @@ export default {
     let route = useRoute();
     const store = useStore();
     const currentTheme = computed(() => store.getters.theme);
-    const linux_products = [
+    const web_products = [
       {
         img: require("@/assets/images/vm/evm_black.png"),
-        name: " Linux Server",
+        name: " Linux OS",
+        price: "$8",
+        yearly: "$85",
+        resource_name: "Resources",
+        type: "wh.mini",
+        info: "1 vCPU, 1 GB RAM",
+        info2: "40 GB NVMe SSD",
+        info3: "1 Elastic IP, 1 Time/Day Snapshot",
+        info4: "2TB/Month Data Transfer",
+        info5: "40 GB Cloud Backup, Cloud Monitoring",
+        info6: "Standard SSL Certificate",
+        btn_text: "Deploy",
+      },
+      {
+        img: require("@/assets/images/vm/evm_black.png"),
+        name: " Linux OS",
         price: "$15",
-        yearly: "$167",
+        yearly: "$160",
         resource_name: "Resources",
-        type: "Mini",
+        type: "wh.small",
         info: "2 vCPU, 2 GB RAM",
-        info2: "50 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 1 Snapshot",
-        info5: "50 GB Cloud Backup, Cloud Monitoring",
+        info2: "60 GB NVMe SSD",
+        info3: "1 Elastic IP, 1 Time/Day Snapshot",
+        info4: "3TB/Month Data Transfer",
+        info5: "60 GB Cloud Backup, Cloud Monitoring",
+        info6: "Standard SSL Certificate",
         btn_text: "Deploy",
       },
       {
         img: require("@/assets/images/vm/evm_black.png"),
-        name: " Linux Server",
-        price: "$30",
-        yearly: "$331",
+        name: " Linux OS",
+        price: "$22",
+        yearly: "$230",
         resource_name: "Resources",
-        type: "Small",
+        type: "wh.medium",
         info: "2 vCPU, 4 GB RAM",
-        info2: "100 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 1 Snapshot",
-        info5: "100 GB Cloud Backup, Cloud Monitoring",
+        info2: "80 GB NVMe SSD",
+        info3: "1 Elastic IP, 1 Time/Day Snapshot",
+        info4: "4TB/Month Data Transfer",
+        info5: "80 GB Cloud Backup, Cloud Monitoring",
+        info6: "Standard SSL Certificate",
         btn_text: "Deploy",
       },
       {
         img: require("@/assets/images/vm/evm_black.png"),
-        name: " Linux Server",
-        price: "$58",
-        yearly: "$651",
-        resource_name: "Resources",
-        type: "Medium",
-        info: "4 vCPU, 8 GB RAM",
-        info2: "200 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 1 Snapshot",
-        info5: "200 GB Cloud Backup, Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-      {
-        img: require("@/assets/images/vm/evm_black.png"),
-        name: " Linux Server",
-        price: "$76",
-        yearly: "$870",
-        resource_name: "Resources",
-        type: "Large",
-        info: "4 vCPU, 16 GB RAM",
-        info2: "200 GB NVMe SSD",
-        info3: "5 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 2 Snapshot",
-        info5: "200 GB Cloud Backup, Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-      {
-        img: require("@/assets/images/vm/evm_black.png"),
-        name: " Linux Server",
-        price: "$150",
-        yearly: "$1,742",
-        resource_name: "Resources",
-        type: "xLarge",
-        info: "8 vCPU, 32 GB RAM",
-        info2: "300 GB NVMe SSD",
-        info3: "5 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 2 Snapshot",
-        info5: "300 GB Cloud Backup, Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-      {
-        img: require("@/assets/images/vm/evm_black.png"),
-        name: " Linux Server",
-        price: "$301",
-        yearly: "$3,516",
-        resource_name: "Resources",
-        type: "2xLarge",
-        info: "16 vCPU, 64 GB RAM",
-        info2: " 500 GB NVMe SSD",
-        info3: "10 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 2 Snapshot",
-        info5: "500 GB Cloud Backup, Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-    ];
-
-    const window_products = [
-      {
-        img: require("@/assets/images/vm/evm_black.png"),
-        name: " Windows Server",
+        name: " Linux OS",
         price: "$35",
-        yearly: "$399",
+        yearly: "$370",
         resource_name: "Resources",
-        type: "Small",
-        info: "2 vCPU, 4 GB RAM",
-        info2: "100 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 1 Snapshot",
-        info5: "100 GB Cloud Backup, Cloud Monitoring",
+        type: "wh.large",
+        info: "2 vCPU, 8 GB RAM",
+        info2: "160 GB NVMe SSD",
+        info3: "1 Elastic IP, 1 Time/Day Snapshot",
+        info4: "5TB/Month Data Transfer",
+        info5: "160 GB Cloud Backup, Cloud Monitoring",
+        info6: "Standard SSL Certificate",
         btn_text: "Deploy",
       },
       {
         img: require("@/assets/images/vm/evm_black.png"),
-        name: " Windows Server",
-        price: "$70",
-        yearly: "$799",
+        name: " Linux OS",
+        price: "$45",
+        yearly: "$490",
         resource_name: "Resources",
-        type: "Medium",
+        type: "wh.xlarge",
         info: "4 vCPU, 8 GB RAM",
         info2: "200 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 1 Snapshot",
+        info3: "1 Elastic IP, 1 Time/Day Snapshot",
+        info4: "6TB/Month Data Transfer",
         info5: "200 GB Cloud Backup, Cloud Monitoring",
+        info6: "Standard SSL Certificate",
         btn_text: "Deploy",
       },
       {
         img: require("@/assets/images/vm/evm_black.png"),
-        name: " Windows Server",
-        price: "$90",
-        yearly: "$999",
+        name: " Linux OS",
+        price: "$70",
+        yearly: "$750",
         resource_name: "Resources",
-        type: "Large",
+        type: "wh.mini",
         info: "4 vCPU, 16 GB RAM",
-        info2: "200 GB NVMe SSD",
-        info3: "1 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 2 Snapshot",
-        info5: "200 GB Cloud Backup, Cloud Monitoring",
+        info2: "320 GB NVMe SSD",
+        info3: "1 Elastic IP, 1 Time/Day Snapshot",
+        info4: "7TB/Month Data Transfer",
+        info5: "320 GB Cloud Backup, Cloud Monitoring",
+        info6: "Standard SSL Certificate",
         btn_text: "Deploy",
       },
       {
         img: require("@/assets/images/vm/evm_black.png"),
-        name: " Windows Server",
-        price: "$180",
-        yearly: "$1,999",
+        name: " Linux OS",
+        price: "$140",
+        yearly: "$1,490",
         resource_name: "Resources",
-        type: "xLarge",
+        type: "wh.mini",
         info: "8 vCPU, 32 GB RAM",
-        info2: "300 GB NVMe SSD",
-        info3: "5 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 2 Snapshot",
-        info5: "300 GB Cloud Backup, Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-      {
-        img: require("@/assets/images/vm/evm_black.png"),
-        name: " Windows Server",
-        price: "$350",
-        yearly: "$3,999",
-        resource_name: "Resources",
-        type: "2xLarge",
-        info: "16 vCPU, 64 GB RAM",
-        info2: "500 GB NVMe SSD",
-        info3: "5 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 2 Snapshot",
-        info5: "500 GB Cloud Backup, Cloud Monitoring",
-        btn_text: "Deploy",
-      },
-      {
-        img: require("@/assets/images/vm/evm_black.png"),
-        name: " Windows Server",
-        price: "$630",
-        yearly: "$7,199",
-        resource_name: "Resources",
-        type: "4xLarge",
-        info: "32 vCPU, 128 GB RAM",
-        info2: " 1 TB NVMe SSD",
-        info3: "10 Gbps Virtual Network Virtual Firewall",
-        info4: "1 Elastic IP, 2 Snapshot",
-        info5: "1 TB Cloud Backup, Cloud Monitoring",
+        info2: "640 GB NVMe SSD",
+        info3: "1 Elastic IP, 1 Time/Day Snapshot",
+        info4: "8TB/Month Data Transfer",
+        info5: "640 GB Cloud Backup, Cloud Monitoring",
+        info6: "Standard SSL Certificate",
         btn_text: "Deploy",
       },
     ];
@@ -377,7 +244,7 @@ export default {
       console.log(currentTheme.value);
     });
 
-    return { route, linux_products, window_products, currentTheme };
+    return { route, web_products, currentTheme };
   },
 };
 </script>
@@ -560,7 +427,7 @@ export default {
 }
 
 .product-card .info p {
-  margin: 0px;
+  margin: 3px 0px;
 }
 
 .product-card .info h5,
