@@ -116,6 +116,7 @@ export default {
   border-radius: 10px;
   padding: 5px 10px;
   font-size: 0.9em;
+  z-index: 999;
   display: none;
 }
 
@@ -135,7 +136,8 @@ export default {
 
 .global_map .myanmar span,
 .global_map .singapore span,
-.global_map .netherland span {
+.global_map .netherland span,
+.global_map .thailand span {
   color: #333;
 }
 
