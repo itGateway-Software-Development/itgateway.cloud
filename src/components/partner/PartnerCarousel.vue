@@ -1,6 +1,5 @@
 <template>
   <div class="carousel-wrapper">
-    <!-- <img :src="require('@/assets/images/carousel/banner.png')" alt="" /> -->
     <div class="row carousel-bg-color align-items-center">
       <div class="col-12 col-md-8 col-xl-8 justify-content-center content-col">
         <div class="carousel-content">
@@ -13,9 +12,6 @@
           <div class="d-flex align-items-center gap-3">
             <button
               class="btn partner-btn d-flex gap-2 align-items-center become-partner-btn"
-              @click="
-                changeRoute('https://console.itgatewaycloud.com/register')
-              "
             >
               Become Partner
             </button>
@@ -57,14 +53,12 @@ export default {
 .carousel-wrapper {
   width: 100%;
   height: 500px;
-  position: relative;
   margin-top: 85px;
 }
 
 .carousel-wrapper .carousel-bg-color {
-  width: 100%;
   height: 100%;
-  background: #c75b13;
+  background-color: #c75b13;
   padding: 0px 100px;
 }
 

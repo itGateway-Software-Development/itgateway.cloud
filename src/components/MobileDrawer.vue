@@ -1,45 +1,46 @@
 <template>
-    <v-list>
-        <v-list-item @click="changeRoute('/')">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img :src="require('@/assets/images/logo.png')" alt="">
-                <h5 class="mt-2">itGateway <br> Technology Group</h5>
-              </div>
-            <span class="material-symbols-outlined fs-1 text-white">
-            close
-            </span>
+  <v-list>
+    <v-list-item @click="changeRoute('/')">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img :src="require('@/assets/images/logo.png')" alt="" />
+          <h5 class="mt-2">
+            itGateway <br />
+            Technology Group
+          </h5>
         </div>
-        </v-list-item>
-        <div style="width: 100%; height: 2px; background: #EC6316;"></div>
-        <v-list-group value="Explore">
-            <template v-slot:activator="{ props }">
-                <v-list-item v-bind="props" >{{$t("explore")}}</v-list-item>
-            </template>
-            <v-list-item @click="changeRoute('#')">
-                <v-list-item-title>Partner Network​</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>Global Infrastructure​</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>Managed Cloud Services​</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>Reports & Insights​</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>Customer Success Story​</v-list-item-title>
-            </v-list-item>
-        </v-list-group>
+        <span class="material-symbols-outlined fs-1 text-white"> close </span>
+      </div>
+    </v-list-item>
+    <div style="width: 100%; height: 2px; background: #ec6316"></div>
+    <v-list-group value="Explore">
+      <template v-slot:activator="{ props }">
+        <v-list-item v-bind="props">{{ $t("explore") }}</v-list-item>
+      </template>
+      <v-list-item @click="changeRoute('/explore/partner-netwrok')">
+        <v-list-item-title>Partner Network​</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>Global Infrastructure​</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>Managed Cloud Services​</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>Reports & Insights​</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>Customer Success Story​</v-list-item-title>
+      </v-list-item>
+    </v-list-group>
 
-        <hr class="p-0 m-0" >
+    <hr class="p-0 m-0" />
 
-        <v-list-group value="Products">
-            <template v-slot:activator="{ props }">
-                <v-list-item v-bind="props" >{{$t("product")}}</v-list-item>
-            </template>
-            <!-- <v-list-group value="Cloud">
+    <v-list-group value="Products">
+      <template v-slot:activator="{ props }">
+        <v-list-item v-bind="props">{{ $t("product") }}</v-list-item>
+      </template>
+      <!-- <v-list-group value="Cloud">
                 <template v-slot:activator="{ props }">
                 <v-list-item v-bind="props" title="Cloud"></v-list-item>
                 </template>
@@ -167,101 +168,109 @@
                 </v-list-item>
                 <hr class="p-0 m-0" >
             </v-list-group> -->
-        </v-list-group>
+    </v-list-group>
 
-        <hr class="py-0 my-0" >
+    <hr class="py-0 my-0" />
 
-        <v-list-group value="Solutions">
-            <template v-slot:activator="{ props }">
-                <v-list-item v-bind="props">{{$t("solutions")}}</v-list-item>
-            </template>
-        </v-list-group>
+    <v-list-group value="Solutions">
+      <template v-slot:activator="{ props }">
+        <v-list-item v-bind="props">{{ $t("solutions") }}</v-list-item>
+      </template>
+    </v-list-group>
 
-        <hr class="py-0 my-0" >
+    <hr class="py-0 my-0" />
 
-        <v-list-group value="Pricing">
-            <template v-slot:activator="{ props }">
-                <v-list-item v-bind="props" >{{$t("pricing")}}</v-list-item>
-            </template>
-            <v-list-item @click="changeRoute('/pricing/all-pricing')">
-                <v-list-item-title>See All Pricing</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>itGateway Cloud Free Tier​</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>Pricing Calculator​</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>Cost Optimization​</v-list-item-title>
-            </v-list-item>
-            <v-list-item @click="changeRoute('/#')">
-                <v-list-item-title>Cloud Supports​</v-list-item-title>
-            </v-list-item>
-        </v-list-group>
+    <v-list-group value="Pricing">
+      <template v-slot:activator="{ props }">
+        <v-list-item v-bind="props">{{ $t("pricing") }}</v-list-item>
+      </template>
+      <v-list-item @click="changeRoute('/pricing/all-pricing')">
+        <v-list-item-title>See All Pricing</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>itGateway Cloud Free Tier​</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>Pricing Calculator​</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>Cost Optimization​</v-list-item-title>
+      </v-list-item>
+      <v-list-item @click="changeRoute('/#')">
+        <v-list-item-title>Cloud Supports​</v-list-item-title>
+      </v-list-item>
+    </v-list-group>
 
-        <hr class="py-0 my-0" >
+    <hr class="py-0 my-0" />
 
-        <v-list-item @click="changeRoute('/#')">
-        <v-list-item-title>{{ $t("market_place") }}</v-list-item-title>
-        </v-list-item>
+    <v-list-item @click="changeRoute('/#')">
+      <v-list-item-title>{{ $t("market_place") }}</v-list-item-title>
+    </v-list-item>
 
-        <hr class="py-0 my-0" >
+    <hr class="py-0 my-0" />
 
-        <v-list-item @click="changeRoute('/#')">
-        <v-list-item-title>{{ $t("event") }}</v-list-item-title>
-        </v-list-item>
-        
-        <hr class="py-0 my-0" >
+    <v-list-item @click="changeRoute('/#')">
+      <v-list-item-title>{{ $t("event") }}</v-list-item-title>
+    </v-list-item>
 
-        <v-list-item @click="changeRoute('/#')">
-        <v-list-item-title>{{ $t("company") }}</v-list-item-title>
-        </v-list-item>
-        
-        <hr class="py-0 my-0" >
+    <hr class="py-0 my-0" />
 
-        <v-list-item @click="changeRoute('/#')">
-        <v-list-item-title style="color: #EC6316;">Cutomer Portal</v-list-item-title>
-        </v-list-item>
-        
-        <hr class="py-0 my-0" >
+    <v-list-item @click="changeRoute('/#')">
+      <v-list-item-title>{{ $t("company") }}</v-list-item-title>
+    </v-list-item>
 
-        <v-list-group value="Languages">
-            <template v-slot:activator="{ props }">
-                <v-list-item v-bind="props" >{{ $t("language") }}</v-list-item>
-            </template>
+    <hr class="py-0 my-0" />
 
-            <v-list-item class="active-lang" @click="changeLanguage('EN')">
-                <div class="d-flex justify-content-between">
-                <v-list-item-title>English</v-list-item-title>
-                <span v-if="language == 'EN'" class="material-symbols-outlined" style="color: #EC6316;">
-                    check_circle
-                    </span>
-                </div>
-            </v-list-item>
-            <v-list-item  @click="changeLanguage('MM')">
-                <div class="d-flex justify-content-between">
-                <v-list-item-title>Myanmar</v-list-item-title>
-                <span v-if="language == 'MM'" class="material-symbols-outlined" style="color: #EC6316;">
-                    check_circle
-                    </span>
-                </div>
-            </v-list-item>
-        </v-list-group>
+    <v-list-item @click="changeRoute('/#')">
+      <v-list-item-title style="color: #ec6316"
+        >Cutomer Portal</v-list-item-title
+      >
+    </v-list-item>
 
-        <hr class="py-0 my-0" >
+    <hr class="py-0 my-0" />
 
-    </v-list>
+    <v-list-group value="Languages">
+      <template v-slot:activator="{ props }">
+        <v-list-item v-bind="props">{{ $t("language") }}</v-list-item>
+      </template>
+
+      <v-list-item class="active-lang" @click="changeLanguage('EN')">
+        <div class="d-flex justify-content-between">
+          <v-list-item-title>English</v-list-item-title>
+          <span
+            v-if="language == 'EN'"
+            class="material-symbols-outlined"
+            style="color: #ec6316"
+          >
+            check_circle
+          </span>
+        </div>
+      </v-list-item>
+      <v-list-item @click="changeLanguage('MM')">
+        <div class="d-flex justify-content-between">
+          <v-list-item-title>Myanmar</v-list-item-title>
+          <span
+            v-if="language == 'MM'"
+            class="material-symbols-outlined"
+            style="color: #ec6316"
+          >
+            check_circle
+          </span>
+        </div>
+      </v-list-item>
+    </v-list-group>
+
+    <hr class="py-0 my-0" />
+  </v-list>
 </template>
 
 <script>
-    export default {
-        props: ['language'],
-        setup(props, {emit}) {
-            const changeRoute = (route) => emit('changeRoute', route);
-            const changeLanguage = (lang) => emit('switchLanguage', lang);
-            return {changeRoute, changeLanguage};
-        }
-    }
+export default {
+  props: ["language"],
+  setup(props, { emit }) {
+    const changeRoute = (route) => emit("changeRoute", route);
+    const changeLanguage = (lang) => emit("switchLanguage", lang);
+    return { changeRoute, changeLanguage };
+  },
+};
 </script>
-
