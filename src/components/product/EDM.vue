@@ -70,7 +70,9 @@
           >
             <div class="product-card shadow d-flex flex-column gap-3">
               <div class="name d-flex flex-column gap-2">
-                <div class="d-flex align-items-center gap-3 type">
+                <div
+                  class="d-flex align-items-center gap-3 type justify-content-center"
+                >
                   <img
                     :src="require('@/assets/images/vm/evm_black.png')"
                     alt=""

@@ -109,9 +109,10 @@
               >
             </div>
             <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
-              <h5>Object Storage​</h5>
-              <router-link to="#"
-                >Scalable & secure object storage in the Cloud​</router-link
+              <router-link to="/products/storage/eos" class="menu-route">
+                <h5>Object Storage​</h5>
+                <span>Scalable & secure object storage in the Cloud</span
+                >​</router-link
               >
             </div>
           </div>

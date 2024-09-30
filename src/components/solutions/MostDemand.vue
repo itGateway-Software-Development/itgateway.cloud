@@ -70,7 +70,7 @@ export default {
         name: "Object Storage​",
         description:
           "Secure, durable and scalable object storage with cost saving.​​",
-        link: "/products/storage/eos",
+        link: "products/storage/eos",
       },
       {
         prefix: "Elastic",
