@@ -137,7 +137,7 @@ export default {};
 
 .content-regulation h2 {
   font-family: "Chakra Petch", sans-serif;
-  font-size: 38px;
+  font-size: 34px;
   letter-spacing: 0.007rem;
   text-decoration: underline;
 }
@@ -145,13 +145,13 @@ export default {};
 .content-regulation p,
 span {
   margin: 0px;
-  font-size: 28px !important;
+  font-size: 24px !important;
   font-weight: bold;
   letter-spacing: 0.007rem;
 }
 
 .color-text {
-  color: #2cee36;
+  color: #43a047;
 }
 
 .desktop-img img {
