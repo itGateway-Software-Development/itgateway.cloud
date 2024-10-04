@@ -62,21 +62,21 @@ export default {
         title: "Amigos International​​",
         type: "Engineering",
         desc: "Building ERP System and Digital Workspaces on Cloud to manage business process.​​​",
-        link: "#",
+        link: "https://www.amigosmyanmar.com/index.php/en/",
       },
       {
         img: require("@/assets/images/customers/3.png"),
         title: "Hitachi Soe​​​",
         type: "Manufacturing",
         desc: "Using Private Cloud and DC/DR deployment for the Backup, Replication and Disaster Recovery.​​​​",
-        link: "#",
+        link: "https://www.hitachi-soeelectric.com/",
       },
       {
         img: require("@/assets/images/customers/16.jpg"),
         title: "AKT Holdings​​",
         type: "Distribution",
         desc: "Running ERP and POS software on the Cloud to distribute their car engine oil products.​​​​​",
-        link: "#",
+        link: "https://www.aktdistribution.com/",
       },
       {
         img: require("@/assets/images/customers/13.jpg"),
@@ -104,7 +104,7 @@ export default {
         title: "Annam Group​​",
         type: "Distribution​",
         desc: "Running ERP and POS software on the Cloud to distribute their food & beverage products.​​​​",
-        link: "#",
+        link: "https://annam-group.com/",
       },
       {
         img: require("@/assets/images/customers/18.jpg"),
@@ -118,7 +118,7 @@ export default {
         title: "Gandamar Shwe Pyi​​​​",
         type: "Logistics",
         desc: "Manage their logistic system by hosting the ERP system on the Cloud to transform quickly.​​​​​​",
-        link: "#",
+        link: "https://www.gandamarsp.com/",
       },
       {
         img: require("@/assets/images/customers/28.jpg"),
@@ -146,14 +146,28 @@ export default {
         title: "Makro Myanmar​​",
         type: "Retailers​",
         desc: "Using Cloud Backup system to protect many failure for their data and user information.​​​",
-        link: "#",
+        link: "https://www.makromyanmar.com/",
       },
       {
         img: require("@/assets/images/customers/13.png"),
         title: "Kinetic Myanmar​​​",
         type: "Telecommunication​",
         desc: "Migrating the Server and VM from On-Premises to the Cloud for upgrading their Datacenter.​​",
-        link: "#",
+        link: "https://www.worldwidemyanmar.com/wwm-portfolio/kinetic-myanmar/",
+      },
+      {
+        img: require("@/assets/images/customers/31.jpg"),
+        title: "ICICLE​​​",
+        type: "Food Industrial​",
+        desc: "Running ERP and POS software on the Cloud to distribute their food & beverage products.​​",
+        link: "https://www.iciclegroupofcompanies.com/",
+      },
+      {
+        img: require("@/assets/images/customers/32.jpg"),
+        title: "Myanmar May Kaung​​​",
+        type: "Manufacturing​",
+        desc: "Running ERP and POS software on the Cloud to distribute their furniture products.​​",
+        link: "https://www.iciclegroupofcompanies.com/",
       },
     ];
 

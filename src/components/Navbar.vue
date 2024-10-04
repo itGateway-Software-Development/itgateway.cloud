@@ -3,7 +3,7 @@
     <nav class="pb-1">
       <div class="d-flex justify-content-between align-items-center">
         <div class="logo cursor-pointer" @click="navigate('/')">
-          <img :src="require('@/assets/images/logo.png')" alt="" />
+          <img :src="require('@/assets/images/logo3.png')" alt="" />
           <h5 class="mt-2">itGateway Cloud</h5>
         </div>
 

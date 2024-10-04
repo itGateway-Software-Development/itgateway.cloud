@@ -55,7 +55,10 @@
       <hr class="d-block d-md-none" />
       <div class="col-md-12 col-lg-3 mb-5">
         <div class="d-flex flex-column">
-          <a href="" class="portal-btn primary-btn fill"
+          <a
+            href="https://console.itgatewaycloud.com/login"
+            target="_blank"
+            class="portal-btn primary-btn fill"
             >Cloud Portal Sign In</a
           >
           <div
