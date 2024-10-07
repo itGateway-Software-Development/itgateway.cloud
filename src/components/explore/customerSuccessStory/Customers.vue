@@ -18,7 +18,7 @@
         v-for="(customer, i) in customers"
         :key="i"
       >
-        <router-link :to="customer.link">
+        <a :herf="customer.link" target="_blank">
           <img :src="customer.img" alt="" />
           <h2>{{ customer.title }}</h2>
           <h3>{{ customer.type }}</h3>
@@ -26,14 +26,18 @@
             {{ customer.desc }}
           </p>
           <div class="readmore">
-            <router-link to="#" class="d-flex align-items-center gap-2">
+            <a
+              :href="customer.link"
+              target="_blank"
+              class="d-flex align-items-center gap-2"
+            >
               <span>View Customer</span>
               <span class="material-symbols-outlined mt-1 ms-1"
                 >arrow_right_alt</span
               >
-            </router-link>
+            </a>
           </div>
-        </router-link>
+        </a>
       </div>
     </div>
   </div>
