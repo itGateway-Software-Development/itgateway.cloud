@@ -7,6 +7,7 @@ import BareMetal from "../views/products/BareMetal.vue";
 import ManageCloudVpn from "../views/products/ManageCloudVpn.vue";
 import WebHosting from "../views/products/WebHosting.vue";
 import ObjectStorage from "../views/products/ObjectStorage.vue";
+import FlexConnect from "../views/products/FlexConnect.vue";
 
 const routes = [
   {
@@ -70,6 +71,12 @@ const routes = [
     path: "/products/storage/eos",
     name: "eos",
     component: ObjectStorage,
+    props: true,
+  },
+  {
+    path: "/products/workspace/flexconnect",
+    name: "flex",
+    component: FlexConnect,
     props: true,
   },
 ];
