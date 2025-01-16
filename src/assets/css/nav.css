@@ -1,6 +1,7 @@
 .nav-wrapper {
   position: fixed;
   top: 0;
+  max-width: 1920px;
   width: 100%;
   z-index: 999;
   background: var(--background-color);

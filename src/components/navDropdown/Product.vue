@@ -446,7 +446,7 @@
                 >Digital workspace platform like Microsoft 365​​</router-link
               >
             </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
+            <!-- <div class="col-12 col-md-6 col-lg-4" style="margin-bottom: 40px">
               <router-link
                 to="/products/workspace/flexconnect"
                 class="menu-route"
@@ -456,7 +456,7 @@
                   >Cloud-based remote desktop management software.​</span
                 ></router-link
               >
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

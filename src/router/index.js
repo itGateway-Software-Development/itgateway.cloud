@@ -73,12 +73,12 @@ const routes = [
     component: ObjectStorage,
     props: true,
   },
-  {
-    path: "/products/workspace/flexconnect",
-    name: "flex",
-    component: FlexConnect,
-    props: true,
-  },
+  // {
+  //   path: "/products/workspace/flexconnect",
+  //   name: "flex",
+  //   component: FlexConnect,
+  //   props: true,
+  // },
 ];
 
 const router = createRouter({
