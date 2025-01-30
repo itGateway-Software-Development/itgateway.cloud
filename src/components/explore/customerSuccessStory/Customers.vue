@@ -171,7 +171,14 @@ export default {
         title: "Myanmar May Kaung​​​",
         type: "Manufacturing​",
         desc: "Running ERP and POS software on the Cloud to distribute their furniture products.​​",
-        link: "https://www.iciclegroupofcompanies.com/",
+        link: "https://www.myanmarmaykaung.com/",
+      },
+      {
+        img: require("@/assets/images/customers/33.jpg"),
+        title: "Shwe Kyun International Company Limited​​​",
+        type: "Manufacturing​",
+        desc: "Running ERP and POS software on the Cloud to distribute their building materials.​​",
+        link: "#",
       },
     ];
 
